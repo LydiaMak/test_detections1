@@ -18,12 +18,12 @@ for i in range(x_c.size):
  zcomp = -0.5*((xcomp + ycomp)/(sigma**2.))
  Flux =Flux+ 8.*(1./(2.*np.pi))*(1./(sigma**2.))*np.exp(zcomp)
 
-#bg =  0.003 * np.random.randn(Flux.shape[0], Flux.shape[1]) + 0.18
-#Flux = Flux + bg
+bg =  0.003 * np.random.randn(Flux.shape[0], Flux.shape[1])
+Flux = Flux + bg
 print (np.sum(Flux))
 header=pyfits.getheader('/local/lydia/Data/all_SWASP_data/raw/DAS1_001823758.fts')
 
 if not os.path.exists("input"):
  os.makedirs("input")
 
-pyfits.writeto("./input/sim.fits",Flux,header,clobber=True )
+pyfits.writeto("./input/sim_v.fits",Flux,header,clobber=True )
