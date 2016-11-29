@@ -14,8 +14,11 @@ sigma=0.58
 
 f = sources['base_PsfFlux_flux']
 #f = f[0:9999]
-x_c = np.random.uniform(50,2000,size=f.size)
-y_c = np.random.uniform(50,2000,size=f.size)
+#x_c = np.random.uniform(50,2000,size=f.size)
+#y_c = np.random.uniform(50,2000,size=f.size)
+
+x_c = sources['base_SdssCentroid_x']
+y_c = sources['base_SdssCentroid_y']
 
 #for j in np.arange(1,10):
    #for i in np.arange(1,100):
