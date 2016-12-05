@@ -17,14 +17,14 @@ f = sources['base_PsfFlux_flux']
 #x_c = np.random.uniform(50,2000,size=f.size)
 #y_c = np.random.uniform(50,2000,size=f.size)
 
-deblend = sources['parent']
+#deblend = sources['parent']
 
 x_c = sources['base_SdssCentroid_x']
 y_c = sources['base_SdssCentroid_y']
 
 
 for i in range(x_c.size):
-  if deblend[i] == 0:
+ # if deblend[i] == 0:
     print i
     ind = np.logical_and(np.logical_and(x > (x_c[i] - 50), x < (x_c[i] + 50)), np.logical_and(y > (y_c[i] - 50),y < (y_c[i] + 50)))
     xcomp = (x[ind] - x_c[i])**2.

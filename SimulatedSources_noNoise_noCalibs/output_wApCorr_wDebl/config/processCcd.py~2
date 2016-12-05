@@ -916,7 +916,7 @@ config.charImage.measurePsf.starSelector['objectSize'].widthMin=0.0
 config.charImage.measurePsf.starSelector['objectSize'].kernelSize=21
 
 # specify the minimum psfFlux for good Psf Candidates
-config.charImage.measurePsf.starSelector['objectSize'].fluxMin=0.0001
+config.charImage.measurePsf.starSelector['objectSize'].fluxMin=0.3
 
 # number of pixels to ignore around the edge of PSF candidate postage stamps
 config.charImage.measurePsf.starSelector['objectSize'].borderWidth=0
@@ -925,7 +925,7 @@ config.charImage.measurePsf.starSelector['objectSize'].borderWidth=0
 config.charImage.measurePsf.starSelector['objectSize'].badFlags=['base_PixelFlags_flag_edge', 'base_PixelFlags_flag_interpolatedCenter', 'base_PixelFlags_flag_saturatedCenter', 'base_PixelFlags_flag_crCenter', 'base_PixelFlags_flag_bad', 'base_PixelFlags_flag_interpolated']
 
 # specify the maximum psfFlux for good Psf Candidates (ignored if == 0)
-config.charImage.measurePsf.starSelector['objectSize'].fluxMax=10000.0
+config.charImage.measurePsf.starSelector['objectSize'].fluxMax=0.6
 
 # Name of field in Source to use for flux measurement
 config.charImage.measurePsf.starSelector['objectSize'].sourceFluxField='base_GaussianFlux_flux'
