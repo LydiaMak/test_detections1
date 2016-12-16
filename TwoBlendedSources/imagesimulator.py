@@ -16,9 +16,9 @@ sigma=0.58
 
 #deblend = sources['parent']
 
-x_c = np.array([1000,995,300,2000])
-y_c = np.array([1000,999,55,1500])
-f = np.array([2.,2.,0.5,4])
+x_c = np.array([1000,999,300,2000,1500,500])
+y_c = np.array([1000,999,55,1500,30,2010])
+f = np.array([2.,2.,0.5,4,0.4,0.7])
 
 #x_c = np.append(x_c, xr_c)
 #y_c = np.append(y_c, yr_c)
