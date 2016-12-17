@@ -513,7 +513,7 @@ config.charImage.detection.tempLocalBackground.isNanSafe=False
 
 # how large a region of the sky should be used for each background point
 # 	Valid Range = [1,inf)
-config.charImage.detection.tempLocalBackground.binSize=32
+config.charImage.detection.tempLocalBackground.binSize=64
 
 # Use inverse variance weighting in calculation (valid only with useApprox=True)
 config.charImage.detection.tempLocalBackground.weighting=True
@@ -1407,7 +1407,7 @@ config.calibrate.detection.tempLocalBackground.isNanSafe=False
 
 # how large a region of the sky should be used for each background point
 # 	Valid Range = [1,inf)
-config.calibrate.detection.tempLocalBackground.binSize=64
+config.calibrate.detection.tempLocalBackground.binSize=32
 
 # Use inverse variance weighting in calculation (valid only with useApprox=True)
 config.calibrate.detection.tempLocalBackground.weighting=True

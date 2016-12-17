@@ -1021,7 +1021,7 @@ config.calibrate.deblend.edgeHandling='ramp'
 config.calibrate.deblend.assignStrayFlux=True
 
 # Mask planes with the corresponding limit on the fraction of masked pixels. Sources violating this limit will not be deblended.
-config.calibrate.deblend.maskLimits={'NO_DATA': 0.25}
+config.calibrate.deblend.maskLimits={}
 
 # How to split flux among peaks
 # Allowed values:

@@ -513,7 +513,7 @@ config.charImage.detection.tempLocalBackground.isNanSafe=False
 
 # how large a region of the sky should be used for each background point
 # 	Valid Range = [1,inf)
-config.charImage.detection.tempLocalBackground.binSize=64
+config.charImage.detection.tempLocalBackground.binSize=32
 
 # Use inverse variance weighting in calculation (valid only with useApprox=True)
 config.charImage.detection.tempLocalBackground.weighting=True
@@ -528,7 +528,7 @@ config.charImage.detection.tempLocalBackground.weighting=True
 config.charImage.detection.tempLocalBackground.statisticsProperty='MEANCLIP'
 
 # Use Approximate (Chebyshev) to model background.
-config.charImage.detection.tempLocalBackground.useApprox=False
+config.charImage.detection.tempLocalBackground.useApprox=True
 
 # Include threshold relative to thresholdValue
 # 	Valid Range = [0.0,inf)
@@ -1407,7 +1407,7 @@ config.calibrate.detection.tempLocalBackground.isNanSafe=False
 
 # how large a region of the sky should be used for each background point
 # 	Valid Range = [1,inf)
-config.calibrate.detection.tempLocalBackground.binSize=64
+config.calibrate.detection.tempLocalBackground.binSize=32
 
 # Use inverse variance weighting in calculation (valid only with useApprox=True)
 config.calibrate.detection.tempLocalBackground.weighting=True
@@ -1422,7 +1422,7 @@ config.calibrate.detection.tempLocalBackground.weighting=True
 config.calibrate.detection.tempLocalBackground.statisticsProperty='MEANCLIP'
 
 # Use Approximate (Chebyshev) to model background.
-config.calibrate.detection.tempLocalBackground.useApprox=False
+config.calibrate.detection.tempLocalBackground.useApprox=True
 
 # Include threshold relative to thresholdValue
 # 	Valid Range = [0.0,inf)

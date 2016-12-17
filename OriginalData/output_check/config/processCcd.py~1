@@ -513,7 +513,7 @@ config.charImage.detection.tempLocalBackground.isNanSafe=False
 
 # how large a region of the sky should be used for each background point
 # 	Valid Range = [1,inf)
-config.charImage.detection.tempLocalBackground.binSize=64
+config.charImage.detection.tempLocalBackground.binSize=32
 
 # Use inverse variance weighting in calculation (valid only with useApprox=True)
 config.charImage.detection.tempLocalBackground.weighting=True
@@ -1672,7 +1672,7 @@ config.isr.assembleCcd.doRenorm=False
 config.isr.assembleCcd.setGain=False
 
 # The saturation level to use if no Detector is present in the Exposure (ignored if NaN)
-config.isr.saturation=float('nan')
+config.isr.saturation=50000.0
 
 # Assemble amp-level calibration exposures into ccd-level exposure?
 config.isr.doAssembleIsrExposures=True
