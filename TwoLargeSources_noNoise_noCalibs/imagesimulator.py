@@ -4,6 +4,7 @@ import pyfits
 import os
 import pylab as plt
 
+#Simulating two large sources.
 
 x = np.tile(np.arange(0,2048),(2048,1))
 y=np.tile(np.arange(0,2048).reshape(2048,1),(1,2048))
