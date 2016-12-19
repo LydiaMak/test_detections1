@@ -1,0 +1,887 @@
+SIMPLE  =                    T / Standard FITS format                           BITPIX  =                    8 / Character data                                 NAXIS   =                    1 / Text string                                    NAXIS1  =                64878 / Number of characters                           VOTMETA =                    T / Table metadata in VOTable format               EXTEND  =                    T / There are standard extensions                  COMMENT                                                                         COMMENT The data in this primary HDU consists of bytes which                    COMMENT comprise a VOTABLE document.                                            COMMENT The VOTable describes the metadata of the table contained               COMMENT in the following BINTABLE extension.                                    COMMENT Such a BINTABLE extension can be used on its own as a perfectly         COMMENT good table, but the information from this HDU may provide some          COMMENT useful additional metadata.                                             COMMENT There is one following BINTABLE.                                        NTABLE  =                    1 / Number of following BINTABLE HDUs              END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <?xml version='1.0' encoding='UTF-8'?>
+<VOTABLE version='1.1'>
+<!--
+ !  VOTable written by uk.ac.starlink.votable.FitsPlusTableWriter
+ !  Describes BINTABLE extensions in following HDUs
+ !-->
+<RESOURCE>
+<TABLE name="Joined" nrows="36">
+<PARAM datatype="int" name="FLAGCOL" value="1">
+<DESCRIPTION>Column number for the bitflags.</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="9" datatype="char" name="TDOC2" value="unique ID"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS2" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="18" datatype="char" name="TDOC3" value="position in ra/dec"/>
+<PARAM arraysize="5" datatype="char" name="TCCLS3" value="Angle">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="18" datatype="char" name="TDOC4" value="position in ra/dec"/>
+<PARAM arraysize="5" datatype="char" name="TCCLS4" value="Angle">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="26" datatype="char" name="TDOC5" value="unique ID of parent source"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS5" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="14" datatype="char" name="TFLAG1" value="calib_detected"/>
+<PARAM arraysize="34" datatype="char" name="TFDOC1" value="Source was detected as an icSource"/>
+<PARAM arraysize="18" datatype="char" name="TFLAG2" value="calib_psfCandidate"/>
+<PARAM arraysize="68" datatype="char" name="TFDOC2" value="Flag set if the source was a candidate for PSF determination, as de&amp;"/>
+<PARAM arraysize="*" datatype="char" name="CONTINUE" value="">
+<DESCRIPTION>'termined by the star selector.'</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="13" datatype="char" name="TFLAG3" value="calib_psfUsed"/>
+<PARAM arraysize="68" datatype="char" name="TFDOC3" value="Flag set if the source was actually used for PSF determination, as &amp;"/>
+<PARAM arraysize="17" datatype="char" name="TFLAG4" value="calib_psfReserved"/>
+<PARAM arraysize="68" datatype="char" name="TFDOC4" value="Flag set if the source was selected as a PSF candidate, but was res&amp;"/>
+<PARAM arraysize="14" datatype="char" name="TFLAG5" value="flags_negative"/>
+<PARAM arraysize="52" datatype="char" name="TFDOC5" value="set if source was detected as significantly negative"/>
+<PARAM arraysize="50" datatype="char" name="TDOC6" value="Number of children this object has (defaults to 0)"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS6" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="22" datatype="char" name="TFLAG6" value="deblend_deblendedAsPsf"/>
+<PARAM arraysize="47" datatype="char" name="TFDOC6" value="Deblender thought this source looked like a PSF"/>
+<PARAM arraysize="37" datatype="char" name="TDOC7" value="If deblended-as-psf, the PSF centroid"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS7" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="37" datatype="char" name="TDOC8" value="If deblended-as-psf, the PSF centroid"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS8" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="33" datatype="char" name="TDOC9" value="If deblended-as-psf, the PSF flux"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS9" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="20" datatype="char" name="TFLAG7" value="deblend_tooManyPeaks"/>
+<PARAM arraysize="59" datatype="char" name="TFDOC7" value="Source had too many peaks; only the brightest were included"/>
+<PARAM arraysize="20" datatype="char" name="TFLAG8" value="deblend_parentTooBig"/>
+<PARAM arraysize="40" datatype="char" name="TFDOC8" value="Parent footprint covered too many pixels"/>
+<PARAM arraysize="14" datatype="char" name="TFLAG9" value="deblend_masked"/>
+<PARAM arraysize="41" datatype="char" name="TFDOC9" value="Parent footprint was predominantly masked"/>
+<PARAM arraysize="15" datatype="char" name="TFLAG10" value="deblend_skipped"/>
+<PARAM arraysize="29" datatype="char" name="TFDOC10" value="Deblender skipped this source"/>
+<PARAM arraysize="22" datatype="char" name="TFLAG11" value="deblend_rampedTemplate"/>
+<PARAM arraysize="68" datatype="char" name="TFDOC11" value="This source was near an image edge and the deblender used &quot;ramp&quot; ed&amp;"/>
+<PARAM arraysize="23" datatype="char" name="TFLAG12" value="deblend_patchedTemplate"/>
+<PARAM arraysize="68" datatype="char" name="TFDOC12" value="This source was near an image edge and the deblender used &quot;patched&quot;&amp;"/>
+<PARAM arraysize="20" datatype="char" name="TFLAG13" value="deblend_hasStrayFlux"/>
+<PARAM arraysize="40" datatype="char" name="TFDOC13" value="This source was assigned some stray flux"/>
+<PARAM arraysize="41" datatype="char" name="TDOC10" value="centroid from Gaussian Centroid algorithm"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS10" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="41" datatype="char" name="TDOC11" value="centroid from Gaussian Centroid algorithm"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS11" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="26" datatype="char" name="TFLAG14" value="base_GaussianCentroid_flag"/>
+<PARAM arraysize="48" datatype="char" name="TFDOC14" value="general failure flag, set if anything went wrong"/>
+<PARAM arraysize="33" datatype="char" name="TFLAG15" value="base_GaussianCentroid_flag_noPeak"/>
+<PARAM arraysize="35" datatype="char" name="TFDOC15" value="Fitted Centroid has a negative peak"/>
+<PARAM arraysize="38" datatype="char" name="TFLAG16" value="base_GaussianCentroid_flag_resetToPeak"/>
+<PARAM arraysize="41" datatype="char" name="TFDOC16" value="set if CentroidChecker reset the centroid"/>
+<PARAM arraysize="38" datatype="char" name="TDOC12" value="centroid from Naive Centroid algorithm"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS12" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="38" datatype="char" name="TDOC13" value="centroid from Naive Centroid algorithm"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS13" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="23" datatype="char" name="TFLAG17" value="base_NaiveCentroid_flag"/>
+<PARAM arraysize="48" datatype="char" name="TFDOC17" value="general failure flag, set if anything went wrong"/>
+<PARAM arraysize="32" datatype="char" name="TFLAG18" value="base_NaiveCentroid_flag_noCounts"/>
+<PARAM arraysize="37" datatype="char" name="TFDOC18" value="Object to be centroided has no counts"/>
+<PARAM arraysize="28" datatype="char" name="TFLAG19" value="base_NaiveCentroid_flag_edge"/>
+<PARAM arraysize="24" datatype="char" name="TFDOC19" value="Object too close to edge"/>
+<PARAM arraysize="35" datatype="char" name="TFLAG20" value="base_NaiveCentroid_flag_resetToPeak"/>
+<PARAM arraysize="41" datatype="char" name="TFDOC20" value="set if CentroidChecker reset the centroid"/>
+<PARAM arraysize="37" datatype="char" name="TDOC14" value="centroid from Sdss Centroid algorithm"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS14" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="37" datatype="char" name="TDOC15" value="centroid from Sdss Centroid algorithm"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS15" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="33" datatype="char" name="TDOC16" value="1-sigma uncertainty on x position"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS16" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="33" datatype="char" name="TDOC17" value="1-sigma uncertainty on y position"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS17" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="22" datatype="char" name="TFLAG21" value="base_SdssCentroid_flag"/>
+<PARAM arraysize="48" datatype="char" name="TFDOC21" value="general failure flag, set if anything went wrong"/>
+<PARAM arraysize="27" datatype="char" name="TFLAG22" value="base_SdssCentroid_flag_edge"/>
+<PARAM arraysize="24" datatype="char" name="TFDOC22" value="Object too close to edge"/>
+<PARAM arraysize="41" datatype="char" name="TFLAG23" value="base_SdssCentroid_flag_noSecondDerivative"/>
+<PARAM arraysize="27" datatype="char" name="TFDOC23" value="Vanishing second derivative"/>
+<PARAM arraysize="47" datatype="char" name="TFLAG24" value="base_SdssCentroid_flag_almostNoSecondDerivative"/>
+<PARAM arraysize="34" datatype="char" name="TFDOC24" value="Almost vanishing second derivative"/>
+<PARAM arraysize="35" datatype="char" name="TFLAG25" value="base_SdssCentroid_flag_notAtMaximum"/>
+<PARAM arraysize="26" datatype="char" name="TFDOC25" value="Object is not at a maximum"/>
+<PARAM arraysize="34" datatype="char" name="TFLAG26" value="base_SdssCentroid_flag_resetToPeak"/>
+<PARAM arraysize="41" datatype="char" name="TFDOC26" value="set if CentroidChecker reset the centroid"/>
+<PARAM arraysize="36" datatype="char" name="TDOC18" value="elliptical Gaussian adaptive moments"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS18" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="36" datatype="char" name="TDOC19" value="elliptical Gaussian adaptive moments"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS19" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="36" datatype="char" name="TDOC20" value="elliptical Gaussian adaptive moments"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS20" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="32" datatype="char" name="TDOC21" value="1-sigma uncertainty on xx moment"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS21" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="32" datatype="char" name="TDOC22" value="1-sigma uncertainty on yy moment"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS22" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="32" datatype="char" name="TDOC23" value="1-sigma uncertainty on xy moment"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS23" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="36" datatype="char" name="TDOC24" value="elliptical Gaussian adaptive moments"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS24" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="36" datatype="char" name="TDOC25" value="elliptical Gaussian adaptive moments"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS25" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="36" datatype="char" name="TDOC26" value="elliptical Gaussian adaptive moments"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS26" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC27" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS27" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="56" datatype="char" name="TDOC28" value="adaptive moments of the PSF model at the object position"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS28" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="56" datatype="char" name="TDOC29" value="adaptive moments of the PSF model at the object position"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS29" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="56" datatype="char" name="TDOC30" value="adaptive moments of the PSF model at the object position"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS30" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="68" datatype="char" name="TDOC31" value="uncertainty covariance between base_SdssShape_flux and base_SdssSha&amp;"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS31" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="68" datatype="char" name="TDOC32" value="uncertainty covariance between base_SdssShape_flux and base_SdssSha&amp;"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS32" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="68" datatype="char" name="TDOC33" value="uncertainty covariance between base_SdssShape_flux and base_SdssSha&amp;"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS33" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="19" datatype="char" name="TFLAG27" value="base_SdssShape_flag"/>
+<PARAM arraysize="48" datatype="char" name="TFDOC27" value="general failure flag, set if anything went wrong"/>
+<PARAM arraysize="33" datatype="char" name="TFLAG28" value="base_SdssShape_flag_unweightedBad"/>
+<PARAM arraysize="49" datatype="char" name="TFDOC28" value="Both weighted and unweighted moments were invalid"/>
+<PARAM arraysize="30" datatype="char" name="TFLAG29" value="base_SdssShape_flag_unweighted"/>
+<PARAM arraysize="68" datatype="char" name="TFDOC29" value="Weighted moments converged to an invalid value; using unweighted mo&amp;"/>
+<PARAM arraysize="25" datatype="char" name="TFLAG30" value="base_SdssShape_flag_shift"/>
+<PARAM arraysize="56" datatype="char" name="TFDOC30" value="centroid shifted by more than the maximum allowed amount"/>
+<PARAM arraysize="27" datatype="char" name="TFLAG31" value="base_SdssShape_flag_maxIter"/>
+<PARAM arraysize="39" datatype="char" name="TFDOC31" value="Too many iterations in adaptive moments"/>
+<PARAM arraysize="23" datatype="char" name="TFLAG32" value="base_SdssShape_flag_psf"/>
+<PARAM arraysize="36" datatype="char" name="TFDOC32" value="Failure in measuring PSF model shape"/>
+<PARAM arraysize="35" datatype="char" name="TDOC34" value="flux within 3.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS34" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC35" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS35" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="34" datatype="char" name="TFLAG33" value="base_CircularApertureFlux_3_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC33" value="general failure flag"/>
+<PARAM arraysize="52" datatype="char" name="TFLAG34" value="base_CircularApertureFlux_3_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC34" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="54" datatype="char" name="TFLAG35" value="base_CircularApertureFlux_3_0_flag_sincCoeffsTruncated"/>
+<PARAM arraysize="64" datatype="char" name="TFDOC35" value="full sinc coefficient image did not fit within measurement image"/>
+<PARAM arraysize="35" datatype="char" name="TDOC36" value="flux within 4.500000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS36" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC37" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS37" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="34" datatype="char" name="TFLAG36" value="base_CircularApertureFlux_4_5_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC36" value="general failure flag"/>
+<PARAM arraysize="52" datatype="char" name="TFLAG37" value="base_CircularApertureFlux_4_5_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC37" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="54" datatype="char" name="TFLAG38" value="base_CircularApertureFlux_4_5_flag_sincCoeffsTruncated"/>
+<PARAM arraysize="64" datatype="char" name="TFDOC38" value="full sinc coefficient image did not fit within measurement image"/>
+<PARAM arraysize="35" datatype="char" name="TDOC38" value="flux within 6.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS38" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC39" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS39" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="34" datatype="char" name="TFLAG39" value="base_CircularApertureFlux_6_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC39" value="general failure flag"/>
+<PARAM arraysize="52" datatype="char" name="TFLAG40" value="base_CircularApertureFlux_6_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC40" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="54" datatype="char" name="TFLAG41" value="base_CircularApertureFlux_6_0_flag_sincCoeffsTruncated"/>
+<PARAM arraysize="64" datatype="char" name="TFDOC41" value="full sinc coefficient image did not fit within measurement image"/>
+<PARAM arraysize="35" datatype="char" name="TDOC40" value="flux within 9.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS40" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC41" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS41" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="34" datatype="char" name="TFLAG42" value="base_CircularApertureFlux_9_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC42" value="general failure flag"/>
+<PARAM arraysize="52" datatype="char" name="TFLAG43" value="base_CircularApertureFlux_9_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC43" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="54" datatype="char" name="TFLAG44" value="base_CircularApertureFlux_9_0_flag_sincCoeffsTruncated"/>
+<PARAM arraysize="64" datatype="char" name="TFDOC44" value="full sinc coefficient image did not fit within measurement image"/>
+<PARAM arraysize="36" datatype="char" name="TDOC42" value="flux within 12.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS42" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC43" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS43" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="35" datatype="char" name="TFLAG45" value="base_CircularApertureFlux_12_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC45" value="general failure flag"/>
+<PARAM arraysize="53" datatype="char" name="TFLAG46" value="base_CircularApertureFlux_12_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC46" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="36" datatype="char" name="TDOC44" value="flux within 17.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS44" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC45" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS45" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="35" datatype="char" name="TFLAG47" value="base_CircularApertureFlux_17_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC47" value="general failure flag"/>
+<PARAM arraysize="53" datatype="char" name="TFLAG48" value="base_CircularApertureFlux_17_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC48" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="36" datatype="char" name="TDOC46" value="flux within 25.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS46" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC47" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS47" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="35" datatype="char" name="TFLAG49" value="base_CircularApertureFlux_25_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC49" value="general failure flag"/>
+<PARAM arraysize="53" datatype="char" name="TFLAG50" value="base_CircularApertureFlux_25_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC50" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="36" datatype="char" name="TDOC48" value="flux within 35.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS48" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC49" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS49" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="35" datatype="char" name="TFLAG51" value="base_CircularApertureFlux_35_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC51" value="general failure flag"/>
+<PARAM arraysize="53" datatype="char" name="TFLAG52" value="base_CircularApertureFlux_35_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC52" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="36" datatype="char" name="TDOC50" value="flux within 50.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS50" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC51" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS51" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="35" datatype="char" name="TFLAG53" value="base_CircularApertureFlux_50_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC53" value="general failure flag"/>
+<PARAM arraysize="53" datatype="char" name="TFLAG54" value="base_CircularApertureFlux_50_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC54" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="36" datatype="char" name="TDOC52" value="flux within 70.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS52" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC53" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS53" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="35" datatype="char" name="TFLAG55" value="base_CircularApertureFlux_70_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC55" value="general failure flag"/>
+<PARAM arraysize="53" datatype="char" name="TFLAG56" value="base_CircularApertureFlux_70_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC56" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="33" datatype="char" name="TDOC54" value="flux from Gaussian Flux algorithm"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS54" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC55" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS55" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="22" datatype="char" name="TFLAG57" value="base_GaussianFlux_flag"/>
+<PARAM arraysize="48" datatype="char" name="TFDOC57" value="general failure flag, set if anything went wrong"/>
+<PARAM arraysize="20" datatype="char" name="TFLAG58" value="base_PixelFlags_flag"/>
+<PARAM arraysize="48" datatype="char" name="TFDOC58" value="general failure flag, set if anything went wring"/>
+<PARAM arraysize="29" datatype="char" name="TFLAG59" value="base_PixelFlags_flag_offimage"/>
+<PARAM arraysize="26" datatype="char" name="TFDOC59" value="Source center is off image"/>
+<PARAM arraysize="25" datatype="char" name="TFLAG60" value="base_PixelFlags_flag_edge"/>
+<PARAM arraysize="65" datatype="char" name="TFDOC60" value="Source is outside usable exposure region (masked EDGE or NO_DATA)"/>
+<PARAM arraysize="33" datatype="char" name="TFLAG61" value="base_PixelFlags_flag_interpolated"/>
+<PARAM arraysize="42" datatype="char" name="TFDOC61" value="Interpolated pixel in the Source footprint"/>
+<PARAM arraysize="30" datatype="char" name="TFLAG62" value="base_PixelFlags_flag_saturated"/>
+<PARAM arraysize="39" datatype="char" name="TFDOC62" value="Saturated pixel in the Source footprint"/>
+<PARAM arraysize="23" datatype="char" name="TFLAG63" value="base_PixelFlags_flag_cr"/>
+<PARAM arraysize="34" datatype="char" name="TFDOC63" value="Cosmic ray in the Source footprint"/>
+<PARAM arraysize="24" datatype="char" name="TFLAG64" value="base_PixelFlags_flag_bad"/>
+<PARAM arraysize="33" datatype="char" name="TFDOC64" value="Bad pixel in the Source footprint"/>
+<PARAM arraysize="28" datatype="char" name="TFLAG65" value="base_PixelFlags_flag_suspect"/>
+<PARAM arraysize="42" datatype="char" name="TFDOC65" value="Source's footprint includes suspect pixels"/>
+<PARAM arraysize="39" datatype="char" name="TFLAG66" value="base_PixelFlags_flag_interpolatedCenter"/>
+<PARAM arraysize="39" datatype="char" name="TFDOC66" value="Interpolated pixel in the Source center"/>
+<PARAM arraysize="36" datatype="char" name="TFLAG67" value="base_PixelFlags_flag_saturatedCenter"/>
+<PARAM arraysize="36" datatype="char" name="TFDOC67" value="Saturated pixel in the Source center"/>
+<PARAM arraysize="29" datatype="char" name="TFLAG68" value="base_PixelFlags_flag_crCenter"/>
+<PARAM arraysize="31" datatype="char" name="TFDOC68" value="Cosmic ray in the Source center"/>
+<PARAM arraysize="34" datatype="char" name="TFLAG69" value="base_PixelFlags_flag_suspectCenter"/>
+<PARAM arraysize="42" datatype="char" name="TFDOC69" value="Source's center is close to suspect pixels"/>
+<PARAM arraysize="55" datatype="char" name="TDOC56" value="flux derived from linear least-squares fit of PSF model"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS56" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC57" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS57" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="17" datatype="char" name="TFLAG70" value="base_PsfFlux_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC70" value="general failure flag"/>
+<PARAM arraysize="30" datatype="char" name="TFLAG71" value="base_PsfFlux_flag_noGoodPixels"/>
+<PARAM arraysize="57" datatype="char" name="TFDOC71" value="not enough non-rejected pixels in data to attempt the fit"/>
+<PARAM arraysize="22" datatype="char" name="TFLAG72" value="base_PsfFlux_flag_edge"/>
+<PARAM arraysize="68" datatype="char" name="TFDOC72" value="object was too close to the edge of the image to use the full PSF m&amp;"/>
+<PARAM arraysize="27" datatype="char" name="TDOC58" value="Variance at object position"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS58" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="18" datatype="char" name="TFLAG73" value="base_Variance_flag"/>
+<PARAM arraysize="33" datatype="char" name="TFDOC73" value="Set to True for any fatal failure"/>
+<PARAM arraysize="33" datatype="char" name="TFLAG74" value="base_Variance_flag_emptyFootprint"/>
+<PARAM arraysize="51" datatype="char" name="TFDOC74" value="Set to True when the footprint has no usable pixels"/>
+<PARAM arraysize="43" datatype="char" name="TDOC59" value="aperture correction applied to base_PsfFlux"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS59" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="43" datatype="char" name="TDOC60" value="aperture correction applied to base_PsfFlux"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS60" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TFLAG75" value="base_PsfFlux_flag_apCorr"/>
+<PARAM arraysize="46" datatype="char" name="TFDOC75" value="set if unable to aperture correct base_PsfFlux"/>
+<PARAM arraysize="48" datatype="char" name="TDOC61" value="aperture correction applied to base_GaussianFlux"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS61" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="48" datatype="char" name="TDOC62" value="aperture correction applied to base_GaussianFlux"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS62" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="29" datatype="char" name="TFLAG76" value="base_GaussianFlux_flag_apCorr"/>
+<PARAM arraysize="51" datatype="char" name="TFDOC76" value="set if unable to aperture correct base_GaussianFlux"/>
+<PARAM arraysize="51" datatype="char" name="TDOC63" value="Set to 1 for extended sources, 0 for point sources."/>
+<PARAM arraysize="6" datatype="char" name="TCCLS63" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="36" datatype="char" name="TFLAG77" value="base_ClassificationExtendedness_flag"/>
+<PARAM arraysize="31" datatype="char" name="TFDOC77" value="Set to 1 for any fatal failure."/>
+<PARAM arraysize="24" datatype="char" name="TDOC64" value="archive ID for Footprint"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS64" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="25" datatype="char" name="ALIAS" value="slot_Shape:base_SdssShape"/>
+<PARAM arraysize="*" datatype="char" name="HIERARCH" value="">
+<DESCRIPTION>base_CircularApertureFlux_radii = 3.</DESCRIPTION>
+</PARAM>
+<PARAM datatype="int" name="AR_HDU" value="3">
+<DESCRIPTION>HDU containing the archive index for non-record</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="6" datatype="char" name="AFW_TYPE" value="SOURCE">
+<DESCRIPTION>Tells lsst::afw to load this as a Source table.</DESCRIPTION>
+</PARAM>
+<PARAM datatype="int" name="FLAGCOL" value="1">
+<DESCRIPTION>Column number for the bitflags.</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="9" datatype="char" name="TDOC2" value="unique ID"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS2" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="18" datatype="char" name="TDOC3" value="position in ra/dec"/>
+<PARAM arraysize="5" datatype="char" name="TCCLS3" value="Angle">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="18" datatype="char" name="TDOC4" value="position in ra/dec"/>
+<PARAM arraysize="5" datatype="char" name="TCCLS4" value="Angle">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="26" datatype="char" name="TDOC5" value="unique ID of parent source"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS5" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="14" datatype="char" name="TFLAG1" value="calib_detected"/>
+<PARAM arraysize="34" datatype="char" name="TFDOC1" value="Source was detected as an icSource"/>
+<PARAM arraysize="18" datatype="char" name="TFLAG2" value="calib_psfCandidate"/>
+<PARAM arraysize="68" datatype="char" name="TFDOC2" value="Flag set if the source was a candidate for PSF determination, as de&amp;"/>
+<PARAM arraysize="*" datatype="char" name="CONTINUE" value="">
+<DESCRIPTION>'termined by the star selector.'</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="13" datatype="char" name="TFLAG3" value="calib_psfUsed"/>
+<PARAM arraysize="68" datatype="char" name="TFDOC3" value="Flag set if the source was actually used for PSF determination, as &amp;"/>
+<PARAM arraysize="17" datatype="char" name="TFLAG4" value="calib_psfReserved"/>
+<PARAM arraysize="68" datatype="char" name="TFDOC4" value="Flag set if the source was selected as a PSF candidate, but was res&amp;"/>
+<PARAM arraysize="14" datatype="char" name="TFLAG5" value="flags_negative"/>
+<PARAM arraysize="52" datatype="char" name="TFDOC5" value="set if source was detected as significantly negative"/>
+<PARAM arraysize="50" datatype="char" name="TDOC6" value="Number of children this object has (defaults to 0)"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS6" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="22" datatype="char" name="TFLAG6" value="deblend_deblendedAsPsf"/>
+<PARAM arraysize="47" datatype="char" name="TFDOC6" value="Deblender thought this source looked like a PSF"/>
+<PARAM arraysize="37" datatype="char" name="TDOC7" value="If deblended-as-psf, the PSF centroid"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS7" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="37" datatype="char" name="TDOC8" value="If deblended-as-psf, the PSF centroid"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS8" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="33" datatype="char" name="TDOC9" value="If deblended-as-psf, the PSF flux"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS9" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="20" datatype="char" name="TFLAG7" value="deblend_tooManyPeaks"/>
+<PARAM arraysize="59" datatype="char" name="TFDOC7" value="Source had too many peaks; only the brightest were included"/>
+<PARAM arraysize="20" datatype="char" name="TFLAG8" value="deblend_parentTooBig"/>
+<PARAM arraysize="40" datatype="char" name="TFDOC8" value="Parent footprint covered too many pixels"/>
+<PARAM arraysize="14" datatype="char" name="TFLAG9" value="deblend_masked"/>
+<PARAM arraysize="41" datatype="char" name="TFDOC9" value="Parent footprint was predominantly masked"/>
+<PARAM arraysize="15" datatype="char" name="TFLAG10" value="deblend_skipped"/>
+<PARAM arraysize="29" datatype="char" name="TFDOC10" value="Deblender skipped this source"/>
+<PARAM arraysize="22" datatype="char" name="TFLAG11" value="deblend_rampedTemplate"/>
+<PARAM arraysize="68" datatype="char" name="TFDOC11" value="This source was near an image edge and the deblender used &quot;ramp&quot; ed&amp;"/>
+<PARAM arraysize="23" datatype="char" name="TFLAG12" value="deblend_patchedTemplate"/>
+<PARAM arraysize="68" datatype="char" name="TFDOC12" value="This source was near an image edge and the deblender used &quot;patched&quot;&amp;"/>
+<PARAM arraysize="20" datatype="char" name="TFLAG13" value="deblend_hasStrayFlux"/>
+<PARAM arraysize="40" datatype="char" name="TFDOC13" value="This source was assigned some stray flux"/>
+<PARAM arraysize="41" datatype="char" name="TDOC10" value="centroid from Gaussian Centroid algorithm"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS10" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="41" datatype="char" name="TDOC11" value="centroid from Gaussian Centroid algorithm"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS11" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="26" datatype="char" name="TFLAG14" value="base_GaussianCentroid_flag"/>
+<PARAM arraysize="48" datatype="char" name="TFDOC14" value="general failure flag, set if anything went wrong"/>
+<PARAM arraysize="33" datatype="char" name="TFLAG15" value="base_GaussianCentroid_flag_noPeak"/>
+<PARAM arraysize="35" datatype="char" name="TFDOC15" value="Fitted Centroid has a negative peak"/>
+<PARAM arraysize="38" datatype="char" name="TFLAG16" value="base_GaussianCentroid_flag_resetToPeak"/>
+<PARAM arraysize="41" datatype="char" name="TFDOC16" value="set if CentroidChecker reset the centroid"/>
+<PARAM arraysize="38" datatype="char" name="TDOC12" value="centroid from Naive Centroid algorithm"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS12" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="38" datatype="char" name="TDOC13" value="centroid from Naive Centroid algorithm"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS13" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="23" datatype="char" name="TFLAG17" value="base_NaiveCentroid_flag"/>
+<PARAM arraysize="48" datatype="char" name="TFDOC17" value="general failure flag, set if anything went wrong"/>
+<PARAM arraysize="32" datatype="char" name="TFLAG18" value="base_NaiveCentroid_flag_noCounts"/>
+<PARAM arraysize="37" datatype="char" name="TFDOC18" value="Object to be centroided has no counts"/>
+<PARAM arraysize="28" datatype="char" name="TFLAG19" value="base_NaiveCentroid_flag_edge"/>
+<PARAM arraysize="24" datatype="char" name="TFDOC19" value="Object too close to edge"/>
+<PARAM arraysize="35" datatype="char" name="TFLAG20" value="base_NaiveCentroid_flag_resetToPeak"/>
+<PARAM arraysize="41" datatype="char" name="TFDOC20" value="set if CentroidChecker reset the centroid"/>
+<PARAM arraysize="37" datatype="char" name="TDOC14" value="centroid from Sdss Centroid algorithm"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS14" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="37" datatype="char" name="TDOC15" value="centroid from Sdss Centroid algorithm"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS15" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="33" datatype="char" name="TDOC16" value="1-sigma uncertainty on x position"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS16" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="33" datatype="char" name="TDOC17" value="1-sigma uncertainty on y position"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS17" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="22" datatype="char" name="TFLAG21" value="base_SdssCentroid_flag"/>
+<PARAM arraysize="48" datatype="char" name="TFDOC21" value="general failure flag, set if anything went wrong"/>
+<PARAM arraysize="27" datatype="char" name="TFLAG22" value="base_SdssCentroid_flag_edge"/>
+<PARAM arraysize="24" datatype="char" name="TFDOC22" value="Object too close to edge"/>
+<PARAM arraysize="41" datatype="char" name="TFLAG23" value="base_SdssCentroid_flag_noSecondDerivative"/>
+<PARAM arraysize="27" datatype="char" name="TFDOC23" value="Vanishing second derivative"/>
+<PARAM arraysize="47" datatype="char" name="TFLAG24" value="base_SdssCentroid_flag_almostNoSecondDerivative"/>
+<PARAM arraysize="34" datatype="char" name="TFDOC24" value="Almost vanishing second derivative"/>
+<PARAM arraysize="35" datatype="char" name="TFLAG25" value="base_SdssCentroid_flag_notAtMaximum"/>
+<PARAM arraysize="26" datatype="char" name="TFDOC25" value="Object is not at a maximum"/>
+<PARAM arraysize="34" datatype="char" name="TFLAG26" value="base_SdssCentroid_flag_resetToPeak"/>
+<PARAM arraysize="41" datatype="char" name="TFDOC26" value="set if CentroidChecker reset the centroid"/>
+<PARAM arraysize="36" datatype="char" name="TDOC18" value="elliptical Gaussian adaptive moments"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS18" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="36" datatype="char" name="TDOC19" value="elliptical Gaussian adaptive moments"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS19" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="36" datatype="char" name="TDOC20" value="elliptical Gaussian adaptive moments"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS20" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="32" datatype="char" name="TDOC21" value="1-sigma uncertainty on xx moment"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS21" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="32" datatype="char" name="TDOC22" value="1-sigma uncertainty on yy moment"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS22" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="32" datatype="char" name="TDOC23" value="1-sigma uncertainty on xy moment"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS23" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="36" datatype="char" name="TDOC24" value="elliptical Gaussian adaptive moments"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS24" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="36" datatype="char" name="TDOC25" value="elliptical Gaussian adaptive moments"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS25" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="36" datatype="char" name="TDOC26" value="elliptical Gaussian adaptive moments"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS26" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC27" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS27" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="56" datatype="char" name="TDOC28" value="adaptive moments of the PSF model at the object position"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS28" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="56" datatype="char" name="TDOC29" value="adaptive moments of the PSF model at the object position"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS29" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="56" datatype="char" name="TDOC30" value="adaptive moments of the PSF model at the object position"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS30" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="68" datatype="char" name="TDOC31" value="uncertainty covariance between base_SdssShape_flux and base_SdssSha&amp;"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS31" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="68" datatype="char" name="TDOC32" value="uncertainty covariance between base_SdssShape_flux and base_SdssSha&amp;"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS32" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="68" datatype="char" name="TDOC33" value="uncertainty covariance between base_SdssShape_flux and base_SdssSha&amp;"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS33" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="19" datatype="char" name="TFLAG27" value="base_SdssShape_flag"/>
+<PARAM arraysize="48" datatype="char" name="TFDOC27" value="general failure flag, set if anything went wrong"/>
+<PARAM arraysize="33" datatype="char" name="TFLAG28" value="base_SdssShape_flag_unweightedBad"/>
+<PARAM arraysize="49" datatype="char" name="TFDOC28" value="Both weighted and unweighted moments were invalid"/>
+<PARAM arraysize="30" datatype="char" name="TFLAG29" value="base_SdssShape_flag_unweighted"/>
+<PARAM arraysize="68" datatype="char" name="TFDOC29" value="Weighted moments converged to an invalid value; using unweighted mo&amp;"/>
+<PARAM arraysize="25" datatype="char" name="TFLAG30" value="base_SdssShape_flag_shift"/>
+<PARAM arraysize="56" datatype="char" name="TFDOC30" value="centroid shifted by more than the maximum allowed amount"/>
+<PARAM arraysize="27" datatype="char" name="TFLAG31" value="base_SdssShape_flag_maxIter"/>
+<PARAM arraysize="39" datatype="char" name="TFDOC31" value="Too many iterations in adaptive moments"/>
+<PARAM arraysize="23" datatype="char" name="TFLAG32" value="base_SdssShape_flag_psf"/>
+<PARAM arraysize="36" datatype="char" name="TFDOC32" value="Failure in measuring PSF model shape"/>
+<PARAM arraysize="35" datatype="char" name="TDOC34" value="flux within 3.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS34" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC35" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS35" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="34" datatype="char" name="TFLAG33" value="base_CircularApertureFlux_3_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC33" value="general failure flag"/>
+<PARAM arraysize="52" datatype="char" name="TFLAG34" value="base_CircularApertureFlux_3_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC34" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="54" datatype="char" name="TFLAG35" value="base_CircularApertureFlux_3_0_flag_sincCoeffsTruncated"/>
+<PARAM arraysize="64" datatype="char" name="TFDOC35" value="full sinc coefficient image did not fit within measurement image"/>
+<PARAM arraysize="35" datatype="char" name="TDOC36" value="flux within 4.500000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS36" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC37" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS37" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="34" datatype="char" name="TFLAG36" value="base_CircularApertureFlux_4_5_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC36" value="general failure flag"/>
+<PARAM arraysize="52" datatype="char" name="TFLAG37" value="base_CircularApertureFlux_4_5_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC37" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="54" datatype="char" name="TFLAG38" value="base_CircularApertureFlux_4_5_flag_sincCoeffsTruncated"/>
+<PARAM arraysize="64" datatype="char" name="TFDOC38" value="full sinc coefficient image did not fit within measurement image"/>
+<PARAM arraysize="35" datatype="char" name="TDOC38" value="flux within 6.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS38" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC39" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS39" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="34" datatype="char" name="TFLAG39" value="base_CircularApertureFlux_6_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC39" value="general failure flag"/>
+<PARAM arraysize="52" datatype="char" name="TFLAG40" value="base_CircularApertureFlux_6_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC40" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="54" datatype="char" name="TFLAG41" value="base_CircularApertureFlux_6_0_flag_sincCoeffsTruncated"/>
+<PARAM arraysize="64" datatype="char" name="TFDOC41" value="full sinc coefficient image did not fit within measurement image"/>
+<PARAM arraysize="35" datatype="char" name="TDOC40" value="flux within 9.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS40" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC41" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS41" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="34" datatype="char" name="TFLAG42" value="base_CircularApertureFlux_9_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC42" value="general failure flag"/>
+<PARAM arraysize="52" datatype="char" name="TFLAG43" value="base_CircularApertureFlux_9_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC43" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="54" datatype="char" name="TFLAG44" value="base_CircularApertureFlux_9_0_flag_sincCoeffsTruncated"/>
+<PARAM arraysize="64" datatype="char" name="TFDOC44" value="full sinc coefficient image did not fit within measurement image"/>
+<PARAM arraysize="36" datatype="char" name="TDOC42" value="flux within 12.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS42" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC43" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS43" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="35" datatype="char" name="TFLAG45" value="base_CircularApertureFlux_12_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC45" value="general failure flag"/>
+<PARAM arraysize="53" datatype="char" name="TFLAG46" value="base_CircularApertureFlux_12_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC46" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="36" datatype="char" name="TDOC44" value="flux within 17.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS44" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC45" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS45" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="35" datatype="char" name="TFLAG47" value="base_CircularApertureFlux_17_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC47" value="general failure flag"/>
+<PARAM arraysize="53" datatype="char" name="TFLAG48" value="base_CircularApertureFlux_17_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC48" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="36" datatype="char" name="TDOC46" value="flux within 25.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS46" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC47" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS47" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="35" datatype="char" name="TFLAG49" value="base_CircularApertureFlux_25_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC49" value="general failure flag"/>
+<PARAM arraysize="53" datatype="char" name="TFLAG50" value="base_CircularApertureFlux_25_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC50" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="36" datatype="char" name="TDOC48" value="flux within 35.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS48" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC49" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS49" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="35" datatype="char" name="TFLAG51" value="base_CircularApertureFlux_35_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC51" value="general failure flag"/>
+<PARAM arraysize="53" datatype="char" name="TFLAG52" value="base_CircularApertureFlux_35_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC52" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="36" datatype="char" name="TDOC50" value="flux within 50.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS50" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC51" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS51" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="35" datatype="char" name="TFLAG53" value="base_CircularApertureFlux_50_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC53" value="general failure flag"/>
+<PARAM arraysize="53" datatype="char" name="TFLAG54" value="base_CircularApertureFlux_50_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC54" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="36" datatype="char" name="TDOC52" value="flux within 70.000000-pixel aperture"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS52" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC53" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS53" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="35" datatype="char" name="TFLAG55" value="base_CircularApertureFlux_70_0_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC55" value="general failure flag"/>
+<PARAM arraysize="53" datatype="char" name="TFLAG56" value="base_CircularApertureFlux_70_0_flag_apertureTruncated"/>
+<PARAM arraysize="45" datatype="char" name="TFDOC56" value="aperture did not fit within measurement image"/>
+<PARAM arraysize="33" datatype="char" name="TDOC54" value="flux from Gaussian Flux algorithm"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS54" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC55" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS55" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="22" datatype="char" name="TFLAG57" value="base_GaussianFlux_flag"/>
+<PARAM arraysize="48" datatype="char" name="TFDOC57" value="general failure flag, set if anything went wrong"/>
+<PARAM arraysize="20" datatype="char" name="TFLAG58" value="base_PixelFlags_flag"/>
+<PARAM arraysize="48" datatype="char" name="TFDOC58" value="general failure flag, set if anything went wring"/>
+<PARAM arraysize="29" datatype="char" name="TFLAG59" value="base_PixelFlags_flag_offimage"/>
+<PARAM arraysize="26" datatype="char" name="TFDOC59" value="Source center is off image"/>
+<PARAM arraysize="25" datatype="char" name="TFLAG60" value="base_PixelFlags_flag_edge"/>
+<PARAM arraysize="65" datatype="char" name="TFDOC60" value="Source is outside usable exposure region (masked EDGE or NO_DATA)"/>
+<PARAM arraysize="33" datatype="char" name="TFLAG61" value="base_PixelFlags_flag_interpolated"/>
+<PARAM arraysize="42" datatype="char" name="TFDOC61" value="Interpolated pixel in the Source footprint"/>
+<PARAM arraysize="30" datatype="char" name="TFLAG62" value="base_PixelFlags_flag_saturated"/>
+<PARAM arraysize="39" datatype="char" name="TFDOC62" value="Saturated pixel in the Source footprint"/>
+<PARAM arraysize="23" datatype="char" name="TFLAG63" value="base_PixelFlags_flag_cr"/>
+<PARAM arraysize="34" datatype="char" name="TFDOC63" value="Cosmic ray in the Source footprint"/>
+<PARAM arraysize="24" datatype="char" name="TFLAG64" value="base_PixelFlags_flag_bad"/>
+<PARAM arraysize="33" datatype="char" name="TFDOC64" value="Bad pixel in the Source footprint"/>
+<PARAM arraysize="28" datatype="char" name="TFLAG65" value="base_PixelFlags_flag_suspect"/>
+<PARAM arraysize="42" datatype="char" name="TFDOC65" value="Source's footprint includes suspect pixels"/>
+<PARAM arraysize="39" datatype="char" name="TFLAG66" value="base_PixelFlags_flag_interpolatedCenter"/>
+<PARAM arraysize="39" datatype="char" name="TFDOC66" value="Interpolated pixel in the Source center"/>
+<PARAM arraysize="36" datatype="char" name="TFLAG67" value="base_PixelFlags_flag_saturatedCenter"/>
+<PARAM arraysize="36" datatype="char" name="TFDOC67" value="Saturated pixel in the Source center"/>
+<PARAM arraysize="29" datatype="char" name="TFLAG68" value="base_PixelFlags_flag_crCenter"/>
+<PARAM arraysize="31" datatype="char" name="TFDOC68" value="Cosmic ray in the Source center"/>
+<PARAM arraysize="34" datatype="char" name="TFLAG69" value="base_PixelFlags_flag_suspectCenter"/>
+<PARAM arraysize="42" datatype="char" name="TFDOC69" value="Source's center is close to suspect pixels"/>
+<PARAM arraysize="55" datatype="char" name="TDOC56" value="flux derived from linear least-squares fit of PSF model"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS56" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TDOC57" value="1-sigma flux uncertainty"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS57" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="17" datatype="char" name="TFLAG70" value="base_PsfFlux_flag"/>
+<PARAM arraysize="20" datatype="char" name="TFDOC70" value="general failure flag"/>
+<PARAM arraysize="30" datatype="char" name="TFLAG71" value="base_PsfFlux_flag_noGoodPixels"/>
+<PARAM arraysize="57" datatype="char" name="TFDOC71" value="not enough non-rejected pixels in data to attempt the fit"/>
+<PARAM arraysize="22" datatype="char" name="TFLAG72" value="base_PsfFlux_flag_edge"/>
+<PARAM arraysize="68" datatype="char" name="TFDOC72" value="object was too close to the edge of the image to use the full PSF m&amp;"/>
+<PARAM arraysize="27" datatype="char" name="TDOC58" value="Variance at object position"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS58" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="18" datatype="char" name="TFLAG73" value="base_Variance_flag"/>
+<PARAM arraysize="33" datatype="char" name="TFDOC73" value="Set to True for any fatal failure"/>
+<PARAM arraysize="33" datatype="char" name="TFLAG74" value="base_Variance_flag_emptyFootprint"/>
+<PARAM arraysize="51" datatype="char" name="TFDOC74" value="Set to True when the footprint has no usable pixels"/>
+<PARAM arraysize="43" datatype="char" name="TDOC59" value="aperture correction applied to base_PsfFlux"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS59" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="43" datatype="char" name="TDOC60" value="aperture correction applied to base_PsfFlux"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS60" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="TFLAG75" value="base_PsfFlux_flag_apCorr"/>
+<PARAM arraysize="46" datatype="char" name="TFDOC75" value="set if unable to aperture correct base_PsfFlux"/>
+<PARAM arraysize="48" datatype="char" name="TDOC61" value="aperture correction applied to base_GaussianFlux"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS61" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="48" datatype="char" name="TDOC62" value="aperture correction applied to base_GaussianFlux"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS62" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="29" datatype="char" name="TFLAG76" value="base_GaussianFlux_flag_apCorr"/>
+<PARAM arraysize="51" datatype="char" name="TFDOC76" value="set if unable to aperture correct base_GaussianFlux"/>
+<PARAM arraysize="51" datatype="char" name="TDOC63" value="Set to 1 for extended sources, 0 for point sources."/>
+<PARAM arraysize="6" datatype="char" name="TCCLS63" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="36" datatype="char" name="TFLAG77" value="base_ClassificationExtendedness_flag"/>
+<PARAM arraysize="31" datatype="char" name="TFDOC77" value="Set to 1 for any fatal failure."/>
+<PARAM arraysize="24" datatype="char" name="TDOC64" value="archive ID for Footprint"/>
+<PARAM arraysize="6" datatype="char" name="TCCLS64" value="Scalar">
+<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="25" datatype="char" name="ALIAS" value="slot_Shape:base_SdssShape"/>
+<PARAM arraysize="*" datatype="char" name="HIERARCH" value="">
+<DESCRIPTION>base_CircularApertureFlux_radii = 3.</DESCRIPTION>
+</PARAM>
+<PARAM datatype="int" name="AR_HDU" value="3">
+<DESCRIPTION>HDU containing the archive index for non-record</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="6" datatype="char" name="AFW_TYPE" value="SOURCE">
+<DESCRIPTION>Tells lsst::afw to load this as a Source table.</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="43" datatype="char" name="Match type" value="Pair match; Best match for each Table 2 row">
+<DESCRIPTION>Type of match which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="13" datatype="char" name="Match algorithm" value="2-d Cartesian">
+<DESCRIPTION>Matching algorithm which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="90" datatype="char" name="Join Type" value="All from 2 (An output row for each matched or unmatched row in table 2 (RIGHT OUTER JOIN))">
+<DESCRIPTION>Determines which rows appear in output table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="12" datatype="char" name="First input table" value="1: lt20.fits"/>
+<PARAM arraysize="11" datatype="char" name="Second input table" value="6: src.fits"/>
+<FIELD datatype="long" name="id_1">
+<VALUES null='-9223372036854775808'/>
+</FIELD>
+<FIELD datatype="long" name="parent_1">
+<VALUES null='-9223372036854775808'/>
+</FIELD>
+<FIELD datatype="double" name="base_SdssCentroid_x_1" unit="pixel"/>
+<FIELD datatype="double" name="base_SdssCentroid_y_1" unit="pixel"/>
+<FIELD datatype="double" name="base_PsfFlux_flux_1" unit="count"/>
+<FIELD datatype="long" name="id_2"/>
+<FIELD datatype="long" name="parent_2"/>
+<FIELD datatype="double" name="base_SdssCentroid_x_2" unit="pixel"/>
+<FIELD datatype="double" name="base_SdssCentroid_y_2" unit="pixel"/>
+<FIELD datatype="double" name="base_PsfFlux_flux_2" unit="count"/>
+<FIELD datatype="double" name="Separation">
+<DESCRIPTION>Spatial distance between matched points</DESCRIPTION>
+</FIELD>
+<!-- Dummy VOTable - no DATA element -->
+</TABLE>
+</RESOURCE>
+</VOTABLE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  XTENSION= 'BINTABLE'           / binary table extension                         BITPIX  =                    8 / 8-bit bytes                                    NAXIS   =                    2 / 2-dimensional table                            NAXIS1  =                   88 / width of table in bytes                        NAXIS2  =                   36 / number of rows in table                        PCOUNT  =                    0 / size of special data area                      GCOUNT  =                    1 / one data group                                 TFIELDS =                   11 / number of columns                              EXTNAME = 'Joined  '           / table name                                     TTYPE1  = 'id_1    '           / label for column 1                             TFORM1  = 'K       '           / format for column 1                            TNULL1  = -9223372036854775808 / blank value for column 1                       TTYPE2  = 'parent_1'           / label for column 2                             TFORM2  = 'K       '           / format for column 2                            TNULL2  = -9223372036854775808 / blank value for column 2                       TTYPE3  = 'base_SdssCentroid_x_1' / label for column 3                          TFORM3  = 'D       '           / format for column 3                            TUNIT3  = 'pixel   '           / units for column 3                             TTYPE4  = 'base_SdssCentroid_y_1' / label for column 4                          TFORM4  = 'D       '           / format for column 4                            TUNIT4  = 'pixel   '           / units for column 4                             TTYPE5  = 'base_PsfFlux_flux_1' / label for column 5                            TFORM5  = 'D       '           / format for column 5                            TUNIT5  = 'count   '           / units for column 5                             TTYPE6  = 'id_2    '           / label for column 6                             TFORM6  = 'K       '           / format for column 6                            TTYPE7  = 'parent_2'           / label for column 7                             TFORM7  = 'K       '           / format for column 7                            TTYPE8  = 'base_SdssCentroid_x_2' / label for column 8                          TFORM8  = 'D       '           / format for column 8                            TUNIT8  = 'pixel   '           / units for column 8                             TTYPE9  = 'base_SdssCentroid_y_2' / label for column 9                          TFORM9  = 'D       '           / format for column 9                            TUNIT9  = 'pixel   '           / units for column 9                             TTYPE10 = 'base_PsfFlux_flux_2' / label for column 10                           TFORM10 = 'D       '           / format for column 10                           TUNIT10 = 'count   '           / units for column 10                            TTYPE11 = 'Separation'         / label for column 11                            TFORM11 = 'D       '           / format for column 11                           TCOMM11 = 'Spatial distance between matched points'                             DATE-HDU= '2016-12-13T11:15:05' / Date of HDU creation (UTC)                    STILVERS= '3.1-2   '           / Version of STIL software                       STILCLAS= 'uk.ac.starlink.votable.FitsPlusTableWriter' / Author class in STIL soEND                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                † ˚   † )@ì¸–¿§∆X@òeﬁ„ªPÓ?Ú¸Lfù:≤   † ˚   † )@ì¸—t7ı@òeŸ
+<Zê?ÚÊ¥‚6‚?wêÂÓ3<   † ¸   † )@î4∂˘@òj≤TÆ~h?‚Z ⁄Õ   † ¸   † )@îﬂwµ∆}@òjeZ.Ó?·ÿ˛u¬∂?ºó}QQ£   † ˝   † )@îG|ôe@òÜaÿ&qW?√`áE¡¡>   † ˝   † )@îGé@Ò“#@òÜ;Bç?∑:,ﬁUÉ?•SíÏAÏ   † ˛   † )@î::√@:@òßÅ¶ñÚ´?≠@ëÎG1Ï   † ˛   † )@î:'§ÊØÏ@òßç“Ÿ~?§A˙°jp∫?ñoC‡:◊   † ˇ   † )@îGBŸÑÒz@ò\jŒÑT?¢+E£ú   † ˇ   † )@îG^a˘5ò@ò\sºπ>?ûËÅ;D1?úÒº±h‹   †     † )@ìÃ(ø9÷@ò#ıﬁ≥?®˝Ã˝sÂ   †     † )@ìÃ*÷ÂI÷@ò#ÛŸ≠ÿ¨?¶$Bå;?g@¿”_   †    † )@î'ﬂŸ∫•÷@ò åùÃè?ïòò+Dﬂ?   †    † )@î'ÀQ“›Ç@òœ™jNv?ê^uŸ‰‹‚?ï(¶œ≠±Q   †    † )@î      @ò     ?ÉX®˙A˜   †    † )@î      @ò     ?x ?{TÂE           †    † )@ìÙ     @ò†     ?çˇÕî¢ƒK   †    † )@ìÙ     @ò†     ?ä ìô           †    † )@ìˇ|‹\U@òåc?	√z?rËˆÏ”   †    † )@î      @òå     ?nÈ.•w??ƒ£%®(…   †    † )@ìœÇ´©ÉH@ò?œûÇŒ]?í[+‡ı   †    † )@ìœl\‡@ò?„∫–õp?åÌ ìŸ?@?î_¸∏Ï   †    † )@î      @ò®     ?èï…¨∆‡<   †    † )@î      @ò®     ?ÇÅﬂÂƒKe           †    † )@ì∏     @ò$     ?Ç‰ÈêÕs“   †    † )@ì∏     @ò$     ?…058iΩ           † 	   † )@îo…Ω|@òîyFà?pÛ¨Ü˛e   † 	   † )@î˙!Du@òî*úAÃ?h–IÂ±?æ]>≠u˜   † 
+   † )@î     @ò(     ?Q∏ˆ».   † 
+   † )@î     @ò(     ?BFDã∆A           †    † )@îR¶‘ì"@ò6›˚Eñı?ors*#A   †    † )@îVq$Ç˜@ò6¬ïw}?míáIŒww?õ®˙˛îH˝   †    † )@î     @ò4     ?í„+ñFŸ   †    † )@î     @ò4     ?ê!z;ª*v           †    † )@î≥\2±^@ò∑4~Pî?{;˚BãÍW   †    † )@îæ=‚u‚@ò∏¬Ñ?s¯ √7§“?ÕY!G•”   †    † )@î      @òò     ?å˙ﬂ46IÈ   †    † )@î      @òò     ?áåª‚Ÿ€V        Ä       Ä       ¯      ¯      ¯         †    † )@î      @òD     ?ú∑Òâ.1¯      Ä       Ä       ¯      ¯      ¯         †    † )@î      @ò(     ?`•ËjƒL¯      Ä       Ä       ¯      ¯      ¯         †    † )@ìœ‰&#¡∞@ò_“≥¯DG?w>óOÚ0G¯      Ä       Ä       ¯      ¯      ¯         †    † )@î4     @òÄ     ?äè”„ÿM<¯      Ä       Ä       ¯      ¯      ¯         †    † )@ìÙ     @ò4     ?âOhú6 ˘¯      Ä       Ä       ¯      ¯      ¯         †    † )@î’;X@ò∏h·Ø‚?ê∑IéÊf¯      Ä       Ä       ¯      ¯      ¯         †    † )@î     @òò     ?ãÀíBXKy¯      Ä       Ä       ¯      ¯      ¯         †    † )@ìﬁ˜jI(ı@òà≠à?x^˚í•ç¯      Ä       Ä       ¯      ¯      ¯         †    † )@ìÃ     @òp     ?s®%‹^X	¯      Ä       Ä       ¯      ¯      ¯         †    † )@ì‰     @òú     ?gŸm·F…é¯      Ä       Ä       ¯      ¯      ¯         †    † )@ìÃ     @òP     ?g+◊aN‘¯      Ä       Ä       ¯      ¯      ¯         †    † )@îX     @òl     ?~+é/,∑w¯      Ä       Ä       ¯      ¯      ¯         †    † )@î4‡¿P_µ@ò;ﬁ@~∂?zÓÅ©TCﬁ¯      Ä       Ä       ¯      ¯      ¯         †    † )@î     @òº     ?q;ŒRπ…ü¯      Ä       Ä       ¯      ¯      ¯         †    † )@ì·ƒ@Ø∫H@ò7kAf∞‰?fÿ‰fEdó¯      Ä       Ä       ¯      ¯      ¯         †    † )@î+ÊÎ¯∂@ò¨€¬J?ä:óñéÎ∑¯      Ä       Ä       ¯      ¯      ¯         †    † )@ìÿ     @ò0     ?lüMº¥ÒÁ¯                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
