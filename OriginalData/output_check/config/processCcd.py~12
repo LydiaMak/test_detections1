@@ -528,7 +528,7 @@ config.charImage.detection.tempLocalBackground.weighting=True
 config.charImage.detection.tempLocalBackground.statisticsProperty='MEANCLIP'
 
 # Use Approximate (Chebyshev) to model background.
-config.charImage.detection.tempLocalBackground.useApprox=False
+config.charImage.detection.tempLocalBackground.useApprox=True
 
 # Include threshold relative to thresholdValue
 # 	Valid Range = [0.0,inf)
@@ -1021,7 +1021,7 @@ config.calibrate.deblend.edgeHandling='ramp'
 config.calibrate.deblend.assignStrayFlux=True
 
 # Mask planes with the corresponding limit on the fraction of masked pixels. Sources violating this limit will not be deblended.
-config.calibrate.deblend.maskLimits={'NO_DATA': 0.25}
+config.calibrate.deblend.maskLimits={'SAT': 0.0}
 
 # How to split flux among peaks
 # Allowed values:
@@ -1422,7 +1422,7 @@ config.calibrate.detection.tempLocalBackground.weighting=True
 config.calibrate.detection.tempLocalBackground.statisticsProperty='MEANCLIP'
 
 # Use Approximate (Chebyshev) to model background.
-config.calibrate.detection.tempLocalBackground.useApprox=False
+config.calibrate.detection.tempLocalBackground.useApprox=True
 
 # Include threshold relative to thresholdValue
 # 	Valid Range = [0.0,inf)
