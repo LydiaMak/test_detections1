@@ -1,974 +1,0 @@
-SIMPLE  =                    T / Standard FITS format                           BITPIX  =                    8 / Character data                                 NAXIS   =                    1 / Text string                                    NAXIS1  =                64461 / Number of characters                           VOTMETA =                    T / Table metadata in VOTable format               EXTEND  =                    T / There are standard extensions                  COMMENT                                                                         COMMENT The data in this primary HDU consists of bytes which                    COMMENT comprise a VOTABLE document.                                            COMMENT The VOTable describes the metadata of the table contained               COMMENT in the following BINTABLE extension.                                    COMMENT Such a BINTABLE extension can be used on its own as a perfectly         COMMENT good table, but the information from this HDU may provide some          COMMENT useful additional metadata.                                             COMMENT There is one following BINTABLE.                                        NTABLE  =                    1 / Number of following BINTABLE HDUs              END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <?xml version='1.0' encoding='UTF-8'?>
-<VOTABLE version='1.1'>
-<!--
- !  VOTable written by uk.ac.starlink.votable.FitsPlusTableWriter
- !  Describes BINTABLE extensions in following HDUs
- !-->
-<RESOURCE>
-<TABLE name="Joined" nrows="1251">
-<PARAM datatype="int" name="FLAGCOL" value="1">
-<DESCRIPTION>Column number for the bitflags.</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="9" datatype="char" name="TDOC2" value="unique ID"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS2" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="18" datatype="char" name="TDOC3" value="position in ra/dec"/>
-<PARAM arraysize="5" datatype="char" name="TCCLS3" value="Angle">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="18" datatype="char" name="TDOC4" value="position in ra/dec"/>
-<PARAM arraysize="5" datatype="char" name="TCCLS4" value="Angle">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="26" datatype="char" name="TDOC5" value="unique ID of parent source"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS5" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="14" datatype="char" name="TFLAG1" value="calib_detected"/>
-<PARAM arraysize="34" datatype="char" name="TFDOC1" value="Source was detected as an icSource"/>
-<PARAM arraysize="18" datatype="char" name="TFLAG2" value="calib_psfCandidate"/>
-<PARAM arraysize="68" datatype="char" name="TFDOC2" value="Flag set if the source was a candidate for PSF determination, as de&amp;"/>
-<PARAM arraysize="*" datatype="char" name="CONTINUE" value="">
-<DESCRIPTION>'termined by the star selector.'</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="13" datatype="char" name="TFLAG3" value="calib_psfUsed"/>
-<PARAM arraysize="68" datatype="char" name="TFDOC3" value="Flag set if the source was actually used for PSF determination, as &amp;"/>
-<PARAM arraysize="17" datatype="char" name="TFLAG4" value="calib_psfReserved"/>
-<PARAM arraysize="68" datatype="char" name="TFDOC4" value="Flag set if the source was selected as a PSF candidate, but was res&amp;"/>
-<PARAM arraysize="14" datatype="char" name="TFLAG5" value="flags_negative"/>
-<PARAM arraysize="52" datatype="char" name="TFDOC5" value="set if source was detected as significantly negative"/>
-<PARAM arraysize="50" datatype="char" name="TDOC6" value="Number of children this object has (defaults to 0)"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS6" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="22" datatype="char" name="TFLAG6" value="deblend_deblendedAsPsf"/>
-<PARAM arraysize="47" datatype="char" name="TFDOC6" value="Deblender thought this source looked like a PSF"/>
-<PARAM arraysize="37" datatype="char" name="TDOC7" value="If deblended-as-psf, the PSF centroid"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS7" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="37" datatype="char" name="TDOC8" value="If deblended-as-psf, the PSF centroid"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS8" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="33" datatype="char" name="TDOC9" value="If deblended-as-psf, the PSF flux"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS9" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="20" datatype="char" name="TFLAG7" value="deblend_tooManyPeaks"/>
-<PARAM arraysize="59" datatype="char" name="TFDOC7" value="Source had too many peaks; only the brightest were included"/>
-<PARAM arraysize="20" datatype="char" name="TFLAG8" value="deblend_parentTooBig"/>
-<PARAM arraysize="40" datatype="char" name="TFDOC8" value="Parent footprint covered too many pixels"/>
-<PARAM arraysize="14" datatype="char" name="TFLAG9" value="deblend_masked"/>
-<PARAM arraysize="41" datatype="char" name="TFDOC9" value="Parent footprint was predominantly masked"/>
-<PARAM arraysize="15" datatype="char" name="TFLAG10" value="deblend_skipped"/>
-<PARAM arraysize="29" datatype="char" name="TFDOC10" value="Deblender skipped this source"/>
-<PARAM arraysize="22" datatype="char" name="TFLAG11" value="deblend_rampedTemplate"/>
-<PARAM arraysize="68" datatype="char" name="TFDOC11" value="This source was near an image edge and the deblender used &quot;ramp&quot; ed&amp;"/>
-<PARAM arraysize="23" datatype="char" name="TFLAG12" value="deblend_patchedTemplate"/>
-<PARAM arraysize="68" datatype="char" name="TFDOC12" value="This source was near an image edge and the deblender used &quot;patched&quot;&amp;"/>
-<PARAM arraysize="20" datatype="char" name="TFLAG13" value="deblend_hasStrayFlux"/>
-<PARAM arraysize="40" datatype="char" name="TFDOC13" value="This source was assigned some stray flux"/>
-<PARAM arraysize="41" datatype="char" name="TDOC10" value="centroid from Gaussian Centroid algorithm"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS10" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="41" datatype="char" name="TDOC11" value="centroid from Gaussian Centroid algorithm"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS11" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="26" datatype="char" name="TFLAG14" value="base_GaussianCentroid_flag"/>
-<PARAM arraysize="48" datatype="char" name="TFDOC14" value="general failure flag, set if anything went wrong"/>
-<PARAM arraysize="33" datatype="char" name="TFLAG15" value="base_GaussianCentroid_flag_noPeak"/>
-<PARAM arraysize="35" datatype="char" name="TFDOC15" value="Fitted Centroid has a negative peak"/>
-<PARAM arraysize="38" datatype="char" name="TFLAG16" value="base_GaussianCentroid_flag_resetToPeak"/>
-<PARAM arraysize="41" datatype="char" name="TFDOC16" value="set if CentroidChecker reset the centroid"/>
-<PARAM arraysize="38" datatype="char" name="TDOC12" value="centroid from Naive Centroid algorithm"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS12" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="38" datatype="char" name="TDOC13" value="centroid from Naive Centroid algorithm"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS13" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="23" datatype="char" name="TFLAG17" value="base_NaiveCentroid_flag"/>
-<PARAM arraysize="48" datatype="char" name="TFDOC17" value="general failure flag, set if anything went wrong"/>
-<PARAM arraysize="32" datatype="char" name="TFLAG18" value="base_NaiveCentroid_flag_noCounts"/>
-<PARAM arraysize="37" datatype="char" name="TFDOC18" value="Object to be centroided has no counts"/>
-<PARAM arraysize="28" datatype="char" name="TFLAG19" value="base_NaiveCentroid_flag_edge"/>
-<PARAM arraysize="24" datatype="char" name="TFDOC19" value="Object too close to edge"/>
-<PARAM arraysize="35" datatype="char" name="TFLAG20" value="base_NaiveCentroid_flag_resetToPeak"/>
-<PARAM arraysize="41" datatype="char" name="TFDOC20" value="set if CentroidChecker reset the centroid"/>
-<PARAM arraysize="37" datatype="char" name="TDOC14" value="centroid from Sdss Centroid algorithm"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS14" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="37" datatype="char" name="TDOC15" value="centroid from Sdss Centroid algorithm"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS15" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="33" datatype="char" name="TDOC16" value="1-sigma uncertainty on x position"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS16" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="33" datatype="char" name="TDOC17" value="1-sigma uncertainty on y position"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS17" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="22" datatype="char" name="TFLAG21" value="base_SdssCentroid_flag"/>
-<PARAM arraysize="48" datatype="char" name="TFDOC21" value="general failure flag, set if anything went wrong"/>
-<PARAM arraysize="27" datatype="char" name="TFLAG22" value="base_SdssCentroid_flag_edge"/>
-<PARAM arraysize="24" datatype="char" name="TFDOC22" value="Object too close to edge"/>
-<PARAM arraysize="41" datatype="char" name="TFLAG23" value="base_SdssCentroid_flag_noSecondDerivative"/>
-<PARAM arraysize="27" datatype="char" name="TFDOC23" value="Vanishing second derivative"/>
-<PARAM arraysize="47" datatype="char" name="TFLAG24" value="base_SdssCentroid_flag_almostNoSecondDerivative"/>
-<PARAM arraysize="34" datatype="char" name="TFDOC24" value="Almost vanishing second derivative"/>
-<PARAM arraysize="35" datatype="char" name="TFLAG25" value="base_SdssCentroid_flag_notAtMaximum"/>
-<PARAM arraysize="26" datatype="char" name="TFDOC25" value="Object is not at a maximum"/>
-<PARAM arraysize="34" datatype="char" name="TFLAG26" value="base_SdssCentroid_flag_resetToPeak"/>
-<PARAM arraysize="41" datatype="char" name="TFDOC26" value="set if CentroidChecker reset the centroid"/>
-<PARAM arraysize="36" datatype="char" name="TDOC18" value="elliptical Gaussian adaptive moments"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS18" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="36" datatype="char" name="TDOC19" value="elliptical Gaussian adaptive moments"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS19" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="36" datatype="char" name="TDOC20" value="elliptical Gaussian adaptive moments"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS20" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="32" datatype="char" name="TDOC21" value="1-sigma uncertainty on xx moment"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS21" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="32" datatype="char" name="TDOC22" value="1-sigma uncertainty on yy moment"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS22" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="32" datatype="char" name="TDOC23" value="1-sigma uncertainty on xy moment"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS23" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="36" datatype="char" name="TDOC24" value="elliptical Gaussian adaptive moments"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS24" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="36" datatype="char" name="TDOC25" value="elliptical Gaussian adaptive moments"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS25" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="36" datatype="char" name="TDOC26" value="elliptical Gaussian adaptive moments"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS26" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC27" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS27" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="56" datatype="char" name="TDOC28" value="adaptive moments of the PSF model at the object position"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS28" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="56" datatype="char" name="TDOC29" value="adaptive moments of the PSF model at the object position"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS29" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="56" datatype="char" name="TDOC30" value="adaptive moments of the PSF model at the object position"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS30" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="68" datatype="char" name="TDOC31" value="uncertainty covariance between base_SdssShape_flux and base_SdssSha&amp;"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS31" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="68" datatype="char" name="TDOC32" value="uncertainty covariance between base_SdssShape_flux and base_SdssSha&amp;"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS32" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="68" datatype="char" name="TDOC33" value="uncertainty covariance between base_SdssShape_flux and base_SdssSha&amp;"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS33" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="19" datatype="char" name="TFLAG27" value="base_SdssShape_flag"/>
-<PARAM arraysize="48" datatype="char" name="TFDOC27" value="general failure flag, set if anything went wrong"/>
-<PARAM arraysize="33" datatype="char" name="TFLAG28" value="base_SdssShape_flag_unweightedBad"/>
-<PARAM arraysize="49" datatype="char" name="TFDOC28" value="Both weighted and unweighted moments were invalid"/>
-<PARAM arraysize="30" datatype="char" name="TFLAG29" value="base_SdssShape_flag_unweighted"/>
-<PARAM arraysize="68" datatype="char" name="TFDOC29" value="Weighted moments converged to an invalid value; using unweighted mo&amp;"/>
-<PARAM arraysize="25" datatype="char" name="TFLAG30" value="base_SdssShape_flag_shift"/>
-<PARAM arraysize="56" datatype="char" name="TFDOC30" value="centroid shifted by more than the maximum allowed amount"/>
-<PARAM arraysize="27" datatype="char" name="TFLAG31" value="base_SdssShape_flag_maxIter"/>
-<PARAM arraysize="39" datatype="char" name="TFDOC31" value="Too many iterations in adaptive moments"/>
-<PARAM arraysize="23" datatype="char" name="TFLAG32" value="base_SdssShape_flag_psf"/>
-<PARAM arraysize="36" datatype="char" name="TFDOC32" value="Failure in measuring PSF model shape"/>
-<PARAM arraysize="35" datatype="char" name="TDOC34" value="flux within 3.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS34" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC35" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS35" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="34" datatype="char" name="TFLAG33" value="base_CircularApertureFlux_3_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC33" value="general failure flag"/>
-<PARAM arraysize="52" datatype="char" name="TFLAG34" value="base_CircularApertureFlux_3_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC34" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="54" datatype="char" name="TFLAG35" value="base_CircularApertureFlux_3_0_flag_sincCoeffsTruncated"/>
-<PARAM arraysize="64" datatype="char" name="TFDOC35" value="full sinc coefficient image did not fit within measurement image"/>
-<PARAM arraysize="35" datatype="char" name="TDOC36" value="flux within 4.500000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS36" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC37" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS37" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="34" datatype="char" name="TFLAG36" value="base_CircularApertureFlux_4_5_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC36" value="general failure flag"/>
-<PARAM arraysize="52" datatype="char" name="TFLAG37" value="base_CircularApertureFlux_4_5_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC37" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="54" datatype="char" name="TFLAG38" value="base_CircularApertureFlux_4_5_flag_sincCoeffsTruncated"/>
-<PARAM arraysize="64" datatype="char" name="TFDOC38" value="full sinc coefficient image did not fit within measurement image"/>
-<PARAM arraysize="35" datatype="char" name="TDOC38" value="flux within 6.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS38" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC39" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS39" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="34" datatype="char" name="TFLAG39" value="base_CircularApertureFlux_6_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC39" value="general failure flag"/>
-<PARAM arraysize="52" datatype="char" name="TFLAG40" value="base_CircularApertureFlux_6_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC40" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="54" datatype="char" name="TFLAG41" value="base_CircularApertureFlux_6_0_flag_sincCoeffsTruncated"/>
-<PARAM arraysize="64" datatype="char" name="TFDOC41" value="full sinc coefficient image did not fit within measurement image"/>
-<PARAM arraysize="35" datatype="char" name="TDOC40" value="flux within 9.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS40" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC41" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS41" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="34" datatype="char" name="TFLAG42" value="base_CircularApertureFlux_9_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC42" value="general failure flag"/>
-<PARAM arraysize="52" datatype="char" name="TFLAG43" value="base_CircularApertureFlux_9_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC43" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="54" datatype="char" name="TFLAG44" value="base_CircularApertureFlux_9_0_flag_sincCoeffsTruncated"/>
-<PARAM arraysize="64" datatype="char" name="TFDOC44" value="full sinc coefficient image did not fit within measurement image"/>
-<PARAM arraysize="36" datatype="char" name="TDOC42" value="flux within 12.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS42" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC43" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS43" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="35" datatype="char" name="TFLAG45" value="base_CircularApertureFlux_12_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC45" value="general failure flag"/>
-<PARAM arraysize="53" datatype="char" name="TFLAG46" value="base_CircularApertureFlux_12_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC46" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="36" datatype="char" name="TDOC44" value="flux within 17.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS44" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC45" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS45" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="35" datatype="char" name="TFLAG47" value="base_CircularApertureFlux_17_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC47" value="general failure flag"/>
-<PARAM arraysize="53" datatype="char" name="TFLAG48" value="base_CircularApertureFlux_17_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC48" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="36" datatype="char" name="TDOC46" value="flux within 25.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS46" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC47" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS47" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="35" datatype="char" name="TFLAG49" value="base_CircularApertureFlux_25_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC49" value="general failure flag"/>
-<PARAM arraysize="53" datatype="char" name="TFLAG50" value="base_CircularApertureFlux_25_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC50" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="36" datatype="char" name="TDOC48" value="flux within 35.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS48" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC49" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS49" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="35" datatype="char" name="TFLAG51" value="base_CircularApertureFlux_35_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC51" value="general failure flag"/>
-<PARAM arraysize="53" datatype="char" name="TFLAG52" value="base_CircularApertureFlux_35_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC52" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="36" datatype="char" name="TDOC50" value="flux within 50.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS50" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC51" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS51" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="35" datatype="char" name="TFLAG53" value="base_CircularApertureFlux_50_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC53" value="general failure flag"/>
-<PARAM arraysize="53" datatype="char" name="TFLAG54" value="base_CircularApertureFlux_50_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC54" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="36" datatype="char" name="TDOC52" value="flux within 70.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS52" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC53" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS53" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="35" datatype="char" name="TFLAG55" value="base_CircularApertureFlux_70_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC55" value="general failure flag"/>
-<PARAM arraysize="53" datatype="char" name="TFLAG56" value="base_CircularApertureFlux_70_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC56" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="33" datatype="char" name="TDOC54" value="flux from Gaussian Flux algorithm"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS54" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC55" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS55" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="22" datatype="char" name="TFLAG57" value="base_GaussianFlux_flag"/>
-<PARAM arraysize="48" datatype="char" name="TFDOC57" value="general failure flag, set if anything went wrong"/>
-<PARAM arraysize="20" datatype="char" name="TFLAG58" value="base_PixelFlags_flag"/>
-<PARAM arraysize="48" datatype="char" name="TFDOC58" value="general failure flag, set if anything went wring"/>
-<PARAM arraysize="29" datatype="char" name="TFLAG59" value="base_PixelFlags_flag_offimage"/>
-<PARAM arraysize="26" datatype="char" name="TFDOC59" value="Source center is off image"/>
-<PARAM arraysize="25" datatype="char" name="TFLAG60" value="base_PixelFlags_flag_edge"/>
-<PARAM arraysize="65" datatype="char" name="TFDOC60" value="Source is outside usable exposure region (masked EDGE or NO_DATA)"/>
-<PARAM arraysize="33" datatype="char" name="TFLAG61" value="base_PixelFlags_flag_interpolated"/>
-<PARAM arraysize="42" datatype="char" name="TFDOC61" value="Interpolated pixel in the Source footprint"/>
-<PARAM arraysize="30" datatype="char" name="TFLAG62" value="base_PixelFlags_flag_saturated"/>
-<PARAM arraysize="39" datatype="char" name="TFDOC62" value="Saturated pixel in the Source footprint"/>
-<PARAM arraysize="23" datatype="char" name="TFLAG63" value="base_PixelFlags_flag_cr"/>
-<PARAM arraysize="34" datatype="char" name="TFDOC63" value="Cosmic ray in the Source footprint"/>
-<PARAM arraysize="24" datatype="char" name="TFLAG64" value="base_PixelFlags_flag_bad"/>
-<PARAM arraysize="33" datatype="char" name="TFDOC64" value="Bad pixel in the Source footprint"/>
-<PARAM arraysize="28" datatype="char" name="TFLAG65" value="base_PixelFlags_flag_suspect"/>
-<PARAM arraysize="42" datatype="char" name="TFDOC65" value="Source's footprint includes suspect pixels"/>
-<PARAM arraysize="39" datatype="char" name="TFLAG66" value="base_PixelFlags_flag_interpolatedCenter"/>
-<PARAM arraysize="39" datatype="char" name="TFDOC66" value="Interpolated pixel in the Source center"/>
-<PARAM arraysize="36" datatype="char" name="TFLAG67" value="base_PixelFlags_flag_saturatedCenter"/>
-<PARAM arraysize="36" datatype="char" name="TFDOC67" value="Saturated pixel in the Source center"/>
-<PARAM arraysize="29" datatype="char" name="TFLAG68" value="base_PixelFlags_flag_crCenter"/>
-<PARAM arraysize="31" datatype="char" name="TFDOC68" value="Cosmic ray in the Source center"/>
-<PARAM arraysize="34" datatype="char" name="TFLAG69" value="base_PixelFlags_flag_suspectCenter"/>
-<PARAM arraysize="42" datatype="char" name="TFDOC69" value="Source's center is close to suspect pixels"/>
-<PARAM arraysize="55" datatype="char" name="TDOC56" value="flux derived from linear least-squares fit of PSF model"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS56" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC57" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS57" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="17" datatype="char" name="TFLAG70" value="base_PsfFlux_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC70" value="general failure flag"/>
-<PARAM arraysize="30" datatype="char" name="TFLAG71" value="base_PsfFlux_flag_noGoodPixels"/>
-<PARAM arraysize="57" datatype="char" name="TFDOC71" value="not enough non-rejected pixels in data to attempt the fit"/>
-<PARAM arraysize="22" datatype="char" name="TFLAG72" value="base_PsfFlux_flag_edge"/>
-<PARAM arraysize="68" datatype="char" name="TFDOC72" value="object was too close to the edge of the image to use the full PSF m&amp;"/>
-<PARAM arraysize="27" datatype="char" name="TDOC58" value="Variance at object position"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS58" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="18" datatype="char" name="TFLAG73" value="base_Variance_flag"/>
-<PARAM arraysize="33" datatype="char" name="TFDOC73" value="Set to True for any fatal failure"/>
-<PARAM arraysize="33" datatype="char" name="TFLAG74" value="base_Variance_flag_emptyFootprint"/>
-<PARAM arraysize="51" datatype="char" name="TFDOC74" value="Set to True when the footprint has no usable pixels"/>
-<PARAM arraysize="43" datatype="char" name="TDOC59" value="aperture correction applied to base_PsfFlux"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS59" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="43" datatype="char" name="TDOC60" value="aperture correction applied to base_PsfFlux"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS60" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TFLAG75" value="base_PsfFlux_flag_apCorr"/>
-<PARAM arraysize="46" datatype="char" name="TFDOC75" value="set if unable to aperture correct base_PsfFlux"/>
-<PARAM arraysize="48" datatype="char" name="TDOC61" value="aperture correction applied to base_GaussianFlux"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS61" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="48" datatype="char" name="TDOC62" value="aperture correction applied to base_GaussianFlux"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS62" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="29" datatype="char" name="TFLAG76" value="base_GaussianFlux_flag_apCorr"/>
-<PARAM arraysize="51" datatype="char" name="TFDOC76" value="set if unable to aperture correct base_GaussianFlux"/>
-<PARAM arraysize="51" datatype="char" name="TDOC63" value="Set to 1 for extended sources, 0 for point sources."/>
-<PARAM arraysize="6" datatype="char" name="TCCLS63" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="36" datatype="char" name="TFLAG77" value="base_ClassificationExtendedness_flag"/>
-<PARAM arraysize="31" datatype="char" name="TFDOC77" value="Set to 1 for any fatal failure."/>
-<PARAM arraysize="24" datatype="char" name="TDOC64" value="archive ID for Footprint"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS64" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="25" datatype="char" name="ALIAS" value="slot_Shape:base_SdssShape"/>
-<PARAM arraysize="*" datatype="char" name="HIERARCH" value="">
-<DESCRIPTION>base_CircularApertureFlux_radii = 3.</DESCRIPTION>
-</PARAM>
-<PARAM datatype="int" name="AR_HDU" value="3">
-<DESCRIPTION>HDU containing the archive index for non-record</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="6" datatype="char" name="AFW_TYPE" value="SOURCE">
-<DESCRIPTION>Tells lsst::afw to load this as a Source table.</DESCRIPTION>
-</PARAM>
-<PARAM datatype="int" name="FLAGCOL" value="1">
-<DESCRIPTION>Column number for the bitflags.</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="9" datatype="char" name="TDOC2" value="unique ID"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS2" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="18" datatype="char" name="TDOC3" value="position in ra/dec"/>
-<PARAM arraysize="5" datatype="char" name="TCCLS3" value="Angle">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="18" datatype="char" name="TDOC4" value="position in ra/dec"/>
-<PARAM arraysize="5" datatype="char" name="TCCLS4" value="Angle">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="26" datatype="char" name="TDOC5" value="unique ID of parent source"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS5" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="14" datatype="char" name="TFLAG1" value="calib_detected"/>
-<PARAM arraysize="34" datatype="char" name="TFDOC1" value="Source was detected as an icSource"/>
-<PARAM arraysize="18" datatype="char" name="TFLAG2" value="calib_psfCandidate"/>
-<PARAM arraysize="68" datatype="char" name="TFDOC2" value="Flag set if the source was a candidate for PSF determination, as de&amp;"/>
-<PARAM arraysize="*" datatype="char" name="CONTINUE" value="">
-<DESCRIPTION>'termined by the star selector.'</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="13" datatype="char" name="TFLAG3" value="calib_psfUsed"/>
-<PARAM arraysize="68" datatype="char" name="TFDOC3" value="Flag set if the source was actually used for PSF determination, as &amp;"/>
-<PARAM arraysize="17" datatype="char" name="TFLAG4" value="calib_psfReserved"/>
-<PARAM arraysize="68" datatype="char" name="TFDOC4" value="Flag set if the source was selected as a PSF candidate, but was res&amp;"/>
-<PARAM arraysize="14" datatype="char" name="TFLAG5" value="flags_negative"/>
-<PARAM arraysize="52" datatype="char" name="TFDOC5" value="set if source was detected as significantly negative"/>
-<PARAM arraysize="50" datatype="char" name="TDOC6" value="Number of children this object has (defaults to 0)"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS6" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="22" datatype="char" name="TFLAG6" value="deblend_deblendedAsPsf"/>
-<PARAM arraysize="47" datatype="char" name="TFDOC6" value="Deblender thought this source looked like a PSF"/>
-<PARAM arraysize="37" datatype="char" name="TDOC7" value="If deblended-as-psf, the PSF centroid"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS7" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="37" datatype="char" name="TDOC8" value="If deblended-as-psf, the PSF centroid"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS8" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="33" datatype="char" name="TDOC9" value="If deblended-as-psf, the PSF flux"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS9" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="20" datatype="char" name="TFLAG7" value="deblend_tooManyPeaks"/>
-<PARAM arraysize="59" datatype="char" name="TFDOC7" value="Source had too many peaks; only the brightest were included"/>
-<PARAM arraysize="20" datatype="char" name="TFLAG8" value="deblend_parentTooBig"/>
-<PARAM arraysize="40" datatype="char" name="TFDOC8" value="Parent footprint covered too many pixels"/>
-<PARAM arraysize="14" datatype="char" name="TFLAG9" value="deblend_masked"/>
-<PARAM arraysize="41" datatype="char" name="TFDOC9" value="Parent footprint was predominantly masked"/>
-<PARAM arraysize="15" datatype="char" name="TFLAG10" value="deblend_skipped"/>
-<PARAM arraysize="29" datatype="char" name="TFDOC10" value="Deblender skipped this source"/>
-<PARAM arraysize="22" datatype="char" name="TFLAG11" value="deblend_rampedTemplate"/>
-<PARAM arraysize="68" datatype="char" name="TFDOC11" value="This source was near an image edge and the deblender used &quot;ramp&quot; ed&amp;"/>
-<PARAM arraysize="23" datatype="char" name="TFLAG12" value="deblend_patchedTemplate"/>
-<PARAM arraysize="68" datatype="char" name="TFDOC12" value="This source was near an image edge and the deblender used &quot;patched&quot;&amp;"/>
-<PARAM arraysize="20" datatype="char" name="TFLAG13" value="deblend_hasStrayFlux"/>
-<PARAM arraysize="40" datatype="char" name="TFDOC13" value="This source was assigned some stray flux"/>
-<PARAM arraysize="41" datatype="char" name="TDOC10" value="centroid from Gaussian Centroid algorithm"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS10" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="41" datatype="char" name="TDOC11" value="centroid from Gaussian Centroid algorithm"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS11" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="26" datatype="char" name="TFLAG14" value="base_GaussianCentroid_flag"/>
-<PARAM arraysize="48" datatype="char" name="TFDOC14" value="general failure flag, set if anything went wrong"/>
-<PARAM arraysize="33" datatype="char" name="TFLAG15" value="base_GaussianCentroid_flag_noPeak"/>
-<PARAM arraysize="35" datatype="char" name="TFDOC15" value="Fitted Centroid has a negative peak"/>
-<PARAM arraysize="38" datatype="char" name="TFLAG16" value="base_GaussianCentroid_flag_resetToPeak"/>
-<PARAM arraysize="41" datatype="char" name="TFDOC16" value="set if CentroidChecker reset the centroid"/>
-<PARAM arraysize="38" datatype="char" name="TDOC12" value="centroid from Naive Centroid algorithm"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS12" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="38" datatype="char" name="TDOC13" value="centroid from Naive Centroid algorithm"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS13" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="23" datatype="char" name="TFLAG17" value="base_NaiveCentroid_flag"/>
-<PARAM arraysize="48" datatype="char" name="TFDOC17" value="general failure flag, set if anything went wrong"/>
-<PARAM arraysize="32" datatype="char" name="TFLAG18" value="base_NaiveCentroid_flag_noCounts"/>
-<PARAM arraysize="37" datatype="char" name="TFDOC18" value="Object to be centroided has no counts"/>
-<PARAM arraysize="28" datatype="char" name="TFLAG19" value="base_NaiveCentroid_flag_edge"/>
-<PARAM arraysize="24" datatype="char" name="TFDOC19" value="Object too close to edge"/>
-<PARAM arraysize="35" datatype="char" name="TFLAG20" value="base_NaiveCentroid_flag_resetToPeak"/>
-<PARAM arraysize="41" datatype="char" name="TFDOC20" value="set if CentroidChecker reset the centroid"/>
-<PARAM arraysize="37" datatype="char" name="TDOC14" value="centroid from Sdss Centroid algorithm"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS14" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="37" datatype="char" name="TDOC15" value="centroid from Sdss Centroid algorithm"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS15" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="33" datatype="char" name="TDOC16" value="1-sigma uncertainty on x position"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS16" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="33" datatype="char" name="TDOC17" value="1-sigma uncertainty on y position"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS17" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="22" datatype="char" name="TFLAG21" value="base_SdssCentroid_flag"/>
-<PARAM arraysize="48" datatype="char" name="TFDOC21" value="general failure flag, set if anything went wrong"/>
-<PARAM arraysize="27" datatype="char" name="TFLAG22" value="base_SdssCentroid_flag_edge"/>
-<PARAM arraysize="24" datatype="char" name="TFDOC22" value="Object too close to edge"/>
-<PARAM arraysize="41" datatype="char" name="TFLAG23" value="base_SdssCentroid_flag_noSecondDerivative"/>
-<PARAM arraysize="27" datatype="char" name="TFDOC23" value="Vanishing second derivative"/>
-<PARAM arraysize="47" datatype="char" name="TFLAG24" value="base_SdssCentroid_flag_almostNoSecondDerivative"/>
-<PARAM arraysize="34" datatype="char" name="TFDOC24" value="Almost vanishing second derivative"/>
-<PARAM arraysize="35" datatype="char" name="TFLAG25" value="base_SdssCentroid_flag_notAtMaximum"/>
-<PARAM arraysize="26" datatype="char" name="TFDOC25" value="Object is not at a maximum"/>
-<PARAM arraysize="34" datatype="char" name="TFLAG26" value="base_SdssCentroid_flag_resetToPeak"/>
-<PARAM arraysize="41" datatype="char" name="TFDOC26" value="set if CentroidChecker reset the centroid"/>
-<PARAM arraysize="36" datatype="char" name="TDOC18" value="elliptical Gaussian adaptive moments"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS18" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="36" datatype="char" name="TDOC19" value="elliptical Gaussian adaptive moments"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS19" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="36" datatype="char" name="TDOC20" value="elliptical Gaussian adaptive moments"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS20" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="32" datatype="char" name="TDOC21" value="1-sigma uncertainty on xx moment"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS21" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="32" datatype="char" name="TDOC22" value="1-sigma uncertainty on yy moment"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS22" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="32" datatype="char" name="TDOC23" value="1-sigma uncertainty on xy moment"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS23" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="36" datatype="char" name="TDOC24" value="elliptical Gaussian adaptive moments"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS24" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="36" datatype="char" name="TDOC25" value="elliptical Gaussian adaptive moments"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS25" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="36" datatype="char" name="TDOC26" value="elliptical Gaussian adaptive moments"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS26" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC27" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS27" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="56" datatype="char" name="TDOC28" value="adaptive moments of the PSF model at the object position"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS28" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="56" datatype="char" name="TDOC29" value="adaptive moments of the PSF model at the object position"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS29" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="56" datatype="char" name="TDOC30" value="adaptive moments of the PSF model at the object position"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS30" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="68" datatype="char" name="TDOC31" value="uncertainty covariance between base_SdssShape_flux and base_SdssSha&amp;"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS31" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="68" datatype="char" name="TDOC32" value="uncertainty covariance between base_SdssShape_flux and base_SdssSha&amp;"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS32" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="68" datatype="char" name="TDOC33" value="uncertainty covariance between base_SdssShape_flux and base_SdssSha&amp;"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS33" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="19" datatype="char" name="TFLAG27" value="base_SdssShape_flag"/>
-<PARAM arraysize="48" datatype="char" name="TFDOC27" value="general failure flag, set if anything went wrong"/>
-<PARAM arraysize="33" datatype="char" name="TFLAG28" value="base_SdssShape_flag_unweightedBad"/>
-<PARAM arraysize="49" datatype="char" name="TFDOC28" value="Both weighted and unweighted moments were invalid"/>
-<PARAM arraysize="30" datatype="char" name="TFLAG29" value="base_SdssShape_flag_unweighted"/>
-<PARAM arraysize="68" datatype="char" name="TFDOC29" value="Weighted moments converged to an invalid value; using unweighted mo&amp;"/>
-<PARAM arraysize="25" datatype="char" name="TFLAG30" value="base_SdssShape_flag_shift"/>
-<PARAM arraysize="56" datatype="char" name="TFDOC30" value="centroid shifted by more than the maximum allowed amount"/>
-<PARAM arraysize="27" datatype="char" name="TFLAG31" value="base_SdssShape_flag_maxIter"/>
-<PARAM arraysize="39" datatype="char" name="TFDOC31" value="Too many iterations in adaptive moments"/>
-<PARAM arraysize="23" datatype="char" name="TFLAG32" value="base_SdssShape_flag_psf"/>
-<PARAM arraysize="36" datatype="char" name="TFDOC32" value="Failure in measuring PSF model shape"/>
-<PARAM arraysize="35" datatype="char" name="TDOC34" value="flux within 3.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS34" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC35" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS35" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="34" datatype="char" name="TFLAG33" value="base_CircularApertureFlux_3_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC33" value="general failure flag"/>
-<PARAM arraysize="52" datatype="char" name="TFLAG34" value="base_CircularApertureFlux_3_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC34" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="54" datatype="char" name="TFLAG35" value="base_CircularApertureFlux_3_0_flag_sincCoeffsTruncated"/>
-<PARAM arraysize="64" datatype="char" name="TFDOC35" value="full sinc coefficient image did not fit within measurement image"/>
-<PARAM arraysize="35" datatype="char" name="TDOC36" value="flux within 4.500000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS36" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC37" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS37" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="34" datatype="char" name="TFLAG36" value="base_CircularApertureFlux_4_5_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC36" value="general failure flag"/>
-<PARAM arraysize="52" datatype="char" name="TFLAG37" value="base_CircularApertureFlux_4_5_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC37" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="54" datatype="char" name="TFLAG38" value="base_CircularApertureFlux_4_5_flag_sincCoeffsTruncated"/>
-<PARAM arraysize="64" datatype="char" name="TFDOC38" value="full sinc coefficient image did not fit within measurement image"/>
-<PARAM arraysize="35" datatype="char" name="TDOC38" value="flux within 6.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS38" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC39" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS39" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="34" datatype="char" name="TFLAG39" value="base_CircularApertureFlux_6_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC39" value="general failure flag"/>
-<PARAM arraysize="52" datatype="char" name="TFLAG40" value="base_CircularApertureFlux_6_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC40" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="54" datatype="char" name="TFLAG41" value="base_CircularApertureFlux_6_0_flag_sincCoeffsTruncated"/>
-<PARAM arraysize="64" datatype="char" name="TFDOC41" value="full sinc coefficient image did not fit within measurement image"/>
-<PARAM arraysize="35" datatype="char" name="TDOC40" value="flux within 9.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS40" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC41" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS41" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="34" datatype="char" name="TFLAG42" value="base_CircularApertureFlux_9_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC42" value="general failure flag"/>
-<PARAM arraysize="52" datatype="char" name="TFLAG43" value="base_CircularApertureFlux_9_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC43" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="54" datatype="char" name="TFLAG44" value="base_CircularApertureFlux_9_0_flag_sincCoeffsTruncated"/>
-<PARAM arraysize="64" datatype="char" name="TFDOC44" value="full sinc coefficient image did not fit within measurement image"/>
-<PARAM arraysize="36" datatype="char" name="TDOC42" value="flux within 12.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS42" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC43" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS43" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="35" datatype="char" name="TFLAG45" value="base_CircularApertureFlux_12_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC45" value="general failure flag"/>
-<PARAM arraysize="53" datatype="char" name="TFLAG46" value="base_CircularApertureFlux_12_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC46" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="36" datatype="char" name="TDOC44" value="flux within 17.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS44" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC45" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS45" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="35" datatype="char" name="TFLAG47" value="base_CircularApertureFlux_17_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC47" value="general failure flag"/>
-<PARAM arraysize="53" datatype="char" name="TFLAG48" value="base_CircularApertureFlux_17_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC48" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="36" datatype="char" name="TDOC46" value="flux within 25.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS46" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC47" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS47" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="35" datatype="char" name="TFLAG49" value="base_CircularApertureFlux_25_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC49" value="general failure flag"/>
-<PARAM arraysize="53" datatype="char" name="TFLAG50" value="base_CircularApertureFlux_25_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC50" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="36" datatype="char" name="TDOC48" value="flux within 35.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS48" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC49" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS49" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="35" datatype="char" name="TFLAG51" value="base_CircularApertureFlux_35_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC51" value="general failure flag"/>
-<PARAM arraysize="53" datatype="char" name="TFLAG52" value="base_CircularApertureFlux_35_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC52" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="36" datatype="char" name="TDOC50" value="flux within 50.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS50" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC51" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS51" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="35" datatype="char" name="TFLAG53" value="base_CircularApertureFlux_50_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC53" value="general failure flag"/>
-<PARAM arraysize="53" datatype="char" name="TFLAG54" value="base_CircularApertureFlux_50_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC54" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="36" datatype="char" name="TDOC52" value="flux within 70.000000-pixel aperture"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS52" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC53" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS53" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="35" datatype="char" name="TFLAG55" value="base_CircularApertureFlux_70_0_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC55" value="general failure flag"/>
-<PARAM arraysize="53" datatype="char" name="TFLAG56" value="base_CircularApertureFlux_70_0_flag_apertureTruncated"/>
-<PARAM arraysize="45" datatype="char" name="TFDOC56" value="aperture did not fit within measurement image"/>
-<PARAM arraysize="33" datatype="char" name="TDOC54" value="flux from Gaussian Flux algorithm"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS54" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC55" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS55" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="22" datatype="char" name="TFLAG57" value="base_GaussianFlux_flag"/>
-<PARAM arraysize="48" datatype="char" name="TFDOC57" value="general failure flag, set if anything went wrong"/>
-<PARAM arraysize="20" datatype="char" name="TFLAG58" value="base_PixelFlags_flag"/>
-<PARAM arraysize="48" datatype="char" name="TFDOC58" value="general failure flag, set if anything went wring"/>
-<PARAM arraysize="29" datatype="char" name="TFLAG59" value="base_PixelFlags_flag_offimage"/>
-<PARAM arraysize="26" datatype="char" name="TFDOC59" value="Source center is off image"/>
-<PARAM arraysize="25" datatype="char" name="TFLAG60" value="base_PixelFlags_flag_edge"/>
-<PARAM arraysize="65" datatype="char" name="TFDOC60" value="Source is outside usable exposure region (masked EDGE or NO_DATA)"/>
-<PARAM arraysize="33" datatype="char" name="TFLAG61" value="base_PixelFlags_flag_interpolated"/>
-<PARAM arraysize="42" datatype="char" name="TFDOC61" value="Interpolated pixel in the Source footprint"/>
-<PARAM arraysize="30" datatype="char" name="TFLAG62" value="base_PixelFlags_flag_saturated"/>
-<PARAM arraysize="39" datatype="char" name="TFDOC62" value="Saturated pixel in the Source footprint"/>
-<PARAM arraysize="23" datatype="char" name="TFLAG63" value="base_PixelFlags_flag_cr"/>
-<PARAM arraysize="34" datatype="char" name="TFDOC63" value="Cosmic ray in the Source footprint"/>
-<PARAM arraysize="24" datatype="char" name="TFLAG64" value="base_PixelFlags_flag_bad"/>
-<PARAM arraysize="33" datatype="char" name="TFDOC64" value="Bad pixel in the Source footprint"/>
-<PARAM arraysize="28" datatype="char" name="TFLAG65" value="base_PixelFlags_flag_suspect"/>
-<PARAM arraysize="42" datatype="char" name="TFDOC65" value="Source's footprint includes suspect pixels"/>
-<PARAM arraysize="39" datatype="char" name="TFLAG66" value="base_PixelFlags_flag_interpolatedCenter"/>
-<PARAM arraysize="39" datatype="char" name="TFDOC66" value="Interpolated pixel in the Source center"/>
-<PARAM arraysize="36" datatype="char" name="TFLAG67" value="base_PixelFlags_flag_saturatedCenter"/>
-<PARAM arraysize="36" datatype="char" name="TFDOC67" value="Saturated pixel in the Source center"/>
-<PARAM arraysize="29" datatype="char" name="TFLAG68" value="base_PixelFlags_flag_crCenter"/>
-<PARAM arraysize="31" datatype="char" name="TFDOC68" value="Cosmic ray in the Source center"/>
-<PARAM arraysize="34" datatype="char" name="TFLAG69" value="base_PixelFlags_flag_suspectCenter"/>
-<PARAM arraysize="42" datatype="char" name="TFDOC69" value="Source's center is close to suspect pixels"/>
-<PARAM arraysize="55" datatype="char" name="TDOC56" value="flux derived from linear least-squares fit of PSF model"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS56" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TDOC57" value="1-sigma flux uncertainty"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS57" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="17" datatype="char" name="TFLAG70" value="base_PsfFlux_flag"/>
-<PARAM arraysize="20" datatype="char" name="TFDOC70" value="general failure flag"/>
-<PARAM arraysize="30" datatype="char" name="TFLAG71" value="base_PsfFlux_flag_noGoodPixels"/>
-<PARAM arraysize="57" datatype="char" name="TFDOC71" value="not enough non-rejected pixels in data to attempt the fit"/>
-<PARAM arraysize="22" datatype="char" name="TFLAG72" value="base_PsfFlux_flag_edge"/>
-<PARAM arraysize="68" datatype="char" name="TFDOC72" value="object was too close to the edge of the image to use the full PSF m&amp;"/>
-<PARAM arraysize="27" datatype="char" name="TDOC58" value="Variance at object position"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS58" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="18" datatype="char" name="TFLAG73" value="base_Variance_flag"/>
-<PARAM arraysize="33" datatype="char" name="TFDOC73" value="Set to True for any fatal failure"/>
-<PARAM arraysize="33" datatype="char" name="TFLAG74" value="base_Variance_flag_emptyFootprint"/>
-<PARAM arraysize="51" datatype="char" name="TFDOC74" value="Set to True when the footprint has no usable pixels"/>
-<PARAM arraysize="43" datatype="char" name="TDOC59" value="aperture correction applied to base_PsfFlux"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS59" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="43" datatype="char" name="TDOC60" value="aperture correction applied to base_PsfFlux"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS60" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="24" datatype="char" name="TFLAG75" value="base_PsfFlux_flag_apCorr"/>
-<PARAM arraysize="46" datatype="char" name="TFDOC75" value="set if unable to aperture correct base_PsfFlux"/>
-<PARAM arraysize="48" datatype="char" name="TDOC61" value="aperture correction applied to base_GaussianFlux"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS61" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="48" datatype="char" name="TDOC62" value="aperture correction applied to base_GaussianFlux"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS62" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="29" datatype="char" name="TFLAG76" value="base_GaussianFlux_flag_apCorr"/>
-<PARAM arraysize="51" datatype="char" name="TFDOC76" value="set if unable to aperture correct base_GaussianFlux"/>
-<PARAM arraysize="51" datatype="char" name="TDOC63" value="Set to 1 for extended sources, 0 for point sources."/>
-<PARAM arraysize="6" datatype="char" name="TCCLS63" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="36" datatype="char" name="TFLAG77" value="base_ClassificationExtendedness_flag"/>
-<PARAM arraysize="31" datatype="char" name="TFDOC77" value="Set to 1 for any fatal failure."/>
-<PARAM arraysize="24" datatype="char" name="TDOC64" value="archive ID for Footprint"/>
-<PARAM arraysize="6" datatype="char" name="TCCLS64" value="Scalar">
-<DESCRIPTION>Field template used by lsst.afw.table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="25" datatype="char" name="ALIAS" value="slot_Shape:base_SdssShape"/>
-<PARAM arraysize="*" datatype="char" name="HIERARCH" value="">
-<DESCRIPTION>base_CircularApertureFlux_radii = 3.</DESCRIPTION>
-</PARAM>
-<PARAM datatype="int" name="AR_HDU" value="3">
-<DESCRIPTION>HDU containing the archive index for non-record</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="6" datatype="char" name="AFW_TYPE" value="SOURCE">
-<DESCRIPTION>Tells lsst::afw to load this as a Source table.</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="33" datatype="char" name="Match type" value="Pair match; Best match, symmetric">
-<DESCRIPTION>Type of match which created this table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="13" datatype="char" name="Match algorithm" value="2-d Cartesian">
-<DESCRIPTION>Matching algorithm which created this table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="82" datatype="char" name="Join Type" value="1 and 2 (An output row for each row represented in both input tables (INNER JOIN))">
-<DESCRIPTION>Determines which rows appear in output table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="11" datatype="char" name="First input table" value="1: sim.fits"/>
-<PARAM arraysize="12" datatype="char" name="Second input table" value="6: orig.fits"/>
-<FIELD datatype="long" name="parent_2">
-<VALUES null='-9223372036854775808'/>
-</FIELD>
-<FIELD datatype="int" name="deblend_nChild_2">
-<VALUES null='-2147483648'/>
-</FIELD>
-<FIELD datatype="double" name="base_SdssCentroid_x_2" unit="pixel"/>
-<FIELD datatype="double" name="base_SdssCentroid_y_2" unit="pixel"/>
-<FIELD datatype="double" name="base_PsfFlux_flux_2" unit="count"/>
-<!-- Dummy VOTable - no DATA element -->
-</TABLE>
-</RESOURCE>
-</VOTABLE>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   XTENSION= 'BINTABLE'           / binary table extension                         BITPIX  =                    8 / 8-bit bytes                                    NAXIS   =                    2 / 2-dimensional table                            NAXIS1  =                   36 / width of table in bytes                        NAXIS2  =                 1251 / number of rows in table                        PCOUNT  =                    0 / size of special data area                      GCOUNT  =                    1 / one data group                                 TFIELDS =                    5 / number of columns                              EXTNAME = 'Joined  '           / table name                                     TTYPE1  = 'parent_2'           / label for column 1                             TFORM1  = 'K       '           / format for column 1                            TTYPE2  = 'deblend_nChild_2'   / label for column 2                             TFORM2  = 'J       '           / format for column 2                            TTYPE3  = 'base_SdssCentroid_x_2' / label for column 3                          TFORM3  = 'D       '           / format for column 3                            TUNIT3  = 'pixel   '           / units for column 3                             TTYPE4  = 'base_SdssCentroid_y_2' / label for column 4                          TFORM4  = 'D       '           / format for column 4                            TUNIT4  = 'pixel   '           / units for column 4                             TTYPE5  = 'base_PsfFlux_flux_2' / label for column 5                            TFORM5  = 'D       '           / format for column 5                            TUNIT5  = 'count   '           / units for column 5                             DATE-HDU= '2016-12-05T09:32:22' / Date of HDU creation (UTC)                    STILVERS= '3.1-2   '           / Version of STIL software                       STILCLAS= 'uk.ac.starlink.votable.FitsPlusTableWriter' / Author class in STIL soEND                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @“şÑá@@˜f^'ğç@Êcd`           @3·z,g@u™ŠnMè?ıîã(           @ ¼†œë@‰yöXŞ~?ı£Š#ÊwË           @vån·İ@2X¶»?ı¨ûÔ”øå           @i'n@`¯ºŒÔ‚?ğÑÈ ½‘Õ           @œ=¨Fƒ @ÛAlS?õã¨?ç[           @mĞKÎ—£T@e…­FJNë@°yzA           @~\]Å)ÂÆ@ˆd#ö­h@æTp‚kÓ           @“œì²IN€@h=+ğq?îWºSßĞÖ           @˜²ˆ<„@İÓüJ(h?õá€´D?           @“$&IÜ%i@’©‘…"?ìdœ :           @™îØíæ“@—¥fËñŠ!@
-yÛ%yÒÓ           @A1O X¤@!/ºÖW@	´ªË(š§           @•Šy&z»™@ŸL´DµÁ@\jÎ¥y           @ulì~p@™d)Œy¢„?Ûàtl4û           @a—Óİïˆ@R¶o§´@·[™2N¹           @v@,Bh@W†n¾?ù±·           @<SU/Ë@ck| ;mf@³Øº–X           @Z]º’¢d@sÚ•ïF?÷	j½F”           @ƒEÄq®Şw@w¹ÊF. “@{Ås&WÆ           @VRŸ¼¦G‹@x"{ x©ê?Ó×Ñò¯ [           @egÈBóJh@yÔ¦“ş?Ì÷ç`@I           @–ƒqqYJ*@ƒ7õvÕÁ@£!	`¶Ñ           @•ÉnŸt@‘À1ƒi?Ú+x£‰º           @`°mx÷@•+ÌIÊÏ	?æ$Ê±±:R           @›È¦©áj@—ß€C@ ôgP&Æ’           @™´­bıA@™æ$.a¬)?ïïY¡:Cù           @•¡ï	¹ó @œ;W—^R@:@H¸ÉÒ           @™jª;é3@p}¹ÇİÊ?Ïõ8Í	“           @“Ur3[@“Zÿ½àh?ñ……=—y~           @™‡2ƒ¿@¯°ª¼;É?ßÖÎ^çæ           @AğÃ÷4@=`?áŞ>?àPmLÌ«
-           @t,>ûy3å@]©8²I&?Åé©0Ğ&           @x/¼â=ğ@g%
-@ìa@lŞnF ú           @pó,‹&	@g#~š²K*?èiø"Ğé           @›W[;´
-@lP¹?ÕÜ˜›\DÜ           @†n‚SøÉ@nb|¶d²?ûÄøxõV           @‚AhËsÄ@pŸÇË±:s@ˆÅ‚«jÖ           @jeÖĞ»¬S@sÀğ}B?Çöh™‘           @…GVR“w@tAíF5?Ó6³ŠOŞo           @cÁ¡×Í*H@t‘$hfs[?ÿ˜ı	¥ê           @}~Ç}·S£@uP^˜ÁY!?Ì­§ûm           @a’.–B@xv•+0?ÎN¦ñÎ           @â8XT¡@x]¶wÒc?éèPd‰O           @yÑí¶ô'†@{ê—$ÏI?ç}–Ó           @XºÏÌ;!@€y WÈ3¬@(Ú5U(P           @“k±À,%]@€Ê749Ê?Ó`T¦—zQ           @‚ø)r˜@¾¢Dˆ@?â\CÒµr°           @‘ã‚Î ¨Ü@‚øL!Hâ?à¦IsOë;           @“i!ç @…–¯›Ü=d?ùh;Ÿ¡^7           @œ¼ø
-®h5@‡æ$Me«ö?Óî®‡F           @\Ï™g3@‰—€<ÇĞa@ Ñ—»jÊ           @‹œ¥z¦¼@Š7kƒo?øğk#4w           @}ÔÓ Q@ŠØ¾fS†?Äv¢_ë}»           @k"DïYfø@‹5ã’'»?Ñinã½òy           @“Óÿµ¦@‹*qmG?ÕÁ‹X#Çù           @‹P›ñÀ/@Ø][ƒ‡?Å!òµX€İ           @r qßùA@@²(›‰?âm#MüÖ÷           @^/HgÜı@‘qaõ{6?÷\;º'3           @›_]Ê@’œ3º95I?æÌö³1           @’îjëm@“9Sqªsâ?Ş†8Ó›Á           @„“KòÖÍ÷@”H/vğ¸Ù?æ=@TËÙM           @œ«(´‰öx@•—£Rs•º?ãGUSØ¥           @œo†ööğ£@•Ãg“ˆ@
- UÈ¼           @‚€;²ÁT@–\(ƒ?æõé—°Ş           @’iOó4Š@–Yº}•m@oëæò           @”ç;í9¢r@˜ª¸väyÕ@İh¯DÌñ           @*      @™h     ?Ûx5À×ğ³           @<woiÇ£@™íÔåãÅ?êCƒààÑ           @_òÓ˜˜¸@šVéê·?Ğˆécí&           @•Şü;±]@šwŸ0•İŸ?ÛÊñbáQ­           @QõA	Et@›š‹Vƒ?ı—ùµ@·©           @FI
-½fR@›x/†(¾c?Ğ	ë4¹¤1           @f-°~¸[@›æ7ò°ƒ?Ñí½ˆ­Ÿy           @xŞÏ«µ@›Ë¸Ç[Òö?ÿqMy‡©           @Ÿğ     @Ì     ?ĞP•„yœ=           @šNĞJ5@Í£zBa?Çs5 ¿Q           @™€     @ŸØ     ?ÚÖQ`Mw           @{œ(·tUÉ@MÀŠm?ÛÉg@ÿ4™           @†UcÛ2¿g@~×:uõu^?ûg9:³­]           @§Sî3]@€ÉÒ­H$ô?ÉŒ7<RQ[           @aW!9šî@‡Türöt'?êÂ®fÊë¤           @”ğ©%µ¥@‡?¦X¯¦?şÏ Ïƒm
-           @\%£Ó)ŞÜ@  ­º?m?õå•÷+           @wÙEsº(@æ>GDƒÂ?ì©­öå˜Ô           @‘JD#ŞÅS@’«ZŒa?¹Ò€R)M           @¯¦ˆ™8@šü”ô±†?·á’$D           @ˆÍ°*/@0e…i0?ŞFëÃ„           @s°—-&@7Å5Kú"?êM)¦®X#           @ƒÇùˆ/èh@=Hº_>Ö›?ù‰Nêo÷           @fÿ%¼@C‹3İY¨5@îOÅ±ó           @ğÛ~CÑ@C‹î	o³å@ßDe5!N           @–§"g÷•@E‰~‡]"°?ÙIÇÓnß           @CEÛO@G4óbkº?Ø3lPù4X           @„º°6@L}_ŸÇ?è@ÿÔª,           @ºç€¯¾@LùÆP‡^>?Ù+è/Iªˆ           @O)şë`‡@TÂSªí³?ë4VkPX           @˜DogciQ@WO×õ¿sÄ?ö¹©´e           @g¹·Ï´@WM°A‰@@!X|·1           @—yÃèe²@XÖ©Ÿ›¸?ØvÔß(            @gíté¾¼B@]C¼Ûi½?ÀnÅø"f           @—íİ·ú@c
-ôê¹?êÛõ%Û	¼           @v;…cõc/@c/ä$¿ˆÒ?áØê¼bgX           @{‹ô‚ıª@cÙ[¤CŸƒ?Ò»Ä™|š           @cf}2\Ïk@d¤Í­ì³T?õâõ])           @–'z9£õI@f,İŠÅ¨?Ï¨Å¾úT           @&      @fà     ?êU”é§Í           @Œ jTEæû@g ÓÇû…µ?ÇóàùM·Ñ           @›”›¸ü@iŸ*yfÎ˜?ë;£´­´           @Yi>!†<@kG˜i¡~Ñ?ÀûwC9,           @\ısğV}@lšˆ*n?Î Íƒ¬Æ’           @’œ{•æ‰@n–ü×>@æÍ÷Â„V           @‘ÏjÆ¥ºm@oŒœ®Ö,¾?ĞFRé&©‹           @Ø¾9×å@@pŒ)à#?ëú³å…           @“ïg#ó@pGƒ½B€?ÒI—p‰Ø           @q®9tdÓú@p‹Ç;ıŠl?ãû^éçš           @“·*•ÕÒ@q6Yp×ÿ³?ññì=Vûê           @|Ğ     @rà     ?º)éR±Ò           @šò•²ÜÏ@sß9ŒY„M?¬?—¬ÄÎ           @Œ<Ü¡@Ò)@tø#2Í?ÊqB°a?2           @‚‡”¡£@vÆç¿VK?â6)G\&           @c?”s8ş«@v¼D	˜Â?Öƒwà±=r           @cŒNM®Øü@x-5%²€ä@A²ÁdÏ           @û¡°o@xÿŠ `Ô^?Ïmbu"Z¼           @      @y     ?Ëb‚z5'           @;Æ—›ö[@ys2¡Yò?ñ¢^¨ú\w           @lìµÊsÖ@yÅj<¡¹X?Ëq´ââ           @hQ¸¢1ª6@zFƒ,9Mc?è}ÿ„ñ           @a:æAÉW@{µõÖòZñ?ÑQ*\\f           @uîˆ˜5YW@|Tê¾)ƒv?âä6×ş           @pÌ6‘@|˜ß:@ğÇ?Ğëunê
-           @ŠhKTØ-@}±+„wú?í!Ñh´Äõ           @gúí96JÜ@€<]W¢@†®9ìv           @H²ı×ÂÍô@€w?öÆ4õ?ú¬ÚúñæV           @Ş|Úæ¦ô@€zÀ«šÚ«?üzºHî±           @p²§Hş·@€—áâ2j?Ì»üŠÕäÛ           @eb;¥ÄÙ¡@‰GÉà7?ç—W N}Ñ           @jgXÖ1@˜ÿ;‹Øp?ï|Œõm’}           @‚@ÁûX	,@‚2Õ]‘#ª?ï|c2˜ä           @q1ÖÁK@ƒ/®y0·?Ù—æè,:           @†€,¯Jæ@ƒ‚†ÀXI?ŞÒœáP)_           @ö|ñ8äw@ƒ>;a¨;Ó?ì¾ËIò¦^           @ëÄ%ã@ƒgmpà‘?ãQç½n¦ä           @NRµ=@ƒ¾ œbÚo?úñ%=            @“ZÀJ¯§à@ƒü¶x•{E?ğÊÃ)›ïW           @~œoñ0*@„å½¹`¼?õ_Œ¿†I           @‚ó²<¼ÏÍ@„ıÀğ–)k?ÅráôÔ¦           @wîsÃª@…`Ù–f&O?ÊÂ©‰>I           @†ë’ ™Û@…Xõ§×À?ÃœZ¥U“!           @tÙ¨ĞY%@…‚=Ã.@-(¹”Ù           @—²1¬Ác{@…Šƒ>«F?ä¯€W««           @€ı}w\-i@…â£D–À?Æ.ñrQ¤@           @˜_&û¯èY@†l#>2GÁ?íß‹¬Œ7–           @ƒ®-VdÊ@†è*Èz¹G?ù¢³wÏh„           @sêŠÏ‡¦™@‡ pêöo@mù²É           @‡¿ï§^Ø@‡SÈ^ùS?êI&äÔğ]           @¯’PÃ@‡S:
-Æt@?ÛB-¬*ù           @”Šflèq@‡ÄĞ%Ù”?ÿR6Ñ¼ù           @‚8s>Në@‡ÌÊ÷sá?Û|è«‘XÃ           @Š0SQê@‡Ääèº®I?×ÈçÏvÛ           @‰CJ£Ú‘@ˆ?Îåœ?ş1õæ.÷           @‡_×2¿f²@ˆŞª]ß×Ú?±Eò3)ü_           @øÔm Ûk@ˆà+ÍvŠ§?ÏÃ_´šú           @>Š‚„5ŞÂ@‰=™ÛO`?ımØ”4           @LE·n¬kP@‰£i´5ã?ÏÃPù           @      @‰@     ?ÇÛSAy_           @¸FÙ£@‰¹é£z?å‚ÎNY           @•æ9 å Ğ@Šæ¥¸ãİ?¸&ª8›tµ           @‹Æk“wà@ŠŞmØÖaI?Ë†„™ô           @‘ê?Ş@Šê Ÿ'­@µím1£a           @Š&xİB@‹ú=¯?Ç\n           @iá ˆÔ›@Œ`ûJ¢`?øSâ…®„           @ŒÖù@Œõ/¡Ï?ã¶>7A	           @GÂ>ÑĞ@vıX[»V?Ñ@¯Òœ™           @yüÍ&=7y@†à¨>¥«?ìÒV'²¶           @Kß-İ˜ï@ _RÕ?À³XÿÁ           @ŸZE‡·@@ænºè“À?õ]ø>Œt           @Œ¬KîÁ@-G´zQ?Ó¿F•±           @l‚´,’0y@HZOdp?òz3z.»5           @‹(nQhü$@JğN½ı?àµÂihm9           @k38[;yß@Š ëCËå?¾Áu»e8D           @[Óİö1Aâ@ßâ‚SR-?ı´ÆtÒ           @Á"c¡
-@ù?Uµİ?Ğ|{`“ˆ           @uáĞˆD3@!Xf€Ê?Ş¦PXÁä           @wÙ’pè2@;­4Ìå ?È"c¯^ø           @¬ãâ›ƒ@[aq-?á®±ùòÚi           @›$±+Èã]@ëÂião?ÄhÖîh           @ûŠ†®Hµ@òX(8İ%?İk$e           @‚†•<@@‘8›LgƒÁ?à_"Ì„T           @˜cz›9$@‘=\0â#?ÔÄ°ÇæÜ           @J£H{8ò#@‘9Şìƒ1¹?ãNœT¤p>           @—¯Ñq5=@‘N±$?É‰F#ÿ           @„3Ûjd@‘›ä¡¼ÿi?àŞbí¸\3           @ˆ9:è«$@‘«O{A~?»!z)fŒÿ           @€‰û	É‰@‘Õ¼3ñØ?ÑcVÇ‘Œ‘           @( jÇC@‘ûÆí$_×?Ä5Úø„
-           @p?:ãŠtè@’H¨?ÒÍ×‘¼           @Š ß8B@‘ıÄHŸ?úÈ9C+ƒ           @Ÿ»D¾”[^@’3¼ÑÑ2?çxˆÑ™hC           @k‚ú­Ù¾6@’@‘:d
-?ñÑó@
-f°           @”í…CÆÉû@’X`/-’ù?ÇIÒi>n           @–´©¦z„œ@’u°>~?ü-.5¯ı           @™GQÒØÄ5@’vû,BÈ?Ñª¸†Z®           @œ?50ë@“ `š\‹?Ö +ş¦Ãş           @gîGC~½f@“¬™£p?çSR±‡           @‡¹³æûÓ@“²46S‰@ué¢KóÔ           @Æ@C@“Ä‘Š1ÿ¸?ï|f—‡ï           @‰Ş¨lÙÅ@“ŞÅF“}?ÇP‡´ÜuF           @‹çHìUaI@“ï¡*L?Ùsòèn           @S[‚ï¦C§@”ŒåÚ(«?ï­QÌ-           @“¬Ñ=„›‰@”’ï½›?ÓŒïIÊ6           @÷»Fş!í@”+Ëû"5®?äà×É÷G           @†YÄ [W@”{Qá^³?ĞÇÙ7áhˆ           @pm¨ ±›@”`5^r?ê¸t¿&B›           @Œ‚[¦'"Ÿ@”•¹ªÓ?Ù~áÕ¹           @›“j6B@”¡«²v½?Èc=ëğ_ö           @KPPÀ€WÁ@”Åóœ`“Í?èü±“C8           @8ÄHÂL@”ô’‚ü[k?ÖO<]ÄG0           @Â‘èDŠ@•~„êù?ò†—‰„ÅO           @Z…Ïd9]1@•S®\4©?à?Öç           @š‡Ğ`1w@•°Ş(¤Ó?İÜMŠ„ü           @Ÿ     @•È     ?Ğ¨êŞz           @jáElõ/@•ÔÜéé?Ğ•ßL\ìË           @|j†u¢ÈÁ@–%tR£p@GŸz'kO           @š Ñ¸@–@û/8ì?Ä$âõƒ¯           @OšˆâF*@–¿#ÌÎ?çĞï           @…A3Q.jI@–êjÎ47‚@ è¸…Ÿã‘           @šÜÿrEƒ]@—3èüp\İ?úw<ÊÎ±Ü           @–«“ WB@—Šk˜ïË?àÈ{S¢ú           @™@ÚËAÍî@—ÙÌgr˜ø?Ç4Ğ#¢âŒ           @XCÜÕeÄœ@˜<­¢†°?ş¤M{
-¢À           @~ /,Ùûo@—û!ÿÛ’“?å>l’µ¨F           @aBÏß‘O@˜0éîúxZ@Ö¿|¿tı           @oWdP}I€@˜a[vßûİ?ß“I#£È6           @œ_A•ºQP@˜xS`=Ç@çÔ ä2s           @’èÄifr@˜sÉÎCq?İ€©c6D           @’µv¾Ğ@˜ÇÊd—Î…?İG°ÁBŠë           @ŸÌ     @™      ?êçMZ˜(           @…r»¼ºI@™"Ú8@ÖÁ	´           @˜ğÎ³+şú@™1:Ğí›º@|nIš½2           @Ÿff‰h«@šCÓêd8ü?½}áx53.           @“ó¯:à@šAş…^kû?ö_tÅ’š®           @œ“3B[d@šœmÓu@.J‡Ğœø           @xXUä@š¦Şü÷‰ñ?ş<Ÿwaôö           @,      @š°     ?óc,3p«           @ŸÈ     @šÔ     ?ÒcÅşÙÂ—           @•ŒË#Qê@›&Ehß«„?Ô"iX»Fˆ           @Ÿ´àï@›Äb+*ú?¸!¥û‰           @™…päX!è@œ²1|SÆÌ?ì«iY§           @œ$[^ı9@œğ¶Î†D?µ°wøÉ™           @£ÊF›v:@	:ÑgÓ?Ô?ë¹tÜ           @^€     @4     ?Ìù‚¾™›           @š,±N$YK@nô7Ì§#?Äïç+F)           @—›mLEŸ@È¥#?ÏøÁm÷¼…           @—eÔ*G÷@çIØ»}?ÒÏü–Ÿ[ê           @Z€     @è     ?ĞQŠı:Íe           @™ß:ĞOgb@¿;ñó@@BÔCº           @eh?ıLe@,&İúO?¼/Ím—ãQ           @ŸÌ     @L     ?áVMÄJ           @›ƒpv‰@[ÀÇ÷Oy?á÷±fE3­           @WB•½º@`wqÔ–)?Õ}ëâ‹g           @“ÙôDÜ@¾šßÙ]º?ùğaoÉµ‡           @•üÄŒv…@Ç+xÒà?ï5?Ë           @œe¬6–Õ@Ÿ9Õr_?Ó¤M²)å’           @k      @Ÿ     ?º"ıœ4Šj           @cyœAÄı@ŸùÏ‹q?ğĞQ—J           @v      @Ÿ,     ?¼<ŒCØæb           @›‹“%eÛ@Ÿ_ØGgk4?ÑœíébO÷           @™ô     @ŸÌ     ?Å¥.ªBs           @cÀ     @ŸÔ     ?·èeá           @•XÔ~ì@<Á^è–Š@?ásŞÛ|æ           @„ –IñÏ@T{»ÌÙ|?ü/´Å.           @•T˜3Ç¼¦@ZÙ7^*!?Õ”»EÏF!           @F†’%¶!@c’©îkGş?Îcw9±Ä           @VÅ—êW]@hˆHİ§u?Ñr
-Ï2Ë           @lTj\ş„@s†(¹ºÎ\?ğ¬[ïÀÌõ           @‡z–šÂ¥@xH—áñ?ájº
-a‘           @|M×’‰Yµ@x²Ïş„Åû?È6(ªp~           @„ìÈà­eô@|òLVøÆS?äHM Qª           @h›Ì¬5±E@}ÛµLQg¥?İoÒAáY           @™.›ÕbÉ@‚4}fä¹^?á‹²ëN           @çwÍöX@ƒêĞR#ï?Å…           @io|ªµb@‡C+·§?ËrË]Ş­           @‹Œt>Ó©¶@ˆP65‰‘Ş@"ÏZvì           @²ıé=Ó@ˆ‰‰˜<”?ØÌ¼«ï^           @c1İóEt@‹ß@µLo?îãâ®¦L           @•-‰ùÜÔ–@‹¦¬ü·«ë?ØMÇõ¤—ü           @{T)Rß¬}@‹—kşÚ¶É?ş\Ö#2+           @ƒçè2ÎR@Œ|5í U ?¶
-y×¢           @Œ¿³`¡œ@\ÂòßÜb?è‚">Í:           @‘$3YŞ'@aW¼(?»‰‘Dıê           @’ƒ)[Tû
-@ÿÿÇõX%?íiÇã£AL           @‰«š—øæÂ@‘Ğch²w#?Ám­>           @`×úXí@’LäÔ2át?¸<±ñ“           @Ä     @•<     ?ª!1€Æş           @Œ‰Â5·†@•”€úÙ?È´Æ‘+É           @x€Ÿ/ƒÍ@•æ§œ?Í• <ë           @œxL ¬â@–ÎÛızôó?õO¯1rKÑ           @‘czÈ;s@–ï=ôr?Ì
-º»®ÿÛ           @rYÃğø@—÷o_ïâ?ÿ Ò®5           @“"â­Fİ @—ô4/õÊô?Õã Ì¼/           @š?¿"j4@šN‡©Áõ?Ø-‹~           @qsß¡X4@š]N
-´p?Âè~+I           @h„ÔUŞ@›G1	X®]?³„¼Ø‘tp           @–´œ'(â@œ ™˜]·x?Ä‚Í;¶À           @7      @œÀ     ?¾Ç{˜^           @’1¤?YšO@œä‘> Å?êÌ©;|â           @èWŸ@Í@"ÔûÔª?Í?#&~           @Dv³ ††‘@J	"ºlF?´u^¯äÉ           @Œ9xâŠ™@'ıÍH‚@ Œ¥{¹v«           @˜ ØRn2@7Ò¢åô@¶º¼z           @|      @      ?ÁiIh•É           @†Ø     @      ?É‹¬;`ş           @™ì     @      ?òõîX"bt           @›Ü     @      ?Ôğ¦ölÍ           @‹X     @&      ?§ìáÒŸ&Ó           @‘     @"      ?ÿ*2¦(Û           @’     @(      ?Ö¾Şµ†YÜ           @‰      @*      ?óIvçõ           @™vÑ:§éş@0$L!"Q?ÔÑÓÓz           @€¡¸U@7ïúebÕ?ÏÜ&SšT           @™À     @:      ?ë@xY           @SşyLÍìİ@;Ç~†âS?ò§“&«O¿           @œ-"<-x‘@;çÒ*^`x?Ñ0ä9u·           @      @A      ?Àr?”n¼W           @ddŒÉô@A‡	ä$â?×¶Ã_Vx           @‡?†-şÓ@EhgÈ~'ı?ªö sÿ           @š–’L@‹@FD\[Á?Ûc¤ı           @a[O•)PÑ@Kmá&×l?øó²©"§Ô           @”şøM—°(@J¿8èq?ÀŒYSÖßŒ           @p0j8ÉŸ@Kóºæb»?Î7ş Ø            @™ó²Må.~@L©ş®Ğq?èÌÂú!J           @w}6ëGë@Q$Y¹.'@0íš®#           @•ºÕQON'@Q•<ŸÙ²?ÀÜdí¢‚´           @„8)
-åÅ@Së¯Í²V?Û(ÃÎŒß           @B±†ÚÛx@T÷a‡´T]?Ö1Ï\`sÿ           @‹¼r¶†³@WDhÜ˜A¥?÷–›˜
-P           @—Î;íZĞ9@V;„Á¹?ÙgáC	\           @”Æ*¤E@WU¢È’?ğq8tŞ           @‡]	ßäÃ@X~‚gë?áæ£˜Ñ6           @      @YÀ     ?¸0Ô­É}Ÿ           @{ ˜Ûlo@Yó†¨Éé?Õh«ƒr"¥           @npö¡“ª@[ù#A@ t$Ÿßâ           @‰óÑ§@Zı«2¡wŒ?²â¢cÄÎ>           @€ßÖ‹ƒ®@[ÂãH¬æQ?»±E¼,)           @–Ú¾5İÃ@^F€6P˜­?òìøDd           @ƒ6£rÍ&ê@]§Râ«?Õ½ûkb.           @˜‚Æ5II„@^uq¼6~Í?æ“å            @•ƒ-‚F@^ºJcö?Ã. ªÛ!5           @‡\(NìÇ@_d0±ƒæW?ÍµPVb*&           @n3I*.øŒ@_|ÁìØù3?¹­f÷Öƒå           @x¯É¨O;y@_ƒmñP?ê²9P÷Ëz           @„±Ú-àúˆ@`·úÉ?èxğÀ[¯™           @eCO\ƒ±@`>`..dl?çt£ì1           @ÂÄ-B»#@`äFê”qn?ÖySbZß           @nõ¢xŞ%Ä@a\‘§>?òÅmÿÉ           @}É^âÄ±S@aßüãGı?â{á³™K‡           @(      @b@     ?É4[åÁ           @i;ñÖ’˜@bT£¨<!?Â¯_~§Ê           @Š7ğ Cø@b;h: ?Ô'ººtE           @ƒ|!v@b¦óø]õó?ÌÕŒ‹Ã           @‚–„w@c*ÑNïL?Ò4ŒC_Ÿv           @™ÃğĞZw@c@‘YI0ó?å¿¤<X           @–˜G3Ä@dŒä{çU?ÃşÅpQ:           @      @dà     ?Â½İ®I           @¦#Ss-Î@et)Ú1)?äÎ­=*           @… ÇÓ¨Ëc@eèì7ÃIæ?½Áøö'Ã_           @Œ1ªGDï¢@eœWi¶R?ÇŠêh‡õÜ           @Ÿ:‚Ç@f¼ÃØÄ?Å^&Êd±           @•aw@f¦/ü-`·?Şcí5a           @›znTÑÒ@f”ÊKP?Ğ6Øà·M           @›‚KYu@fÏ·{Ù?ÿSêCÚ'‡           @n^ÊÆn@fÑ ˜cHá?³ÏëGµ1Ø           @–×» õ)@gQ oq2?Ñû 8Û           @šßÇ}Éñ@gº!ÜU$H?Ä
-ò‡;o           @LûY@gÄBä;Øv?ÕåŸ¤\w           @R¡¢Ñ÷B@gâÎÎFd?´ü\ØI0           @€„Îf.6@gåÛé›Ì?½ĞğEÊÅ£           @€ÂJ2±@h«ø'¥ö?¼õZÂ{aÒ           @f;F¸Æw@hUlªqĞğ?ïŞ«I           @šD     @h@     ?²ûÂg!`           @Wè}cs@@hçŞt>o–?¼q¿âÇ¥           @nĞª×º“@hõ£Z]%?æ •„¡Š           @Ÿ7nÀûò@hß-§A{?Ácb·           @Œš1A­Åÿ@j¸äæÈ<Ñ?«ò¦?“r           @}ÿË	^›¥@j²Ã–Ü
-{@7·íŠs½           @~¬üë4k@j;ÈÉ?ÑâòyTˆ           @ƒ2"D–@k!D²f¾F?¤ª'Í±…           @.éc'Ê@koÁ”¡™?¹vÈÚ,X           @–k„ıê¢@kÆ 
-‹¤4?Ö‚NÔ}$           @s‰Šşƒ@k´y³]Àì?ÜİÖ>ò¡           @›-³¤×h@lu?›À?ÁVĞ$           @•ï“TÍ:Ì@l”Å–y<°?Úœ[&oÔı           @”D‰¢j@l½ Ó\×•?×‰Ó{           @}ëïh*§#@lïe¸‰®?Ü
-Sú1y           @†˜÷Ô]@lÖ¶}À=?¼‚GõÇˆ           @ƒW1z…GN@mŠÎİ¬@éıœîm           @ƒÏB¥	B‡@m¯ƒ}¸àß?ÑP:YWØ           @—Å/Ğº
-@mÆi—Bp?½BŞ6Ø³G           @‡'d~¢¸D@mÓĞOH³L?Åu1[ÇU           @“ec€@o1´¥Ãœä?àÜì¸*½B           @e²7®Ùxj@okM{õTê?¸è˜ÿSÚ           @PüÃŒs…@o÷Ç”v~?½+êXÎ¯–           @€¿|ÃÈ_á@o½ü[U2P?º~0/¡*           @’òÇ´Ç@p5Âà@:9?Ğ$BÑ           @-ô¿ØuK@pF
-}å}š?Å¨Üî(           @CÁ‘á•]€@pÃäˆu€?ãÆ»’1           @VZº2"@pè›v§Â2?¹Ç•Ï Í6           @H°¦@pàrè«Ó?²1R˜K†           @(      @q      ?Ñ^¬Æôö}           @˜¥¹‹©Ö@qÏp™?Ş0ÖÈ;Y           @›zÇ³Ñß@pä¿?ÁŞÛğzÄ           @™ê³Ò[¹/@qi»†T¸
-?Õ¯½ç           @m¶÷ È9@qaVa½İ?Ùeıç	Ò           @ŒƒCL®Ö¡@qX:µÆı?»•ŒbÊ¤           @ŒÖ°„¾Õô@q]İ¢°³?ÆıÄ†¦’=           @}šÉò¹Øê@qìå’Te?ÅMÃÈ—€%           @ƒ     @qĞ     ?´PÍRÚèœ           @…ùÎúx@qèêãèj?ñg³FM:           @l¿5´‘@r ©¨É
-?¼àŞL¬(           @‘Øí¡(EÌ@rm }2R?æŸş¸ı           @ŠÂSµ„æ@r‰r³‡	Ü?×rjÚ¬†           @Fs¨˜¿Š×@rÏ8êïq?À Öö°Ç           @‘â-ºH@rÈş´æ)?´Ò¢İ’Ì           @qX69@sÜåD,?Ê!GéÜBZ           @’  ¾á@rşç3=q?¿%vË$¦@           @u¬ƒÇ@s5@s2bAj38?Â6µ‰Æ²˜           @q¬¨ú
-Š@s~I{ 0²?À^oeÅ
-           @ŞfÎTÙ@s¬±Gë”?Í.ÍüÊ           @rôEòŒ@sÀpÆ‰<?âı5ö¡ôs           @¥‹Ñø(œ@sÀ1oó·è@òœÒJw            @•CŒ·Y@sôròn•?º² qåÔ           @K|’ÉN@sësÖ€•?¿Š'æTX           @€Ÿ’¼Z@t$f3-É?Å˜„'~           @w:=g@t2Ñq˜Æ??±["SJ¯           @‚´_IZX
-@t„†ìúøÇ?Ğ”H¶}ûÙ           @”ûï[…@tµ)Dl
-p?±ûmqx0           @€™!Ø±÷@tÏãHFO@?Æ¶ü Ô(           @=7İ2—6@u8î‘Ü˜X?±‚M­ş×:           @“;§°¡mc@u0Ê?Å÷ÛÁ¸9$           @Œb´VƒW@u8–&‡ÁÚ?Úx B_           @      @up     ?æo7Åº<²           @cÉ%iÀ&@udôèIu²?ŞœDÏ‡$           @`¬Á¡ê…@uÎÍRPÌ?¾ÅjW›S           @Šb–šw…"@uàº¥.ÌÁ?´–°P_`[           @òç«nÓ¨@v
-%L…àk?ÒœY,ãº           @‰ş#İ¯g•@v+Ü˜‹Ü?ã'DU—Åü           @Ÿ_{F@v„¾y`„?ÛxÓaRœ           @       @vĞ     ?ÄúÒ´7¨î           @tš†ÉXi»@vğ_<‹í?µXÃ¿ñ           @œû¯?x@wF
-eŸà?ÄÜ, M¿           @ˆ‡2Şûé@w]b«œ2ò?çk¾Gä           @e´J€G@w„TÅTV…?Á!œë.÷n           @—Á–8J’@wÒ?Áœ?×Š¬KêÚ           @”j„Y§õ@w‹Ú‰j?¼”¤‘¼25           @oşL%„2@wµ'\3Ç@?Ç?Åäñ           @”Íûtçyô@w´±>KS÷?è&dXÉŠ           @•{ÑHGŞ¯@wä¢‚´7?³Äp+»ÙÉ           @w¼åj!k@x"o¨?Õ íÛÍ‡Ö           @›Ğğ‰d—]@xj3	¹/Â?ÒŸĞ›ß?{           @~2—6ùŸ@x•¶Ò'@4ú™pä           @V€„Ë¿@xå,•Z¸?ÔóxÎ/º           @ŸÜ     @x      ?´ù4é_ÃB           @€ÚqŠ?Ã@xéŠ1MŸ?»šy|™ïé           @]óÈS¿@xå>Àï£§?ÎSºé£Õ           @yBû?Éú<@yTfíÆ©d?Ñ¾ºáæ           @_Ñ¢Pm¹1@yãÖDÄ¬?ÄÆ-H           @W_Œ¿îôæ@yÏóÁ=M?ë>ï=³           @ŠP0õ
-7@z	qyÛyÉ?²d1KÆY           @€î‹¬/#@zöQÎNs?´Êr*s~¹           @ŠjI@¥@z‚¶gï?ÆFîÆEÅ           @K|D	c·š@zÚtckcc?Ë-éÌ >           @š$áªp`F@zÎÃUá+×?Äæí‡êê           @‡h„#‹>@zòÎ%¸ìÓ?Ä
-¡˜ªEÇ           @iúxp@ãÂ@{c`şÙ?Ë2“BW           @›ÉJt¾ú@{Ett‚}?±ìgÉñ¹Ñ           @”¼È2 ¿^@{@ÒÅ:ó?ò:é`Çer           @‰ŠÍÎMb@{Æö¬–(?ğ3Ã5´r.           @’Ş†u¾­n@{üš=jâ?¸“¤H«¨™           @Õ•3Õ[@{ù`1M’‚?Æµ>‰æÕ;           @‡ÿ }Úö@|ŠÅ«Õ?ûÁ àíÈ           @|Ûá¯&N@|:¶®i¬¯?Î!Û üå           @‘†èjÜ&@|8«®fR?Ğ¨İg]Ó           @fâÉRÿ	@|wŠ~õk?Ô¼ê±QV           @•–‹N×µç@|àÍrŒ\/?ĞØ1Lˆc           @TÜ¤6Y@|ïò?ª1?Î‚.p:İn           @p¸nˆH¯@}}«˜ƒ|?èšFå0,ç           @•CÊ=™Êö@}ZT‘áF•?×Ê[{           @˜¹°~ëE@}bÌÓ(Ğ?Å%ˆÎ\           @yÂ ¬»@}qÂ‹äw@é~Æ¥           @Ÿ5@-@}Æk”ˆ_?åÕfKÌ           @‹0     @}°     ?©†ˆ®~j           @’Ch±å~@}ÿ_Ò»•0?Àn¹†&[           @P°TÍ±¦@~ÊÙZ?ÔAlñ5€è           @s*ï³Tš@~/\+„˜É?¹,­%€æ           @üƒ˜şÍÚ@~1cs?áC
-(ã            @‹Z\Oé@~x †ï7?¿E‡}ñó           @”’Ş‹¤@~Ü&íä?Ía‘\„PØ           @(      @~à     ?¸÷9f            @fÑ+Å@~ôDïˆ"?É:fò~Gû           @‰q½İ_Ù@~ğ½˜C?Ó¢\«&ßÖ           @d„ğlå)@Xç¢>?İŸšuşÈ           @NN!Å¬@°ßYBV?¸¶;Şc&           @œ¬mjëw@Æ¼ÆÚk?Ù4L¸®x           @‘¦$ ğÑğ@êÌªšˆ?¬28ÊTw‚           @—;2íô@€BÃçãI?ÌOcR#‰à           @x[ˆ|¯Í@€ÚÄ$t*?×>œY_cq           @Øp–l‡@€	¥GÉ`X?½’1ö£+»           @™2„W`zò@€æpá£x?Ò:ÜjÍ+…           @šQM'İ'@€5Ügµ^Ô?ò¯ Î9¾           @A€Î8ğ÷@€2~YJı?ß²ƒBˆê           @d5ºqÈªû@€Q¡ßZ.±?Ö¬I%j^           @}÷e«æ@€I4;Ác/?À*÷ü¡ù           @”(Zw|í@€X+‘ s½?åí´Š/~
-           @š†¾]è@€q·¦VR?Ë
-)¥F˜¶           @ˆ‡»Ñu
-Ä@€X„µÀê?­™JVä‰           @~_ì,|®@€}"I?5?´R·<÷           @“_|$*Bc@€…ígû?Ìo¨6           @$      @€˜     @iÍYaœ           @Ÿuå‘ı@€ÅñX6[Ø?ï AŸ:d           @› :Ëk .@€Õ©ædã?´Õ+ğf           @ĞEƒwvü@€Úø®0ƒ3?â×¨0$"           @Ie®X-O@€éVÈˆÄ?ûäÖ£0£¥           @ûTïÉÛ@€éòÕ‘D?ìpêæÌS.           @‘¸¢æ§W@.á½Š¯c?ÃÖ÷û<W           @”ã¢€úË@K-@‰Ğì?¸ÙJóª]           @š/=f¿“@tkİò?´õÁ´#3ª           @smólÔ@•Iö?éØQ>¯/           @]İ¹f@¨ñĞ{?ç£±fp‘           @zÏ³?8´@ÃS{-1¾?Á›Úe?$b           @œìØîd&@Ê-µí†?ø/ìƒÍ•×           @7EI3ñ2@Ø„ŠTí1?àÀ¡î™İ™           @˜$<"ÙØ-@Ú°¥#xü?Ñ,’í
-           @“]×øW“Œ@ŞÂù¨?Ã—U¾           @Š]	p+Õª@‚][)6?Ù¡Ê§‘§€           @“òÔZ@‚jOJ?Ç@GÕçú           @XÀ     @‚0     ?ÂhñÄ.]           @—Hu4j5Ÿ@‚V¹£«Üˆ?ÚEQä²Õ           @Mm‚´A@‚w
-YáÏ€?ä~â«/           @ˆàêM“@‚»Xq7?éO‚ıƒ·           @|ÁÒW*œa@‚²|O(Œ?äÕJ>-            @5>kÄê3œ@‚Ğ—Ğl^²?Æ—¤«bÕ           @™ŸrÑÇS@‚údV‡ş©?ÏÚr¤š'           @5·lÕÉéù@ƒØíO*?Ë	 Ÿ<–           @¢c|ıI@ƒ#*NbÔ?ºC7IUT           @WxÏ Y@ƒ9îâ2Ì?Ş7ÿe ¿           @‹\[Ñö@ƒL H«w?ÀÊó[Û›b           @€Ò/’‹Y$@ƒ[Oñô£?ÒI·Z³A           @–;–ÄÎ|˜@ƒ[tÒ«ö¥?¶[h¹é"           @›ƒ@Mb@ƒˆ´›ßãı?÷‡é¿O£           @pb¥
-ÎšÂ@ƒ›2\š5?Ãq@ó`í           @Œ|=Œ—î¢@ƒšbI±?š?Å;êºS           @lÂQ~â!@ƒªY6h?²7O£p           @ 9Qgp@ƒ²Sè¢Æ?â9î^2	           @ŒJ\>,@ƒŞ™ØAÍb?õ\×‹e­¨           @F¬©›/@ƒã*™D©¦?Årë,3y           @˜l 9c@ƒß¿FêØ.?°?Õİ%ì           @p-M‘Bô@„'N{¦?ì#1X#            @”ñF“™´@„-š_
-²?¼zL4ğ           @(      @„P     ?Ã>D%—uÌ           @–~—æ@„OoZ¾‘k?¶Vë¤·E           @‡Q˜¯‘@„jüáùYV?Ï—|}|>           @›«ø‘°@„h&ğØí9?Î¯8>3$            @—E q%‚@„e M2¸Ü@›rh?ï˜           @‰ÿŠËuk{@„r’Øà&È?Ëm"(O±           @†@2¥ÄQ@„¸*ŒZàÇ?ÃÛ:¨<e&           @{o7tœô<@„Újí5Î”?ÁÜ”‰5ï¬           @‘ÌN°U¿@„» aNNø?´ªPjGÒ           @‹}$n Kæ@„Ş:N{ŠT@ êÃÏZ           @%¤ç®¯
-@…”ƒW?ã4¤=5£Í           @`xhîñ¡@…`{K»_Î?ÇDé2C—           @ŒÁ‡‘0tT@…~üL™²E?ô¸æ®Ò-‹           @™f¾ÊFşw@…w'¨§/¹?ÓøaÀÄƒ           @7¡H“T@… Šhúô?Â{5â›           @;oĞæ¬@…©šÌ¹aÃ?´(<údA           @‰fì-@û™@…Ğ–ºÑ?Ì¯‚öôcQ           @€oªÅ§@†F|Ÿe]?Ã…BÊÄ.$           @lFºC…@†—65l[?ÌŸåê~‘3           @„¡¿ãt®@†Ú ¾D?Ñ}ygİÎà           @‚¥L‘6NJ@†eT¯£?ß™¢ÇÑ 2           @ˆ,/Ë!Œ@†;c@ß?¯lç§yÒ           @uœoq­@†7*GşFg?ªöÚS|            @“U¥­LUn@†RhiSU?ÊŠ	ª!           @†hçs«ûà@†` LËÇ?Ğİ'–bš           @›\UF›O@†{Ãÿ(®?Ò2vúG           @š’F:ÀÖa@†Š.8®,?ç…V?Ñk‡           @ŒşŞuTŸ@†šT7½¸?æÒ~„>ä           @œü¦X³1Á@†ÆÄ˜zI?ô\Ò]ªt           @ŠèŠ´©‹@‡;œÎ†°›?ÅV§è"s™           @‹æµF+@‡+î!?Â§›ş™ûx           @mxz¡Ö-U@‡+–ÌV@6@zxoLU           @•»a8>dŞ@‡#Lv±­?È#7p÷;‰           @‘¡~°EŠ@‡9¥Æ?ï’qÍ“           @—6ù!Â @‡e¾üt:‡?¯îÛ›Gn           @–Ã-À^	@‡lb†£/•?Ã °ö>Ä           @š$“5Çàõ@‡pbÄ¾g?ÇÏ÷TÅHN           @~–AÄw@‡q×%?¼š‘ºšr           @œŸfŠ*.@‡u77-?Ğw,Oú           @t¦ËqÔ°±@‡‚]¤¤V1?Öv%fÃa           @“kmş<s@‡ŠáH3€5?ï¨Ï&ı­           @†˜32‡óa@‡§·ÂÄ˜ß?´cí_í§           @T5œµú@‡¥¸-c(r?ÖèeŒo^ç           @SôÊó²Öâ@‡ºÂêd&@à©Õ¿$&           @›şƒ;AÉ@ˆB^$‚¾?í_­ë–=›           @•ÔœyJĞ@ˆe@t’¹À?ı~'“ç†Û           @†ÒD_F½#@ˆoLbE™?Õöfİ@Õ>           @†2[ë@ˆtò¢°"?æ(À§;Ô_           @’÷Ä }\™@ˆy²¬µÛ?ã¦eÁA
-           @€–M›Æ@ˆ‡Ùõ³½?ÜÚ¤«!Ğc           @˜£Edó<y@ˆ‡ÉD–Œt?´)-–¶Ô           @iÙÉôÓÄ@ˆÉ™§CJq?±ZŸ³yŸ           @Šu9i}Ú@ˆ¤¶2QÌ?Ñ¤˜ş”“B           @Œ /¬Zar@ˆç€q”àŞ?ıGdQÓÎ           @‚­Øg¦Ò<@ˆâ()<Ò?ÁCğT.:¾           @•
-d|‚ùƒ@‰>ˆÖAva?ÅÄÄú           @iõ¥/-K@‰Kx öÂÜ?ìsºô ™F           @œ1<‰	@‰aM·1ö?àÔÈF¦¸È           @ƒ‡şğe@‰ˆkŠy‚Õ?Áh3ƒ¿ŒÂ           @•¦wÊgî@‰•æh‹8ƒ?Î–	YŒ           @uuØ<~¹@‰Ù÷¥¥q¾?ÈÙiÇä‚.           @œƒPÓª×@‰ßiy‚f?Ş,ÃJ….{           @™Óîê—üå@‰Ü¨nÈI?Ã#<TÄ›a           @‘Ï®tr@Á@Šˆ–€Œ?æKnIKƒ           @f#öIdá@Š2V|?Ñ¾‘Ç\Cî           @RïSÂÑ@ŠĞÚf¬?×\%–jv           @Šîw÷&@ŠˆÔÑD?·×ƒ–¥WW           @ScªÊ‰-@ŠP”ùWy?ãIj           @~›}&³¦,@ŠHh#l¢Ö@¹`Ú˜Y           @œûŸç@ŠZG¿:f'?ÓbòÿÔ           @tC.©¡@ŠbD€Ó¥Â?Öò¦Ö§\ó           @Ÿğ     @Š`     ?ú†`û×[           @™Å=îø@Š~¸ÿŸÄv?ğÓFa‹k           @†ç:tpA›@Š†cUx  ?ìöÈÇ’Ù           @“{ Óú~³@ŠŒXQŒŸ?áı|•˜           @|K—–b@Š™Ó‡¥?ÄÅlDhô£           @ƒÏã&R›I@Š§ŒYU§£?µ¯\Ì           @“     @ŠÀ     ?¸´$+[{           @–@–7+¿@ŠÂ ÂÆ§?ÖŒË	kŠM           @xNĞ#Ä‹Ò@ŠĞ %uòŸ?ÖıÓæ           @•`Æ¬¨eK@ŠÑûI´ûÁ?×pağÌ           @Ÿ£©oÖ£@Šø|Ïº>?ä%)æ~’Ê           @|Ò—¢ìÓ@‹“´dµ?Ë–KÏ3¨ı           @ƒè…ú¯‡%@‹¾m-²?¯ì½kw¼           @wÜ¸L™@‹FD©û ?Òßé8Érx           @…ƒÍ4’	@‹~M2C?åÔGÅ’¸İ           @pØ–ïMq@‹^‰ƒièÒ@1x¦úÈ           @—+eee`@‹œq³Áâ?·JKNÕ:>           @Píò@‹¯"¸—Û?È›4zÄì           @b´¡éC/@‹Ê?´°™?×ö<¦A|t           @ÆÛhñiC@‹çzh35´?Êj»u(£           @š7“ÇÀ‹@‹ôUCˆ?ËyÑxµû—           @]©R©!Í@‹ò>5'©?Á¶À-Æ½           @‚ãÉ ¤5Í@‹÷S ”.?³ /+j[           @„.—ym\@Œˆu?Ã€Ñ™İ>6           @‡è     @Œ(     ?³_B¶¶j           @ˆ‘:áïÑ@Œ3‘drSL?°n¨Š           @} ŠA÷ìJ@ŒŠÔ/Ë7d@ ·_Ú           @‰
-sŸ¤L#@Œ…ø[Ÿ]1?ÇLÔJ—±Ë           @…¶^©eè@Œ¾ÛæøPı?¶­ Eé³           @xö˜ßÌE@Œés½<•$?èiæ˜ƒô           @”òÌE@Œö£02±?ĞÃôÚrQ           @v™S-â@üZÓXJ?Öt-X´ü           @Â¤^Ğ#@©Êûa?Â½)JE           @uäÙÙ¯
-a@4qå?ß ~A]î           @Ğöö‹Â˜@W ¿İ]È?É·Ú›OÃ           @€Ä†_³@dUHÛ¬¸?ø'‚íÂHT           @™ØÜ¥s€ú@Y½Y›oÀ?ÁÜ™##/           @—	Ò*'%Å@lG)Ub?ú++“,
-û           @d-ız¦5@….×ÚW?àßâr¤ú           @Z¡A)'£@Š»ê'"?Øåı;mæ           @…ö óÛÇ¤@™Ï±âLw?ñ8Rªç;š           @˜› o6Ü@™5BÑ/1?ÉÃ¨P°¹           @s Í
-@­#P1µÁ?ìm?e©R"           @œQa~
-V¤@É¥•òÔ?Ä`?RşÖ           @XP¿¾ ™@ê_Mw{ı?ÀÒÀÛÑ‚           @‡RıÑÏ(@Uáo´«N?Ã´$
-•¬           @š(¢Õ1–c@V!Á‡µ?ĞZöcªğ           @wÕiiG¸G@aYN¯?Á è           @…/Î¾|@p€P¹?³¹špšÙÅ           @Šsç¹ái@vƒ‡OŞ0?ßá‘p(Ï           @†x„ÓZ@}ğ`ÿ7±?ØmÿFô†ş           @treÕÉe@¸¸›ûå­?âğd„æ           @nœEç@á”LØ¸?Æ?DG“~           @z€áOŒ1!@Á²¢ä×?Ò0û§%’}           @rŞZ…y†@äà-¡?Õ×ZM)¯ö           @pxÏ?@îí½é*?ÀÜ.S8÷F           @pŠjÌ•4D@öz¾ÁD‡?ı-«1c¬Ü           @¿ÉOV©N@ñĞâ6„?·heAÂ{f           @s!óNÁ@¥Ò²?Õş_ºÎ‡ğ           @€zkz£õµ@pcí¥>?ÿÛ(ï˜W           @S$íåê@pd¬ö}?Çé¶/yq·           @„fy=:Ï@wkLÆ‹?ë8çî§4Ë           @ŸÈ     @x     ?É gœê           @ Õ ä+@†m W†?ğÜÁZw’µ           @FX»í†M“@¤P>§L?ÀŸ~tÀ²           @’^Û”¦@¿*OILş?ò¢˜N¿           @q4:¡@ÏÁ út?İ{oãB
-z           @›$ïÓ¶ü@ì“Wÿ?ĞhÅh'¸K           @ŠªİË÷,N@Ì„¦?»Ff#tm¥           @—½û“˜7ı@éë/?ØŠù®½ë\           @“–Ù*E8@4ÚîO?àÎò”Sr'           @’‘»p«z@&´ÖÌh@Ğ•q5           @@­nŸÆ@/‡Öi?Æ8üìCï           @h/º$îo#@OA 9˜r?İ¡Ñ!¦¯u           @l¿“‰}‘@qDÎmõ?È!ã¾ê{           @‡"V¼²pœ@³Ğõj?êO–)PÑÊ           @˜÷á¶c@³ë=IO?¶b$a«¢]           @šT}Š`k@²ƒ½ŒH?ë`…¤Gÿ           @‰ûSá ·@Æ”î‘» ?µÓ¼`›åd           @©?—O@Ği,Êö?á-şo–`           @Y‹+’@Ş‡‹á=?ŞäĞò:S           @÷kşÌx­@ì‡’¦i?ÉÎÜ 1&Ë           @‰Q+Eæ[@óïI3 ?Ö“µ‡cV           @]I©¿í@ùg@õ‰L?èzilös           @”@	…LPl@‘çh>A©?«Œ¥q65J           @^ˆõ_¶úQ@‘)qÕú}?øx²H\           @{OfÍÏì@‘C°œŸ?¹^ö‚¸•           @ƒ÷–ìÒ.T@‘'ufá­3?µ¡Â÷²Ü           @“w‘•ju@‘+€îó?Òr#”ëL           @c1%ş’†R@‘2–u˜Zº?Ó öÆ(Ã           @A¢Şóg@‘<|\g¢6@jö§¬H9           @¼>obJ@‘S5¸Âé?ü!NÉ×Í‰           @›iwèîü@‘FÖ‰§›Í?Ğ”!÷0c           @’ñ£eq@‘J´1ƒG?Ë„•Qî/S           @“›{Ûoİ@‘`şÍdĞ?²óûeŒ           @zÔóuÆL@‘lÌåÓ^Œ?Ómõ=mÉ           @‰±AùMÇ@‘sÓÚwó¡?Ïè‰®×           @ƒ'ÒÚE®@‘wñœ¹.æ?ÂXv’5×           @™ÿ‡•` @‘ú ;q?Ùêõ@À‚{           @—B‚ >Úæ@‘§* 6•?Ñuô¹           @—ëœÈ³Ô@‘¹ëÙWò?ñ4‚Ş@:…           @b-3ª…T@‘ËíÕ¢X-?º+r$Å8@           @–*"0¦@‘ËÈk§?å‚[ÓÜ           @mÜ{yN™æ@‘ıA–{Í?ï!™«sIp           @j^§~ İ@’
-,iôà?êÌúõ2§Z           @^Î*—
-
-@’"¡&Tl?Åµp>£É£           @† wl(•@’$?¿?½6ç_½¾           @{RØ‚Áˆ@’-UB¢Œå?Ö&úÜ#           @y Ç«—@’,»kdíô?°¥oé’%           @JÑ¶X
-Ñ²@’8¡^xÙ@“l—aÆÃ           @‚¹g…}3Z@’:F¤z?Í6øg·
-Å           @v£¢¢ƒPZ@’eØz>°?äaæ´GC¦           @›Y9ÖOŞ@’Uß¸g›?è¿èÜ.{           @‘àé‘ı@’VPatÉ?³‡5®&c           @i©å(šT@’eSÆìà?äo`Y)Îá           @”I3u:‰	@’n2	0×?ùöfìw           @…Ş€Â@’tÜü ­?Ô6“Ôí¨           @V“Eön³O@’y×õEØ?¿“:ƒCÑ           @”˜£ı@’”¬‚ÌÆ?½)Ê´E
-           @|À%¶Û®í@’‘‚eG•?Ïóy›Cõ×           @†=­³£ğ©@’–†ë$U¦?¸ŞÖö|           @“ŒÔœj@’£Ûc=?ÚmšoQŸ®           @“÷º\¨	@’ô;à(?ÈWMá_4           @z*É	Öœ@’©o <Á@¶ 	8‡c           @ŒB>Z&‡`@’¦%ºJCG?È¯7=ĞZ›           @œÕ©Ë q@’§Ô¿Åà<?ú‰U&…³©           @“˜tGïkç@’ÏI/w¢?Ó¹Œ£Z¦           @›Ô±'‰º@’ÎòIá^m?ÒåÜØ$'æ           @œŞö;u_^@’Ô~ÊÁ¼?à…º¦           @ıAª'k@’ÑğşÏ6?ò”Äa½h           @Av…LĞ+@’ê:y]Ï'?ázWÈqJ           @˜vŒcÜš©@’ë‡^?ÀYNyÅõ           @†Oİµù4s@“ñ³Ãìs?âSˆÅî2é           @˜zRº|0D@“7/øı@Ó@Z®İ’\ƒ           @æ‘Uu˜@“@x@]?Ğ=R¶Õ           @–›]ƒ)@“Gw|UÑ?º¨84grN           @ b‚ôw@“\•‰Z^ı?Ê_Ït¯z˜           @bN¦ªÎiK@“UˆèOI×?ÑŒëzÈ®           @u-óŞÂe9@“oæ RÊ?áû#@¹ø÷           @•J9]´¢D@“‚¥µ  ?¯®·ÅN••           @{ñ¿]ÂA@“€HN3=—?ãÈä%T           @”=ŠÙ™@“ïªWÇ˜?¶[ÒÂzå2           @eğ\Kİ€@“…@!Ó÷D?Å‹ÛMAÖ¾           @ƒ³ŞF/9–@“ˆåKÎ?´İ5¡pÒå           @.      @“¸     ?Û®'¶';           @‰¾²»È@“¾‡Šë&e?°üT9ôï           @E¯i»Ö”@“ÃU‘íÒ«?µÓz’¥1C           @Œ³­È@“ÕÏï@Tï?»?"ò¾           @–ò:ì‰v½@“Ûe­?ãni–Ä           @y\Œh¾m@“è/¶–?ú…gPí›2           @J~5@“åßâ2N•?¶%×Âq V           @ŒT†]5@“ğ¸=%S?Ò0XEĞ‘Y           @™–öÒ‡< @“ùe36?®­ä1Ä—’           @“åÜ¨G[@“óøúA¬?÷éƒ˜Q÷           @itšb®m±@”ç|#É»?ì€z¡óİ           @‘¼4;T@“ü¿?@[?íaÃvAj           @A{ob3ı@”|Ô+?Å>N^ãl            @†Y@ªv·@”Hş¢»Dô?şn+Öÿz           @–Š™ˆJ4Ã@”TBõ–´?ÓN£O_´           @šòšĞ!ì@”Vò2zt­?ßÇ¯}Öåj           @bµ	H1Ğ@”Tên’»?»n!’ë<           @mÀ     @”T     ?È¬¢\Øä‚           @œ‹…ñ$z@”^q³ˆc?ÑçÊÀ¶w           @dÁ+'y@”{_‰¨zl?ıæòf5	á           @~%-eá4@”w¾cºl?Ø/ö„g           @éTûq/@”‰C3éĞ?ä%àöô¾M           @Š¾Â,¨öù@”‡’ÅcÂ²?Ü#ôw‡§n           @t§@±œ@”Œp D¨?ô‘_l¿+¸           @=F§Ú^•C@”¯,Kv—?ñ7¡RµÙ           @0üió])@”Ïà–x,4?ºfx{R‰           @“¢QÈ8Ú@”Î&YZÄª?Ë ¿           @„§>ócW@”æÛÙ{Èf?Éıi$ÎÙ           @‹?±qM2@”İ6ïºÑ[?³ú3¤!ï×           @i²‹TÏ±Ú@”÷ˆ¢h,?Óï(ü            @Ÿ¢˜¾	Ã@•ä*Á?ÃHˆz¨H„           @• Òr¡Å@•K­õ?ôGy`(hf           @ŸŠäKõj@•Ì­u!?Æ>áhw/P           @º¥afAo@•§Jj?Ç|€÷<           @ˆÑÉ0Û9@•äœïœ?Æı¼lïÅ5           @…øI•*;@•1údšc?ıƒ T¸g           @›
-¿~qlö@•`tYÌéë?Ñ8†¦­c           @˜­9e%Ö@•làîr±c?ÚpCÙnC2           @qb—M`¡°@•q‰g2ØÀ?÷XXé×åƒ           @v"}“Ãj@•t³\ıâ?Ò£ßs²           @–,y‰4bÆ@•ˆÑÂ(MÜ@§÷—š|           @·½1~$¼@•@zÒ	?ÿu6’Z¬æ           @8      @•°     ?ÀŠãÜğÍ°           @ŸØ     @•°     @¹z!¥•:           @„æ7­<şŞ@•ËL½aÂm?Ã]KaºÊ           @˜ˆ     @•Ğ     ?°Í¿h¡ÇÄ           @€"Zñ@•ŞÈªŸH´?ìËûê"„           @zâÆ·@$ç@•çY§‡Ö?½»ÛªadD           @˜¡æUßj@•÷Ñ(©ÕQ?ÏVİ,f9ö           @ÏØğf]L@–¿V„{?Ñİm;ÖP           @I1|jæ`@–
-Ö
-Í?ÄÓõ4ö           @›zİa·d“@–v…C™ë?®.VCB…           @œÊÄçú@–#öXtÃ…?¿È1
-‰`'           @2ˆäÆ@–/#^n–?Äs_ÇQw           @Èæ‡°)Ü@–4£¬uë!@«@d+           @—ú?’Ê@–:A¢ğa ?ÁgÌ–²9           @šg3©`&?@–NÄ®(rÆ?û!=ÄÑ×%           @Ÿô     @–H     ?Éí­ùÛª           @–ªö÷ö²™@–sF-òÃ@uLhŞÒ8           @ts*ƒA@–€ˆ¨ôŸÏ?úOĞE«2           @›9ÒY…@–€9‹ë±}?ÚràÀÎñ           @uâñŞ.g@–™xÈE½o?¸1‡“ÈVæ           @•˜QÁ @–¶9w’Œ?ÓàD ö           @Ÿ["½ó²@–½UK)b?ŞNº©È           @R“EŸ@–ß3Ë‘œ?Şš“©ØæY           @™WÆŠ~I@–ğ.²d–?³Û'°hŒ           @V¯şé]¹@–÷í“ü†Y?ğyğ~/¸f           @š°     @—     ?½jéşÌgJ           @‰Ñğ™ï@—ß|®£p?ËoH åØ           @™ŸôVÓm‡@—%‘fè?Ó)F±—§           @—-ÚQ6½@—$•ğ^”á?Ì4•ƒoøß           @ˆOc>O@—%8à¿q¿?Ğ6‹×Nùw           @œÄğ¢Ì0ä@—.Íâ›S?ç5”ÅéÕ
-           @v“*ÁpØ@—7¸Iú?ò X„\¾           @jŞXOü‡@—H
-æÖ=Û?ÀrÂÇİÈ           @~ªÖæê¸@—_©ıc?á½“[ü           @\XW{@—V_RØB?¾Á'Ía           @”¯wÆ ¶¶@—WòÌ­õÅ?İınÏÅPª           @—	Jmg»@—[E.j©?·ŞIû¥           @ˆŞÊ—?ŞÑ@—Dbw”E?êf{ÀHğ£           @ˆ:¸•C	@—€èU¦?É1=©Õ¹ı           @šk 0DÀ@—””7‡L?­ë2#X±’           @S<iZOQ@—¡ÅŸ¥¶4?º¨ópt9á           @r‰üù‘@—¦Ÿı™?¸Ù•­f(`           @Ÿ»Cú‹l@—£«Õ¿îZ?å»1·¯‡           @B»m\ö@—º„>¶å™?ë3Õ¬e4c           @•~h˜S@—½¯€Ëæ?ªNÿÉò¹           @»öûÂöÂ@—ç¿aÜ'?Í´•!2ƒ           @d‡dÓ¼Ş@—êÜM•eÏ?İ¹2İx‡6           @A¥Û,pk@—ó¬‡vg?ÂËBƒ•öc           @”°ìØæ0Á@—÷É+Håï?Ï£•¿Qv           @‡>x`[ğt@˜RÈÀù?ì¼·¡‘4†           @ƒƒ•œıù2@˜:o™G©?Ğ o=±‚           @k¡+ïkö@˜a´X>?Îwè0Ü†®           @“Ìh•Ïu@˜$ ç{±?ÃêC{Ìr           @ŸyCG¡@˜(ô½Zü@ å¿÷G²           @–¾pöN@˜N–Ÿ¼¾?úÁ±Å ©®           @›ÁOLFcç@˜O¯1<“ß?Â™²~ï~           @Ÿ	Tø’IA@˜cV‹÷¬o?¸Ìz÷}A           @ƒ$ò9›é@˜sLú/ã©?úvÕ„46           @š—é•§…@˜xÒ#˜n“?Ò­]bPE           @œì*Ğûã¢@˜‚Ç½S	3?ïs 
-yèq           @jj‰‘P)`@˜óÔ÷ïÑ?ÃÕl~Ü˜®           @D!¥”±@˜¦Y|Ô?Èl_‰9Ï           @›òV’‡Û@˜¢[ˆ¦+?ÏQ©§y*           @MMÖ†¼@˜¦ER¾?¾ßé<â	           @…j¿ëıy‘@˜§Ä¥4iŞ?Ğ™ïy/*           @zòy@˜±†á;ß3?ôÑ²õì¥           @„-#’TI@˜³ØàÁE?ì3WGˆ           @I¡÷ˆÁ!@˜¸!Úõ±?¾`K•‡¾&           @›Ä     @˜À     ?§¯:'–œt           @•“¤“øä@˜¸>?ŒÎ?¯m#Ø}“h           @Ÿà     @˜À     ?Ã 8ØŸ2Û           @›İÉË‚ı@˜ØêÇ-şü?ëq±L?ÓF           @‹†ÒÜÃ½@˜İP›i‚?à˜Ô6B ‘           @%¾¶¸Ş@˜ß1{–¬İ?ö—‰w²           @ŸØ     @˜è     ?àÈŒ[^G           @˜òà+ÆŒ@˜ãuwyJh?¾Ó¤Õâ	           @—$%”Ÿ@˜ñ:Mi2?Áyjú§œ           @~1ÿo¿@˜ıŞ^½İz?Ü¯O®çê           @˜šñGªæ×@™w•sÄ?³öìK»H           @X§ªîTG@™/ ¾š@ -k ’           @›_DàØ}\@™?G>-¯Æ?ÔkëÅÁ€û           @9ùª¬Ù7@™_[£æ?¿4 =ëE¸           @•Ôî}¡@™`œs&bj?Ì¿³È5'£           @P€     @™p     ?¿ [z'_           @ñtÔÉ>@™qM÷.?ò°tïØå           @”Ÿ}Iô@™tVj_b?ÌÒHN!‡¾           @—9m)ZŒ@™~ƒÅ
-¡?çë³Ûûä           @ŸØ     @™ˆ     ?ÇDEt›jH           @‚&È’6/Å@™“š’4#9?Á­ní5„           @”/C<Øõ@™4j}Ú?Õ¸ÅLå½           @‘¨í,lŞ@™£àhÿ,?æ4yªÁÖ           @–Sì—†-Ç@™«Á1	cm?Ô€ôsŞ           @€Z`£nL@™¯R-¯ÿ@?êoí `rŒ           @7|9Ü#Ú@™¬!IüÊ#?Ğ3[k ©¿           @i–39ß[@™Äãƒô£ë?¾ë‰rŒ           @‚xl•/]@™ÇhTCKí?ÖJ¹°±ğv           @™gĞCîpà@™Êê_öà%?Ë O’l2           @—QPX;H@™ãö0§#À?®èôr           @…¡ö]º°j@™ûzÚ{?İpÎäCe€           @Ÿg'×¿]@šræÑl?¨æ´é>Qz           @™Jô¤³§@š $Ü@?¯7kÂx            @9      @š,     ?ÁÆ§lg$           @’õşšD
-@š'L§mŸ?²šö3˜“Ñ           @ß…ª9@š/Ÿ˜Î?ã°ÏˆÓÕ,           @˜!ÍqC½@š32sTDy?ÍYÊøxŠš           @Ÿè     @š<     ?Æ†¶‚zAš           @nŞlobG@šOÈp€p?º¿õãAÔ¤           @UuõÃÂ
-@šZ¡ ®º?Å€İŞ ;           @œH¤S`Ë¾@š^uÑ½\?è)+›İäÄ           @š[ö…JO@šh[ëiyy?ÑŸ™=z           @„®fè!@š€sny
-@8?E¨¨           @”ûDõ×N¦@š„ªu&Ûß?¯×Æäd|Û           @•«~ÙVS+@š–ëóU®R?µnÔ´L î           @
-wTj\@š‘ÅI6d?ıUæ¶           @Yù5M*Ê@šŸ”ìØ§?ãƒğíÆÇ‘           @VWÅ’Xôç@š®€j·b?Ç×p×<­           @›ƒœª[@š°ÍOàD?Ş³Zj           @§îTJc@š²Íwï?¾2èÆô7           @™Ğ^7_q@šÆîúä"<?ŞşÑƒÏb           @–t†7xíƒ@šÛ£×?Ú øö ·Ü           @™–ƒ(o]@šÛ¦ŒÚ å?ËgøÃe            @‘Æ(ÈÍ0@šŞû¹…MU?Í¯TÌ¯]           @4bóq	ç@šàaŸi²?°“dY(g·           @™‚·…ruâ@› À«Ş‹?³’:‘Ÿt           @’¸A«ÎÆ@›-³qØe?·Â2DøÁ           @zÃã\ä'@›9	Œ+™?×cğ‹:H           @—–fû­Ãû@›@=É¹m?ñ¼ò€6v           @=sÛ ß@›3Á‰i
-§?Ä6™ğş*"           @x¶e)2@›8¬vT¶?·œÕ‚VŠ           @šŞ+ğ]@›8k‡Mi?Ä¶%}Æ™           @\kEÌî½@›A¶êõ?Ğqö:VıC           @Tq/j/Û3@›SĞD•×ş?¿¦¼§Ês           @k¼ê%•©@›o0A…pÎ?ÖM
-”¦!Ù           @›äTâ„b@›{—$Î?Ñó«Uwd¸           @ŸÜ     @›     ?ı-N<È‘Ú           @b#¿ğÒ·@›9ğ›îä?»9îHf¼           @rUfˆ‹W@›¡Ö¸ù?Ğ ïošY           @V²Ìü¾@›¡sØö(Ä?µ¡±Ò>œ           @”íl7Û§@›²£âZÛ¨?²QßÈÖ           @_iÅgøk@›Ã3ô£ƒV?Ç³´¿‹           @,      @›Ä     ?É	ÅÌÓ           @ˆcR1a$@›Â¯Şİ"?ĞNÜª6           @›F˜.to½@›ÔsP,Æ?ÕÇGq(xá           @˜¬À¾øú@›İˆıÙc°?ø…É3õC¸           @–ø ëPx@›ç¡ïŞ~õ?Ü~½€½àğ           @dáG½ÿ„@œ,Hî52?Ã÷¼¯fÁN           @x”Ôã»ÑS@œ½ÂfI§?Äh»“°BÃ           @“lŒËx±@œ<×ı“X?à(¢U
-Ú           @Ÿà     @œ<     ?Ş|9ÑgùR           @g¶/qìš@œ<‰V 4A?Ä°¼ê4‡           @™¦÷kâæ|@œ;9ÏŸ¢r?»½P|m
-           @FábâÅª®@œ>}3@M[?¿âìÃ3óë           @œMî~šPø@œE†-'?ÔúÿHöë           @›;ÑZÌ«@œYi:Â»?À±%-í           @—«#:O@œo´‚åæ»?ÅíñVW           @jş•66íĞ@œwÉZËW?Áğ¡Ü¨À           @œK6åãéÔ@œw9ßoHŠ?ÓÁ¨.6           @—^SMùà@œ¡ïv€»Ú?¼£ZİMŞ           @’3ÈVe˜¯@œ¥Y˜_kÄ?¼Ø°j \           @–T&H½F0@œ±º­•(?Ö&Õı°Ü           @       @œ¸     ?Ò§~           @•"§…=šò@œ±zÍ¶dü?÷¤È£á           @yĞ     @œÈ     ?± `X(           @›oÆ,euŸ@œÄĞ‡T•\?İ²…>¼N           @dDk³ß$@œÍ+]S?ÀT®\`           @—Š÷m=p@œÚáxgPÅ?¿$Yyz           @‡z†
-ÓŒ]@-CR$—z?à0ºu£–           @gÉ–Ç#k@3µdÔ?Ş¶œu;õ           @‘|%µŸ@C×ï;(?·IøyM           @y9¼lœJ+@[<ËÒŠ?¾ç_o4»           @“ÄâR‡@e‰lÅC°?Î%Î!T           @pïœœ;{@lX*`9?óqx÷j           @ŸĞ     @     ?´çZĞ?Áı           @ïİzì#¦@Ÿ†!ÿæ™?½ó©6+`Ş           @s’”§êT@°şú¦qP?ãùœB=Æ           @Ÿ"h*Ì¯ü@¯›t:ø?äEÂ Œ           @ŸÈ     @°     ?³ãèIJLé           @€E'Â…Õq@Ãm°¦ Y?·²wç           @0«f9eÓ@Óï;g}…?«A{’ÚšÉ           @\¯¤Lú@ù×4ğ·P?¹¾°%N           @EJ|£^@	ã›9&@ ñéoç           @nBk#Ãd@]=ÊO?ºç™G5           @€YÍD‹@"•?à$n¬°±           @ï\/ºÔ@1OF¥K?¸Z¢ÏQkj           @<ßr˜Ç@<Şi?½½–ÇéZ¯           @—„ùdú@dvW@Ğu?Û1¶»ä           @y©›®á8e@cZš¶ïÀ?¿,4Í5•R           @YÏVe&Û#@mchòë?¹¯ŸÌ€K           @eFÿ‘»m@n_€—›?»–Ë¸Àùp           @J&g—Ï@tö$Îæ?@ Híÿ€†           @       @|     @Á?ĞbÙ}           @’Ä}!×@ƒÏ•#IX?Ä2aêó-í           @e˜Wö»’@>şB?Êâ7µ¯           @—¿¤“ƒ‘@©&@Ox5?Ù”2j(9A           @†Î‹C]@»çør­Ï@—æ™U           @Ñ¬?W~ @¶“e2Ö#?¾š›’5ãÔ           @Ÿ¾£)p	õ@Çö9Ÿ=Ã?¿NÊTú           @•eBV;ú0@Ò¡l=ÉW?¶ÿQd°š           @”—ª«kU@íîm{¿õ?éÉĞg·‚º           @›-8Ì™Qf@ö„àğt4?»@êpñ           @l      @Ÿ     ?¸pÊCÖ            @hûê°98@Ÿë¥%¼4?º:#Eï           @œì     @Ÿ     ?§è[®qÃ¢           @–Õ®Œ@ŸåH¾Ká?±sYË©           @D'® òF@Ÿ&`Á"e?³œ‹+8½’           @€ÇHYpX5@Ÿ-z90ª?ÈE³€ñ           @ƒ=ƒ?¶@ŸU¥v$R?À£8„.Î           @™Éµƒ6.5@Ÿ_fü'?âËè*š           @U}ï(@ŸVøZ»@»?Ò®ö$[^y           @’NÛÖ7æ™@ŸeOµ%ó?Àòâ  	           @—-<{¼@Ÿjô„!ãù?Õr„á6ä           @š<Å™#k,@ŸuÒ/Ö`¢?ÉfU\®Q           @`Ëa¬„WV@Ÿ€–ñŠÓ?ºaxø
-oö           @—SŞ¿›ú@Ÿ£ü©H?±»”øPÿ           @o      @Ÿ      ?óĞÅ€B“3           @™&Òö@Ÿµ¤±qO?Û¾Í0Tæ           @›     @ŸÈ     @3±ñ›è           @Ÿ„     @ŸÈ     ?Âú§wP           @ŸÀ     @ŸĞ     ?É«_4´           @Ÿ@     @Ÿà     ?á%•›§®÷           @šÄ     @Ÿä     ?Áø‚æ­í           @œ     @Ÿì     ?ÆXÊ†Í           @BÒcv@+çú¨íS?¬À¥Éo           @†ø÷T2C@?.d7õ&?²2`:ßú           @‰%Gî@CŒ-­	øV?µ¿Ùââ
-           @ÍÊ4zH†@GŠº!“µ*?½0,-å           @Ÿ”     @G€     ?¾ª7”5           @v®ŸQtèæ@I*æ½jÙÿ?Ç¢ò#­           @eŠá½ig‘@HÄıï´'>?Ş¾wJ}Ó†           @¦‹zà›@K"™àÍËî?²å‡ó»²           @ŒV ¬´@OÏó™X¦p?Ş	£åĞ~           @w@ò’*0@T³
-ÉÉ?À3Ö•Ü³           @Xóûêtz1@WÄ·Ú‹Òª?Ô«öõÍr           @z­‹æ+ª@Y6Ø0]—?Å¥dşÍ+           @ÖgïÉ@]öm<z??·¿MÿÜ|           @œ©ê¨|×@`PXazé ?ÂŠOa‘           @n&@êø]@`É™(I‚?ÏñŠ0r           @Š¯Ù=ü@`¥¹µ%ËP?Á£èõÛK           @”rÎ(Ş¯@a*O±M?ÆK@Ãë¸           @mdÒs­6F@a¸"ñ7?È”+È           @ƒ—´ÇÏ@a£ErîM?­ÚßáÌÖ           @–^ká¼#k@c?%zÆ?å½öL{           @}ÿ9 ¾%Í@e ½Âe ?¸ˆrÇ»jõ           @‰Já í­"@f@W½†€•?ÔïÚgšï           @…Ì-ìì18@f­ù×‹?±¡»va           @œ      @fà     ?À÷Va,Q6           @rÆr,éE@h
-Å[Yã?ğ)IÅÀœÇ           @…M“Öñ@kÿÈÉ8Jù?æ=6…XÙ–           @p@nÒŞã¾@lzx¾<eç@³"`_7û           @‹‡ë¿l¥@l2›•vŞ?åuœh|           @[w‡@«Ğ¸@lqr9h¨ü?µ‚G.³[(           @~®ºØ¤@mdlö©ğ?Ã`÷ó            @‘kZÂ5ñ@m»¶Æ¹b?ÉÖjÄeé           @‘›W€ä+@mÑ/D·”?Õˆ­ÖÎË           @fËTe’e…@nàPây­¬?Èõ¡Z®           @Ÿ°     @nà     ?Õë¿Ó	           @sê®%ùıë@p(·ƒf>ò@ç4vÜ®Ê           @“úsÄ[@p—
-ºœéæ?Ä=3A«\           @LÿSí¯ø@q£¥ÀTıh?Ñƒÿø´]Ñ           @v`=Ùñöï@r Ëñ5?Ãe8‘–           @ró
-k@@r±&‹^Àw?Ã^«¦JÙ           @-F—ë{¨€@sMYí¬]?Ãæ ,Qéê           @„1Å Á»@s‰€áŸÍQ?ìœôÒ{jº           @04íä@sÈ Ò—‡?¶Œ³IU½–           @uÙ56 E@sã(ú|@d?¦ô¸#ğbp           @Xè3¬ p@tÎ†ßS{Ÿ?Ê]Ü' )           @{tÏ0h@vt‰—–T?õÓYÓqMF           @”'ÃyWà@v;Ú6¬u?Á³3‘¿0ß           @–Ó·„'Ñ@vEø°ÉfÀ?À"o†ù7           @’‡T8l@wãªè?İR¼]Sí\           @Ù#‹dl@w ùüãP?Àä,Ö‹şÊ           @—ƒ‰Wj$@xîÑßé¬?ÉõÍ!üç           @Y0çwã@xF¥<«?¾]b/3           @†;¾ğ.n\@xyñƒñ6$?çJ0ûÚñ           @[îƒP£T@xµ£ÏĞtº?·"Ãó¼cĞ           @•|íò‰&@yİA|Q?¿F¤>4³           @`§•³×ô@zQ×ù ğÀ?¼C¬;W­           @‰Áµ<E½Ú@{bÆ;Új?²Ä‚Lø¤|           @„~¨7Uî@{™µÂlå?ÂÄB&şŞá           @Y¶ 5Ş¤@{Ó8ƒø¿]?ÃŸ…8LÌ           @^:¥g@| c Û|B?Ài8èe­K           @!gğ@|_?ÎÌğÊºj           @”…À'òe@~eÅ5ÁÇ?áæ±º¤Z<           @i‰ãfñr`@!Ğ»Ó<á?Ù;`èç÷œ           @„è“4w@~Ì×Óêyz?Å¡Ie¿ï           @€ßZß®I@¨/¿ ¥?Ï§róœDú           @ÜşWf@Á÷8B?ÌŠ‚åL           @´Éõ{Ÿ@òè2­Ú?±4qNú           @‚wxDÉê!@€+­nP‘k?ÍSw°	           @|Í^bd’¥@€Z?0¦¦?ÒVˆW›ü           @‚ê‰'ã<@€ÀÍJè<¦?÷ŞY¤™’           @•ãé×è]@€ê@äÃ™D?çÿûévã½           @@EßÃ¹q¦@€öêİ1´?²^•~	           @†-B	ÃÏ@9¦ˆÊ@é?àıÏş›î           @›ú­³@£q@fvĞÉø?·±Éßìİ           @…?DTK@¦T%ğŠ?´+ÏSõL-           @Ézp€Ÿ@¨QÁ/Ê?»% ÉÕ¼           @”ÕªèËBµ@”bÅS¡@g©E¬.           @id)Ø¦Ç@‚¬[Wü!k?Î†z•mG           @Škè.êâÙ@‚Åô^ä?Â 5è‘œÀ           @d€     @ƒ      ?ªÉO,3ë           @Ÿ¸     @‚ğ     ?´ØĞEï5           @f¯e9¼ 2@ƒ	/xX(?Æ,¯¼Âw“           @‚%L-îb@ƒÛİ­:ö?ÀÖÒÚ“~ò           @7N½ôVµµ@„|Û¯Ò%@	^¾¼,«           @ƒ,~jÒ@„7û>Ó?ºjmÑ}Ğ           @xœÇÎM\@„&é*Ë²	?ÕsÒ¨Ím           @ry$·Nî
-@„k[†U<?ÛÁV¿}ß×           @eÀ$NÉ­W@„·~X¥Â?´«ñšJ4§           @šÏöã¨{@„·Ì2”Á?ÊÀ$c$“           @‘ù‹ñöüô@„º+ÔØ£?ÚÙløa           @ˆÖˆb-s@…<GèC?¶D±ä"š›           @€·sO`€Ù@…\¤Õ‘úg?ĞdÕlüˆv           @’¨}]¬«“@…p”³Ş?á|ãÕÆ¢            @‘J¤½ÊYd@…ˆÔ>”G?Ä¬Ûƒ           @…VyTÁÉ[@…ÁtöF‚?Ó H}èò           @`Vä«[@†³Ë¸~™?¿ºUÑ           @›Àûø@†@ìk?ûşas˜           @‘lÄ|c@†Q´ü?Ës™ü"           @œ½ñæò@†‹oO/€?Ö\ˆ'êøú           @;ÆzÅ9›V@†¦\?¼UQ›@Â>           @’qùÈò¨ï@†½9X½Ì?·Å8Ä»"           @z€q§£Ûş@†Ğ¢…íñ?ÎŠœ5nü‚           @‡}ÈYJ¼Û@†»X“öú?²áŠ{           @€…)×á/¾@‡NP–Î>?ö0ñ{U           @”ÊØ`}+æ@‡q­´ÜCI?÷":+:           @›W­t°ï@ˆ=ƒÄ?ğ3•¬út           @9–ß¿@ˆ|x+¶@Ô?­~®”#¤           @–Ö’Qê%@ˆ£Iè|N(?¹vmİ)]           @“SıoéÏ@ˆ°(["³?ç^ƒ^Vk           @œ@?]d@ˆÍà{xÚf?Ö=häºT           @…[Üƒ«=¿@ˆúº6N$†?Övt$¢           @”AmX!„Ó@‰Y¿7€?Ë©‚ìá¼I           @p™Y¾]qA@‰p)IN?È(ºc+           @sIQÚÛ@‰C²D±ª?±¨oË&           @z4¬ë/ @‰ÉG}Ğ?å>Oš           @"ºw%Z@Š &™²¸c?»³ÎQÎÅ           @.ÓÀÛáè@ŠwûyÏ?É­«CÑO           @aÌa™	@Š—5[µ
-V?ËH©{(EÆ           @Ó2õ‚@ŠâÒûåØR?õ½UnE¿ø           @°8z¢Ä@‹ĞX¢nW?ßk4Ö¹Í¿           @yñ”R@‹ø#É$aS?Æ«P>Å­R           @•´õ'…@‹ûÖ§c–?æp–Ä”âY           @šânæÏĞ¸@Œ|YÂáLö?±!4J¥           @‡CªĞõ€ˆ@Œ®¹0#¹?Äï';n=           @“¨‡?ÿ“X@(¡U¿Øí?ÅİáÒúïÚ           @œÄ*m1d@&k|©0º?Î5™6¶›~           @’D     @p     ?Èş$`Ö"           @ˆ.Ù+ŠÆ@Ï{O*Ww?Á/PÖ\´î           @¼î“Z„‹@ÛÎŸy¦¶?Û.÷${           @Š‘æ³/@÷úšX–?ÈtÓ‰½           @‡lA³²(@p Wi‹?º)Ç)ó|¦           @‹{~@ÍX7§d?®,ÄË           @Š¶ƒÒN¾@«ŠĞ‡¹x?ì5¿ş^°           @Ü`ı|á@­Á»"Í+?¾#¸d<           @f£ÚVN7 @Ìô°xò?ÿØ:R_B           @=|â~YCæ@Ië“ä©W?ÍX>Vœ…4           @Š’A›ãéC@;è
-‹œ?Ügk1È°           @ˆ7£—7Ø@F[›¼×?¼®¶››`           @€w‡RÇæ@W`Ÿrù}?ÑX0÷|¢            @UpV9V<@qÁ†™&?Ë²¾·ˆç           @’†N•/Òb@¬ñcú ?·§•£iªé           @~@ˆù¾•@Û™AowÑ?Á	ÉÓV¥           @tJ™â½â@é+qà?¹¹`A‚           @’F*º]Í@‘IF$48?ÃR3œCß           @—xì>f”@‘kcÊî–?±å@'Û’A           @~äqU	«@‘‰€¸Â?¼:Ôî‘           @›PÖ7|™V@‘™zú?³«Æûäò:           @²œ‚c>»@‘´¯/– ?º8Ø6›j           @œñ$Ñğ™@@‘Ø†İ
-?ËOô.É           @˜p     @’     ?±>Éëÿ6.           @”Ç<p¶Ö@’yÎ2SB?Ñ:™‘ÊÏ           @™§aór1¾@’59!û¸©?Æã ¦…o           @šˆN€H Â@’6ÓçÇA?ÛÔ‡–5Ï           @w°`8\@’;-³®D?Ä¿³™ØÛŠ           @“yİ]Ã+m@’eo¼4 S?Â0g#t¤           @,SÆd´M@’rìd„0¡?±HÅcg,           @ŒuB½‰æÀ@’~¯€T,?±wnQV1ø           @œå#ÃÉ_@’™÷NKC“?îÅÀ§îÑä           @ˆìÀüsäa@’»•µûç?ô­¹¯Ìl±           @šWtXÃÃ @“,†cZ…â?Ú -½1aÄ           @qøê ´ju@“/ÓøÀ;Ì@sC„İÂ‹           @!–À`e¬@“<­8“D?É•†pËşz           @û’§öƒ•@“¼ZT3¢^?ğ'ÂbµŸ           @œvtù¦@“Á£­Àk?ä%ñ×e&ş           @”RJ^ğ/½@“Äòp:K%?·†Øz³           @…¾P”—ı@“ß3_ªXÔ?µº˜4á\           @˜½,jn@“àÄI’?÷lÁû„Wö           @Ÿvıöş²@“ô¡]-lq?»™læ—bÀ           @ã.’óÊ@”HÁ¿Ò`O?Àê\ÜN~           @fÏÇk©İ@”ˆ÷?òçş$êú           @†‘‹Ë)¤
-@”¨\ôA9?×§ÑÄíEA           @›ÕÄ+¤ÆB@”¬ÂIm!@#ö%w¾           @“ğZ¸<İ[@”ÂRƒô'?Ëş.f¡¿°           @ƒ#TÆŒk@”´¦A4€Ç?¶+z³tä           @–;@ûÜ7F@•AÎâP+?ÁV½Q™Ÿ           @—‘Æ@•EÂ$Rù?×ËİæÑĞ           @Ñål…Oæ@•O%àXÁ&?Äµoç1£           @‹Â’ô9ú@•^=ùhdJ?İŒ¤ó3           @“_±‹q@•®ÎˆŠä?ÒŞ>@#Eğ           @şq~]û@–7ï}?È6É»¿D           @‹e]lÀ®@–Uö«r?ã¨äÒÙÍ           @jÚ¼VGËÚ@–™ûòc(?ÙC9Lîù           @j`ƒ ğ@–œQıX°?í™b–òX’           @ŸYRºë@—7®ÈP?ÙßñRÑ ©           @Ÿ‹!RÆ'·@—I!äØgÒ?â€êÎC           @—¹;<•2=@—›Áq/È?¸pjpÕ Ò           @ŒùU
-õq=@˜‰#NÿÏ?Ï1QAk           @•«´e	ë@˜€ĞÂÀ.?Ái\â³<            @‰+
-&
-Æ@˜ÏìşDa?¬’%Şhî           @¯ñOñ©Ô@˜ø*¾œ0?Ê[“´Ã“           @‡æ¸ 2Îf@™ xÁÙ?ÂuTÔ£™Î           @”NÙh=‰C@™#Ê?¸Ì#m1a           @ŸbË åÜ@™[„ôÕ"5?Ğ®WÓá           @S£šœ­Ñ]@™xÈÎ­¬?Ş‰ú?’           @œ¶›Õ¼@šST´TÁ?Âê
-N-S           @—Ô=/<@™ù<€
-è"?ü#µE	Í           @vDddw@š5÷,Ÿ±?ÒğÕ@‘´           @–ß³ì­8@šrê{š?¾÷ıfVÄ§           @ˆí“P¥¿@šyqÄY?Ç9şÏh·           @’ªšÑÉß@š‘F£_i?³ID‹R           @“w¥û˜H|@šÅ¨V¨Ù—?çUL,\OU           @œ»õœ†¿n@šûªï‘%?ø7.ã46b           @p—oL±È@›îA'Î?í,œlÌ;           @™ø     @›     ?³G üZ           @˜H8×û›@›a~¸T?¼—mıŠı           @šs-H9ã@›‰–•'?º]Å]ÆË           @PÆäd„X@œjpª[0?ÕMòŞ~           @[Q<3kÇ@œš#Ø¸¼?¼j‰( è           @—YW­«Gï@ğûïHa?²Ê;^”           @’<JİÅU@U5«R?»°q;;           @r0     @ø     ?¶í;é<é           @œüÖß›™@Ÿa2UÒc?ÑO´››           @‰>ÛÎ¾ğè@Ÿi†µ
-q?Ö­|‹	„|           @v      @Ÿ     ?½9è	¡&                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
