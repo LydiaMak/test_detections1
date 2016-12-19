@@ -4,6 +4,7 @@ import pyfits
 import os
 import pylab as plt
 
+#Simulating sources form original data.
 t = pyfits.open('/local/lydia/Data/all_SWASP_data/test_detections/OriginalData/wDeblend_00001_1000/sci-results/src/src.fits')
 
 sources = t[1].data
