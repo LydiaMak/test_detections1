@@ -513,7 +513,7 @@ config.charImage.detection.tempLocalBackground.isNanSafe=False
 
 # how large a region of the sky should be used for each background point
 # 	Valid Range = [1,inf)
-config.charImage.detection.tempLocalBackground.binSize=32
+config.charImage.detection.tempLocalBackground.binSize=16
 
 # Use inverse variance weighting in calculation (valid only with useApprox=True)
 config.charImage.detection.tempLocalBackground.weighting=True
@@ -616,7 +616,7 @@ config.charImage.detection.thresholdType='stdev'
 
 # Threshold for footprints
 # 	Valid Range = [0.0,inf)
-config.charImage.detection.thresholdValue=5.0
+config.charImage.detection.thresholdValue=3.0
 
 # Default reference catalog filter to use if filter not specified in exposure; if blank then filter must be specified in exposure
 config.charImage.refObjLoader.defaultFilter=''
@@ -1407,7 +1407,7 @@ config.calibrate.detection.tempLocalBackground.isNanSafe=False
 
 # how large a region of the sky should be used for each background point
 # 	Valid Range = [1,inf)
-config.calibrate.detection.tempLocalBackground.binSize=32
+config.calibrate.detection.tempLocalBackground.binSize=16
 
 # Use inverse variance weighting in calculation (valid only with useApprox=True)
 config.calibrate.detection.tempLocalBackground.weighting=True
@@ -1510,7 +1510,7 @@ config.calibrate.detection.thresholdType='stdev'
 
 # Threshold for footprints
 # 	Valid Range = [0.0,inf)
-config.calibrate.detection.thresholdValue=5.0
+config.calibrate.detection.thresholdValue=3.0
 
 # Write reference matches (ignored if doWrite false)?
 config.calibrate.doWriteMatches=True

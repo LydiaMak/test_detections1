@@ -513,7 +513,7 @@ config.charImage.detection.tempLocalBackground.isNanSafe=False
 
 # how large a region of the sky should be used for each background point
 # 	Valid Range = [1,inf)
-config.charImage.detection.tempLocalBackground.binSize=32
+config.charImage.detection.tempLocalBackground.binSize=16
 
 # Use inverse variance weighting in calculation (valid only with useApprox=True)
 config.charImage.detection.tempLocalBackground.weighting=True
@@ -1003,7 +1003,7 @@ config.charImage.measurePsf.reserveSeed=1
 config.charImage.measurePsf.reserveFraction=-1.0
 
 # Perform astrometric calibration?
-config.calibrate.doAstrometry=False
+config.calibrate.doAstrometry=True
 
 # Run subtask to apply aperture correction
 config.calibrate.doApCorr=True
@@ -1021,7 +1021,7 @@ config.calibrate.deblend.edgeHandling='ramp'
 config.calibrate.deblend.assignStrayFlux=True
 
 # Mask planes with the corresponding limit on the fraction of masked pixels. Sources violating this limit will not be deblended.
-config.calibrate.deblend.maskLimits={'SAT': 0.0}
+config.calibrate.deblend.maskLimits={'SAT': 0.1}
 
 # How to split flux among peaks
 # Allowed values:
@@ -1407,7 +1407,7 @@ config.calibrate.detection.tempLocalBackground.isNanSafe=False
 
 # how large a region of the sky should be used for each background point
 # 	Valid Range = [1,inf)
-config.calibrate.detection.tempLocalBackground.binSize=32
+config.calibrate.detection.tempLocalBackground.binSize=16
 
 # Use inverse variance weighting in calculation (valid only with useApprox=True)
 config.calibrate.detection.tempLocalBackground.weighting=True
