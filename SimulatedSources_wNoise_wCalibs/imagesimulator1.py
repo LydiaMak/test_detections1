@@ -6,7 +6,7 @@ import pylab as plt
 
 
 #Simulating data without the parents. Avoid double counting.
-t = pyfits.open('/local/lydia/Data/all_SWASP_data/test_detections/OriginalData/wDeblend_00001_1000/sci-results/src/src.fits')
+t = pyfits.open('/local/lydia/Data/all_SWASP_data/test_detections/OriginalData/output_astrometry/sci-results/src/src.fits')
 
 sources = t[1].data
 x = np.tile(np.arange(0,2048),(2048,1))
@@ -69,5 +69,5 @@ np.savetxt('fluxes.txt', np.c_[x_c,y_c,f])
 pyfits.writeto("./input/data1_v/bias.fits",bias,bias_header,clobber=True )
 pyfits.writeto("./input/data1_v/dark.fits",dark,dark_header,clobber=True )
 pyfits.writeto("./input/data1_v/flat.fits",flat,flat_header,clobber=True )
-if not os.path.exists("input"):
- os.makedirs("input")
+
+

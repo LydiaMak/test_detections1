@@ -616,7 +616,7 @@ config.charImage.detection.thresholdType='stdev'
 
 # Threshold for footprints
 # 	Valid Range = [0.0,inf)
-config.charImage.detection.thresholdValue=10.0
+config.charImage.detection.thresholdValue=5.0
 
 # Default reference catalog filter to use if filter not specified in exposure; if blank then filter must be specified in exposure
 config.charImage.refObjLoader.defaultFilter=''
@@ -1291,7 +1291,7 @@ config.calibrate.astrometry.matcher.sourceFluxType='Psf'
 
 # Number of bright stars to use
 # 	Valid Range = [2,inf)
-config.calibrate.astrometry.matcher.numBrightStars=100
+config.calibrate.astrometry.matcher.numBrightStars=300
 
 # number of points to define a shape for matching
 config.calibrate.astrometry.matcher.numPointsForShape=6
@@ -1510,7 +1510,7 @@ config.calibrate.detection.thresholdType='stdev'
 
 # Threshold for footprints
 # 	Valid Range = [0.0,inf)
-config.calibrate.detection.thresholdValue=10.0
+config.calibrate.detection.thresholdValue=5.0
 
 # Write reference matches (ignored if doWrite false)?
 config.calibrate.doWriteMatches=True
